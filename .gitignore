@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (for future phases)
+node_modules/
+.env
+.env.local
+.env.production
+
+# Build output (for future phases)
+.next/
+.astro/
+dist/
+
+# Netlify
+.netlify/

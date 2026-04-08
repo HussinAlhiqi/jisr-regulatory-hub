@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jisr Regulatory Hub — Saudi Arabia</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --navy:#0B1D2E;--navy-mid:#162D44;--teal:#00A896;--teal-dk:#007A6E;
+  --teal-lt:#E6F7F5;--teal-mid:#B2E8E2;--orange:#FF5C00;--orange-lt:#FFF0E8;
+  --orange-mid:#FFB699;--body:#1A2B38;--slate:#4A6375;--mist:#8FA3B1;
+  --border:#E2EAEE;--border-dk:#C8D6DE;--bg:#F5F7F8;--white:#FFFFFF;
+  --sidebar-w:232px;--top-h:56px;
+  --font:'IBM Plex Sans','IBM Plex Sans Arabic',system-ui,sans-serif;
+  --radius-sm:6px;--radius-md:10px;--radius-lg:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:14px}
+body{font-family:var(--font);background:var(--bg);color:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border-dk);border-radius:3px}
+
+/* TOPBAR */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--top-h);background:var(--navy);display:flex;align-items:center;padding:0 20px;gap:14px;border-bottom:1px solid rgba(255,255,255,.07)}
+.logo{display:flex;align-items:center;gap:9px;flex-shrink:0;text-decoration:none;cursor:pointer}
+.logo-mark{width:30px;height:30px;border-radius:7px;background:var(--teal);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;letter-spacing:-.5px}
+.logo-name{color:#fff;font-weight:600;font-size:15px;letter-spacing:-.2px}
+.logo-sub{color:rgba(255,255,255,.35);font-size:10px;display:block;line-height:1;margin-top:1px}
+.top-divider{width:1px;height:22px;background:rgba(255,255,255,.12);flex-shrink:0}
+.top-title{color:rgba(255,255,255,.55);font-size:12.5px;font-weight:400;white-space:nowrap}
+.top-search{flex:1;max-width:380px;position:relative;margin-left:4px}
+.top-search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.4;pointer-events:none}
+#searchInput{width:100%;padding:7px 36px 7px 34px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:22px;color:#fff;font-family:var(--font);font-size:12.5px;outline:none;transition:all .2s}
+#searchInput::placeholder{color:rgba(255,255,255,.32)}
+#searchInput:focus{background:rgba(255,255,255,.13);border-color:var(--teal)}
+#searchClear{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.4);cursor:pointer;font-size:13px;display:none;padding:2px 4px;font-family:var(--font)}
+#searchClear:hover{color:#fff}
+#resultBadge{position:absolute;right:30px;top:50%;transform:translateY(-50%);font-size:9.5px;color:var(--teal);font-weight:600;display:none;pointer-events:none}
+.aud-toggle{display:flex;align-items:center;gap:3px;margin-left:auto}
+.aud-label{font-size:9.5px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.8px;margin-right:4px;white-space:nowrap}
+.aud-btn{padding:4px 11px;border-radius:20px;font-size:11px;font-weight:500;color:rgba(255,255,255,.5);background:none;border:1px solid transparent;cursor:pointer;font-family:var(--font);transition:all .15s;white-space:nowrap}
+.aud-btn:hover{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.2)}
+.aud-btn.active{color:#fff;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25)}
+/* Subscribe button in topbar */
+.subscribe-btn-top{display:flex;align-items:center;gap:6px;padding:5px 13px;background:var(--orange);border:none;border-radius:20px;color:#fff;font-size:11px;font-weight:600;font-family:var(--font);cursor:pointer;transition:background .15s;white-space:nowrap;flex-shrink:0}
+.subscribe-btn-top:hover{background:#E54E00}
+.subscribe-btn-top svg{width:12px;height:12px}
+
+/* LAYOUT */
+.layout{display:flex;padding-top:var(--top-h);min-height:100vh}
+
+/* SIDEBAR */
+.sidebar{width:var(--sidebar-w);flex-shrink:0;position:fixed;top:var(--top-h);bottom:0;left:0;background:var(--white);border-right:1px solid var(--border);overflow-y:auto;z-index:400;padding:16px 0 60px}
+.sb-group{padding:0 8px 4px}
+.sb-label{font-size:9.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--mist);padding:8px 8px 4px}
+.sb-divider{height:1px;background:var(--border);margin:6px 8px 10px}
+.sb-item{display:flex;align-items:center;gap:8px;width:100%;padding:7px 8px;border-radius:var(--radius-sm);background:none;border:none;cursor:pointer;font-family:var(--font);font-size:12.5px;color:var(--slate);text-align:left;transition:all .12s;margin-bottom:1px}
+.sb-item:hover{background:var(--bg);color:var(--body)}
+.sb-item.active{background:var(--teal-lt);color:var(--teal-dk);font-weight:600}
+.sb-item .sb-ico{font-size:13px;width:18px;text-align:center;flex-shrink:0}
+.sb-item .sb-badge{margin-left:auto;font-size:9.5px;font-weight:600;background:var(--bg);color:var(--mist);padding:1px 6px;border-radius:10px;flex-shrink:0}
+.sb-item.has-update .sb-badge{background:var(--orange-lt);color:var(--orange)}
+.sb-item.active .sb-badge{background:rgba(0,168,150,.15);color:var(--teal-dk)}
+
+/* MAIN */
+.main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+.view{display:none}
+.view.active{display:block}
+
+/* HOME */
+.home-pad{padding:28px 32px 80px;max-width:880px}
+.hero{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px 28px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;right:-50px;top:-50px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(0,168,150,.2) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;right:60px;bottom:-30px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,rgba(255,92,0,.15) 0%,transparent 70%);pointer-events:none}
+.hero-ey{font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+.hero h1{font-size:26px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:8px}
+.hero h1 em{color:var(--teal);font-style:normal}
+.hero p{color:rgba(255,255,255,.55);font-size:13px;max-width:460px;line-height:1.65}
+.hero-stats{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.h-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-md);padding:10px 14px}
+.h-stat strong{display:block;font-size:18px;font-weight:700;color:#fff}
+.h-stat span{font-size:9.5px;color:rgba(255,255,255,.38);text-transform:uppercase;letter-spacing:.7px}
+.sec-hd{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.sec-hd h2{font-size:13px;font-weight:600;color:var(--body)}
+.sec-hd span{font-size:11px;color:var(--mist)}
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
+.topic-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 16px 14px;cursor:pointer;transition:all .18s;text-align:left}
+.topic-card:hover{border-color:var(--teal);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,168,150,.1)}
+.tc-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.tc-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.tc-icon.teal{background:var(--teal-lt)}
+.tc-icon.orange{background:var(--orange-lt)}
+.tc-icon.navy{background:#EBF0F5}
+.tc-update-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);margin-top:3px}
+.tc-title{font-size:12.5px;font-weight:600;color:var(--body);margin-bottom:3px}
+.tc-sub{font-size:11px;color:var(--mist);line-height:1.5;margin-bottom:10px}
+.tc-footer{display:flex;align-items:center;justify-content:space-between}
+.tc-count{font-size:10.5px;color:var(--teal-dk);font-weight:600}
+.tc-update{font-size:9.5px;background:var(--orange-lt);color:var(--orange);font-weight:600;padding:2px 7px;border-radius:10px}
+.change-feed{display:flex;flex-direction:column;gap:6px;margin-bottom:28px}
+.change-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:11px 14px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:border-color .15s}
+.change-item:hover{border-color:var(--teal)}
+.ci-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.ci-dot.orange{background:var(--orange)}
+.ci-dot.teal{background:var(--teal)}
+.ci-title{flex:1;font-size:12.5px;color:var(--body);font-weight:500}
+.ci-meta{font-size:10.5px;color:var(--mist);white-space:nowrap}
+.ci-badge{font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:10px;white-space:nowrap}
+.ci-badge.leave{background:var(--teal-lt);color:var(--teal-dk)}
+.ci-badge.pay{background:#EBF0F5;color:#2A4A60}
+.ci-badge.hiring{background:var(--orange-lt);color:var(--orange)}
+.ci-badge.comp{background:#F0EBF5;color:#4A2A70}
+.ci-arrow{font-size:11px;color:var(--mist)}
+.aud-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.aud-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;cursor:pointer;transition:all .15s}
+.aud-card:hover{border-color:var(--navy)}
+.ac-role{font-size:11.5px;font-weight:600;color:var(--body);margin-bottom:3px}
+.ac-desc{font-size:10.5px;color:var(--mist);line-height:1.5;margin-bottom:10px}
+.ac-tags{display:flex;flex-wrap:wrap;gap:4px}
+.ac-tag{font-size:9.5px;background:var(--bg);color:var(--slate);padding:2px 7px;border-radius:8px}
+.ac-start{display:flex;align-items:center;gap:4px;margin-top:10px;font-size:10.5px;color:var(--teal-dk);font-weight:600;border-top:1px solid var(--border);padding-top:8px}
+
+/* TOPIC VIEW */
+.topic-topbar{background:var(--white);border-bottom:1px solid var(--border);padding:0 32px;display:flex;align-items:center;gap:10px;height:48px;position:sticky;top:var(--top-h);z-index:300}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--mist)}
+.bc-link{cursor:pointer;transition:color .12s}
+.bc-link:hover{color:var(--teal-dk)}
+.bc-sep{color:var(--border-dk)}
+.bc-current{color:var(--body);font-weight:500}
+.topic-topbar-actions{margin-left:auto;display:flex;gap:8px;align-items:center}
+.upd-badge-top{background:var(--orange-lt);color:var(--orange);font-size:10px;font-weight:700;padding:3px 9px;border-radius:12px;letter-spacing:.3px}
+.last-updated{font-size:10px;color:var(--mist)}
+.topic-content{padding:24px 32px 80px}
+.topic-hero{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:20px;display:flex;gap:20px;align-items:flex-start}
+.th-icon{width:48px;height:48px;border-radius:12px;background:var(--teal-lt);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.th-title{font-size:20px;font-weight:700;color:var(--body);margin-bottom:4px}
+.th-sub{font-size:12.5px;color:var(--mist);line-height:1.6;max-width:500px}
+.th-meta{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.th-pill{font-size:10px;font-weight:500;padding:3px 9px;border-radius:10px;border:1px solid var(--border);color:var(--slate)}
+.th-pill.upd{background:var(--orange-lt);border-color:var(--orange-mid);color:var(--orange);font-weight:700}
+.sub-nav{display:flex;gap:2px;margin-bottom:16px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:4px;width:fit-content}
+.sub-tab{padding:6px 14px;border-radius:var(--radius-sm);font-size:11.5px;font-weight:500;color:var(--slate);background:none;border:none;cursor:pointer;font-family:var(--font);transition:all .12s}
+.sub-tab:hover{color:var(--body);background:var(--bg)}
+.sub-tab.active{background:var(--navy);color:#fff}
+.articles-layout{display:grid;grid-template-columns:1fr 240px;gap:16px;align-items:start}
+
+/* ARTICLE CARD */
+.article-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:8px;transition:border-color .15s}
+.article-card:hover{border-color:var(--teal-mid)}
+.article-card.hidden{display:none}
+.article-card.upd-card{border-left:3px solid var(--orange)}
+.art-header{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;cursor:pointer;background:none;border:none;width:100%;text-align:left;font-family:var(--font);transition:background .15s}
+.art-header:hover{background:#FAFCFC}
+.art-q{flex:1;font-size:13px;font-weight:600;color:var(--body);line-height:1.4}
+.art-upd{flex-shrink:0;background:var(--orange);color:#fff;font-size:8.5px;font-weight:700;letter-spacing:.4px;padding:2px 7px;border-radius:10px;text-transform:uppercase;align-self:center;white-space:nowrap}
+.art-chev{color:var(--mist);font-size:10px;align-self:center;transition:transform .22s;flex-shrink:0}
+.article-card.open .art-chev{transform:rotate(180deg)}
+.art-body{max-height:0;overflow:hidden;transition:max-height .32s ease;padding:0 16px}
+.article-card.open .art-body{max-height:2000px;padding-bottom:18px}
+.art-answer{font-size:13px;color:var(--body);line-height:1.75;border-top:1px solid var(--border);padding-top:13px}
+.art-answer ul,.art-answer ol{padding-left:18px;margin:8px 0}
+.art-answer li{margin-bottom:5px}
+
+/* CALLOUTS */
+.callout{border-radius:0 6px 6px 0;padding:11px 14px;font-size:12.5px;line-height:1.7;margin:10px 0}
+.callout.info{background:var(--teal-lt);border-left:3px solid var(--teal);color:#1A4040}
+.callout.upd{background:var(--orange-lt);border-left:3px solid var(--orange);color:#5D2800}
+.callout strong{font-weight:600}
+
+/* TABLE */
+.data-tbl{width:100%;border-collapse:collapse;font-size:12.5px;margin:10px 0;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden}
+.data-tbl thead th{background:var(--navy);color:#fff;padding:9px 12px;text-align:left;font-size:11px;font-weight:600}
+.data-tbl tbody td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.55}
+.data-tbl tbody tr:last-child td{border-bottom:none}
+.data-tbl tbody tr:nth-child(even) td{background:var(--bg)}
+.data-tbl .new-row td{background:var(--orange-lt)!important}
+.data-tbl .new-row td:first-child{font-weight:600;color:var(--orange)}
+.data-tbl .y{color:var(--teal-dk);font-weight:600}
+.data-tbl .n{color:var(--mist)}
+
+/* ASIDE */
+.widget{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;margin-bottom:10px}
+.widget-title{font-size:11px;font-weight:600;color:var(--body);margin-bottom:10px;letter-spacing:.2px}
+.widget-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--border);font-size:11.5px}
+.widget-row:last-child{border-bottom:none;padding-bottom:0}
+.wr-label{color:var(--slate)}
+.wr-value{font-weight:600;color:var(--body)}
+.wr-value.teal{color:var(--teal-dk)}
+.wr-value.orange{color:var(--orange)}
+.related-item{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border);cursor:pointer;transition:color .12s}
+.related-item:last-child{border-bottom:none}
+.related-item:hover .ri-title{color:var(--teal-dk)}
+.ri-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
+.ri-dot.orange{background:var(--orange)}
+.ri-title{font-size:11.5px;color:var(--body);flex:1;line-height:1.4}
+.ri-arr{font-size:10px;color:var(--mist)}
+.source-cite{font-size:10.5px;color:var(--mist);margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;align-items:center;gap:6px}
+.src-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0}
+mark{background:#FFF3B0;color:inherit;border-radius:2px;padding:0 1px}
+
+/* CHIPS */
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
+.chip{font-size:11px;font-weight:500;padding:3px 10px;border-radius:10px;background:var(--teal-lt);color:var(--teal-dk)}
+.chip.red{background:#FFEBEB;color:#A33030}
+
+/* SEARCH RESULTS */
+#searchResults{display:none;position:fixed;top:var(--top-h);left:var(--sidebar-w);right:0;bottom:0;background:var(--bg);z-index:450;overflow-y:auto;padding:24px 32px 60px}
+.sr-header{font-size:12px;color:var(--mist);margin-bottom:16px}
+.sr-header strong{color:var(--body)}
+.sr-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:13px 16px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.sr-card:hover{border-color:var(--teal)}
+.sr-card.has-upd{border-left:3px solid var(--orange)}
+.src-topic{font-size:10px;font-weight:600;color:var(--mist);text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}
+.src-title{font-size:13px;font-weight:600;color:var(--body);margin-bottom:4px}
+.src-excerpt{font-size:12px;color:var(--slate);line-height:1.55}
+
+/* SUBSCRIBE MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(11,29,46,.6);z-index:900;align-items:center;justify-content:center}
+.modal-overlay.open{display:flex}
+.modal{background:var(--white);border-radius:var(--radius-lg);width:100%;max-width:440px;padding:28px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.modal-close{position:absolute;top:14px;right:14px;background:none;border:none;font-size:18px;color:var(--mist);cursor:pointer;line-height:1;font-family:var(--font)}
+.modal-close:hover{color:var(--body)}
+.modal-icon{width:44px;height:44px;border-radius:12px;background:var(--teal-lt);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+.modal h2{font-size:18px;font-weight:700;color:var(--body);margin-bottom:6px}
+.modal p{font-size:12.5px;color:var(--mist);line-height:1.6;margin-bottom:20px}
+.modal-form label{display:block;font-size:11px;font-weight:600;color:var(--slate);margin-bottom:5px;text-transform:uppercase;letter-spacing:.6px}
+.modal-form input[type=email],.modal-form input[type=text]{width:100%;padding:9px 12px;border:1px solid var(--border-dk);border-radius:var(--radius-md);font-family:var(--font);font-size:13px;color:var(--body);outline:none;transition:border-color .15s;margin-bottom:12px;background:var(--white)}
+.modal-form input:focus{border-color:var(--teal)}
+.modal-form .topics-label{font-size:11px;font-weight:600;color:var(--slate);margin-bottom:8px;text-transform:uppercase;letter-spacing:.6px}
+.topic-checks{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:16px}
+.topic-check{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;transition:all .12s;font-size:11.5px;color:var(--slate)}
+.topic-check:hover{border-color:var(--teal);background:var(--teal-lt);color:var(--teal-dk)}
+.topic-check.selected{border-color:var(--teal);background:var(--teal-lt);color:var(--teal-dk);font-weight:600}
+.topic-check input{display:none}
+.topic-check-ico{font-size:12px}
+.freq-row{display:flex;gap:6px;margin-bottom:18px}
+.freq-btn{flex:1;padding:7px;border:1px solid var(--border);border-radius:var(--radius-sm);background:none;font-family:var(--font);font-size:11.5px;color:var(--slate);cursor:pointer;transition:all .12s;text-align:center}
+.freq-btn:hover{border-color:var(--teal);color:var(--teal-dk)}
+.freq-btn.selected{border-color:var(--teal);background:var(--teal-lt);color:var(--teal-dk);font-weight:600}
+.submit-btn{width:100%;padding:11px;background:var(--navy);color:#fff;border:none;border-radius:var(--radius-md);font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer;transition:background .15s}
+.submit-btn:hover{background:var(--navy-mid)}
+.success-state{display:none;text-align:center;padding:20px 0}
+.success-icon{font-size:36px;margin-bottom:12px}
+.success-state h3{font-size:16px;font-weight:700;color:var(--body);margin-bottom:6px}
+.success-state p{font-size:12.5px;color:var(--mist);line-height:1.6}
+
+@media(max-width:900px){.topic-grid{grid-template-columns:repeat(2,1fr)}.articles-layout{grid-template-columns:1fr}.aside-col{display:none}.aud-toggle .aud-label{display:none}}
+@media(max-width:680px){:root{--sidebar-w:0px}.sidebar{display:none}.main{margin-left:0}#searchResults{left:0}.topic-grid,.aud-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.topic-grid,.aud-cards{grid-template-columns:1fr}.home-pad{padding:16px 16px 60px}.topic-content,.topic-topbar{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo" onclick="showHome()">
+    <div class="logo-mark">J</div>
+    <div><span class="logo-name">Jisr</span><span class="logo-sub">jisr.net</span></div>
+  </div>
+  <div class="top-divider"></div>
+  <span class="top-title">Regulatory Hub</span>
+  <div class="top-search">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="Search any regulation, right, or topic…" autocomplete="off" spellcheck="false"/>
+    <span id="resultBadge"></span>
+    <button id="searchClear">&#x2715;</button>
+  </div>
+  <div class="aud-toggle">
+    <span class="aud-label">Viewing as</span>
+    <button class="aud-btn active" data-aud="all">All</button>
+    <button class="aud-btn" data-aud="expat">New expat</button>
+    <button class="aud-btn" data-aud="hr">HR manager</button>
+    <button class="aud-btn" data-aud="founder">Founder</button>
+  </div>
+  <button class="subscribe-btn-top" onclick="openSubscribe()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    Subscribe
+  </button>
+</header>
+
+<div class="layout">
+<nav class="sidebar">
+  <div class="sb-label">Topics</div>
+  <div class="sb-group">
+    <button class="sb-item active" data-view="home"><span class="sb-ico">&#8862;</span>Overview</button>
+    <button class="sb-item has-update" data-view="hiring"><span class="sb-ico">&#128203;</span>Hiring &amp; Contracts<span class="sb-badge">7&#9733;</span></button>
+    <button class="sb-item has-update" data-view="pay"><span class="sb-ico">&#128176;</span>Pay &amp; Compensation<span class="sb-badge">4&#9733;</span></button>
+    <button class="sb-item has-update" data-view="leave"><span class="sb-ico">&#127958;</span>Leave &amp; Time Off<span class="sb-badge">6&#9733;</span></button>
+    <button class="sb-item has-update" data-view="termination"><span class="sb-ico">&#9878;&#65039;</span>Termination<span class="sb-badge">5&#9733;</span></button>
+    <button class="sb-item" data-view="worker-types"><span class="sb-ico">&#128101;</span>Worker Types<span class="sb-badge">4</span></button>
+    <button class="sb-item has-update" data-view="compliance"><span class="sb-ico">&#9989;</span>Compliance<span class="sb-badge">3&#9733;</span></button>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-label">By Audience</div>
+  <div class="sb-group">
+    <button class="sb-item" onclick="setAud('expat')"><span class="sb-ico">&#9992;&#65039;</span>New expat employee</button>
+    <button class="sb-item" onclick="setAud('hr')"><span class="sb-ico">&#128193;</span>HR manager</button>
+    <button class="sb-item" onclick="setAud('founder')"><span class="sb-ico">&#128640;</span>Founder / startup</button>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-label">Tools</div>
+  <div class="sb-group">
+    <button class="sb-item" onclick="openSubscribe()"><span class="sb-ico">&#128276;</span>Subscribe to updates</button>
+    <button class="sb-item"><span class="sb-ico">&#129518;</span>Gratuity calculator<span class="sb-badge" style="background:var(--teal-lt);color:var(--teal-dk)">soon</span></button>
+    <button class="sb-item"><span class="sb-ico">&#128202;</span>Saudization checker<span class="sb-badge" style="background:var(--teal-lt);color:var(--teal-dk)">soon</span></button>
+  </div>
+</nav>
+
+<main class="main">
+
+<div id="view-home" class="view active">
+<div class="home-pad">
+<div class="hero">
+  <div class="hero-ey">Saudi Arabia &middot; 2025 Edition</div>
+  <h1>KSA Regulatory <em>Hub</em></h1>
+  <p>Plain-language Saudi HR law for everyone working in the Kingdom. Updated to reflect the February 2025 amendments &mdash; the most significant reform since 2015.</p>
+  <div class="hero-stats">
+    <div class="h-stat"><strong>6</strong><span>Topic areas</span></div>
+    <div class="h-stat"><strong>38</strong><span>Articles updated</span></div>
+    <div class="h-stat"><strong>10</strong><span>Key 2025 changes</span></div>
+    <div class="h-stat"><strong>Feb 2025</strong><span>Effective date</span></div>
+  </div>
+</div>
+<div class="sec-hd"><h2>Browse by topic</h2><span>Click any topic to explore articles</span></div>
+<div class="topic-grid">
+  <div class="topic-card" onclick="showView('hiring')">
+    <div class="tc-head"><div class="tc-icon orange">&#128203;</div><div class="tc-update-dot"></div></div>
+    <div class="tc-title">Hiring &amp; Contracts</div>
+    <div class="tc-sub">Qiwa digital contracts, fixed-term rules, probation, work permits</div>
+    <div class="tc-footer"><span class="tc-count">7 articles</span><span class="tc-update">2 changes in 2025</span></div>
+  </div>
+  <div class="topic-card" onclick="showView('pay')">
+    <div class="tc-head"><div class="tc-icon orange">&#128176;</div><div class="tc-update-dot"></div></div>
+    <div class="tc-title">Pay &amp; Compensation</div>
+    <div class="tc-sub">WPS, overtime, housing allowances, end-of-service gratuity</div>
+    <div class="tc-footer"><span class="tc-count">4 articles</span><span class="tc-update">3 changes in 2025</span></div>
+  </div>
+  <div class="topic-card" onclick="showView('leave')">
+    <div class="tc-head"><div class="tc-icon orange">&#127958;</div><div class="tc-update-dot"></div></div>
+    <div class="tc-title">Leave &amp; Time Off</div>
+    <div class="tc-sub">Annual, sick, maternity, paternity, bereavement, public holidays</div>
+    <div class="tc-footer"><span class="tc-count">6 articles</span><span class="tc-update">3 changes in 2025</span></div>
+  </div>
+  <div class="topic-card" onclick="showView('termination')">
+    <div class="tc-head"><div class="tc-icon orange">&#9878;&#65039;</div><div class="tc-update-dot"></div></div>
+    <div class="tc-title">Termination</div>
+    <div class="tc-sub">Resignation process, dismissal grounds, dispute resolution, MHRSD</div>
+    <div class="tc-footer"><span class="tc-count">5 articles</span><span class="tc-update">2 changes in 2025</span></div>
+  </div>
+  <div class="topic-card" onclick="showView('worker-types')">
+    <div class="tc-head"><div class="tc-icon navy">&#128101;</div></div>
+    <div class="tc-title">Worker Types</div>
+    <div class="tc-sub">Employees, contractors, volunteers, non-citizens, refugees</div>
+    <div class="tc-footer"><span class="tc-count">4 articles</span></div>
+  </div>
+  <div class="topic-card" onclick="showView('compliance')">
+    <div class="tc-head"><div class="tc-icon orange">&#9989;</div><div class="tc-update-dot"></div></div>
+    <div class="tc-title">Compliance</div>
+    <div class="tc-sub">Qiwa obligations, Saudization enforcement, WPS, penalties</div>
+    <div class="tc-footer"><span class="tc-count">3 articles</span><span class="tc-update">3 changes in 2025</span></div>
+  </div>
+</div>
+<div class="sec-hd"><h2>Latest regulation changes</h2><span>February 2025 amendments &middot; Royal Decree M/44</span></div>
+<div class="change-feed">
+  <div class="change-item" onclick="showView('leave')"><div class="ci-dot orange"></div><div class="ci-title">Maternity leave extended from 10 to 12 weeks on full pay</div><div class="ci-meta">Art. 151 &middot; Feb 2025</div><div class="ci-badge leave">Leave</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('pay')"><div class="ci-dot orange"></div><div class="ci-title">Housing and transport allowances are now a statutory obligation</div><div class="ci-meta">Art. 61 &middot; Feb 2025</div><div class="ci-badge pay">Pay</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('hiring')"><div class="ci-dot orange"></div><div class="ci-title">Probation period extended from 90 days to 180 days</div><div class="ci-meta">Feb 2025</div><div class="ci-badge hiring">Hiring</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('leave')"><div class="ci-dot orange"></div><div class="ci-title">New 3-day paid bereavement leave for death of a sibling</div><div class="ci-meta">Art. 113 &middot; Feb 2025</div><div class="ci-badge leave">Leave</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('termination')"><div class="ci-dot orange"></div><div class="ci-title">Formal resignation process introduced &mdash; 30-day employer response rule</div><div class="ci-meta">Feb 2025</div><div class="ci-badge comp">Termination</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('compliance')"><div class="ci-dot teal"></div><div class="ci-title">Equal opportunity mandate now an explicit legal duty for employers</div><div class="ci-meta">Feb 2025</div><div class="ci-badge pay">Compliance</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('leave')"><div class="ci-dot teal"></div><div class="ci-title">Paternity leave must now be taken within 7 days of birth</div><div class="ci-meta">Art. 113 &middot; Feb 2025</div><div class="ci-badge leave">Leave</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('hiring')"><div class="ci-dot teal"></div><div class="ci-title">Paper contracts no longer legally recognised &mdash; Qiwa digital only</div><div class="ci-meta">Feb 2025</div><div class="ci-badge hiring">Hiring</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('termination')"><div class="ci-dot teal"></div><div class="ci-title">Bankruptcy and force majeure added as valid termination grounds</div><div class="ci-meta">Feb 2025</div><div class="ci-badge comp">Termination</div><div class="ci-arrow">&rsaquo;</div></div>
+  <div class="change-item" onclick="showView('compliance')"><div class="ci-dot teal"></div><div class="ci-title">Remote and hybrid work formally recognised &mdash; must be registered on Qiwa</div><div class="ci-meta">Feb 2025</div><div class="ci-badge pay">Compliance</div><div class="ci-arrow">&rsaquo;</div></div>
+</div>
+<div class="sec-hd"><h2>Start by your situation</h2><span>Filtered views tailored to you</span></div>
+<div class="aud-cards">
+  <div class="aud-card" onclick="setAud('expat');showView('leave')">
+    <div class="ac-role">&#9992;&#65039; &nbsp;New expat employee</div>
+    <div class="ac-desc">Just joined a company in KSA? Start with your core rights around leave, pay, and your contract.</div>
+    <div class="ac-tags"><span class="ac-tag">Leave</span><span class="ac-tag">Contracts</span><span class="ac-tag">Work permits</span></div>
+    <div class="ac-start">Start here &nbsp;&rsaquo;</div>
+  </div>
+  <div class="aud-card" onclick="setAud('hr');showView('compliance')">
+    <div class="ac-role">&#128193; &nbsp;HR manager</div>
+    <div class="ac-desc">Managing a team? Focus on Qiwa compliance, Saudization quotas, and the 2025 amendment checklist.</div>
+    <div class="ac-tags"><span class="ac-tag">Compliance</span><span class="ac-tag">Termination</span><span class="ac-tag">Saudization</span></div>
+    <div class="ac-start">Start here &nbsp;&rsaquo;</div>
+  </div>
+  <div class="aud-card" onclick="setAud('founder');showView('hiring')">
+    <div class="ac-role">&#128640; &nbsp;Founder / startup</div>
+    <div class="ac-desc">Hiring your first employees? Understand what you must provide, what you&rsquo;re liable for, and Saudization basics.</div>
+    <div class="ac-tags"><span class="ac-tag">Hiring</span><span class="ac-tag">Pay</span><span class="ac-tag">Worker types</span></div>
+    <div class="ac-start">Start here &nbsp;&rsaquo;</div>
+  </div>
+</div>
+<div style="margin-top:32px;padding:14px 18px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);font-size:11px;color:var(--mist);line-height:1.7">
+  <strong style="color:var(--slate)">Legal disclaimer</strong> &mdash; This hub is maintained by Jisr HR for informational purposes only. It does not constitute legal advice. Content reflects KSA Labour Law as amended by Royal Decree M/44 (effective February 2025). Always consult qualified Saudi legal counsel for specific situations. Sources: MHRSD &middot; Al Tamimi &amp; Company &middot; Morgan Lewis &middot; Clyde &amp; Co &middot; Addleshaw Goddard &middot; King &amp; Spalding.
+</div>
+</div>
+</div>
+
+<div id="view-hiring" class="view">
+  <div class="topic-topbar">
+    <div class="breadcrumb">
+      <span class="bc-link" onclick="showHome()">Overview</span>
+      <span class="bc-sep">&rsaquo;</span>
+      <span class="bc-current">Hiring &amp; Contracts</span>
+    </div>
+    <div class="topic-topbar-actions">
+      <span class="upd-badge-top">&#9733; 2 changes in Feb 2025</span>
+      <span class="last-updated">Last verified: April 2025</span>
+    </div>
+  </div>
+  <div class="topic-content">
+    <div class="topic-hero">
+      <div class="th-icon">&#128203;</div>
+      <div>
+        <div class="th-title">Hiring &amp; Contracts</div>
+        <div class="th-sub">Rules governing employment contracts, probation periods, minimum ages, and digital Qiwa requirements. Two significant changes in the February 2025 amendments affect every employer in KSA.</div>
+        <div class="th-meta"><span class="th-pill upd">★ Updated Feb 2025</span><span class="th-pill">Royal Decree M/44</span><span class="th-pill">Arts. 37–81</span><span class="th-pill">Applies to: All employers</span></div>
+      </div>
+    </div>
+    <div class="sub-nav" data-view="hiring">
+      <button class="sub-tab active">All articles</button>
+      <button class="sub-tab">2025 changes only</button>
+    </div>
+    <div class="articles-layout">
+      <div class="articles-col"><div class="article-card" data-keywords="what types of employment contracts are available">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What types of employment contracts are available?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>The KSA Labour Law provides for two main contract types:</p>
+<ul>
+<li><strong>Unlimited (indefinite) contracts</strong> — available to Saudi nationals only. No fixed end date.</li>
+<li><strong>Fixed-term contracts</strong> — mandatory for all non-Saudi (expatriate) employees. Typically one year, renewable.</li>
+</ul>
+<p>Part-time contracts also exist. Part-time is defined as working fewer than half the usual daily hours at the establishment. There are no specific contract types for non-profit organisations.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 37 · Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card upd-card open" data-updated="true" data-keywords="what must a qiwa contract contain">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What must a Qiwa contract contain?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change:</strong> The Qiwa electronic contract is now the <em>sole legally recognised form</em>. Paper contracts have no legal effect. All contracts must be executed and signed via the MHRSD Qiwa portal. Previously, courts sometimes treated paper and Qiwa contracts differently — this ambiguity is now resolved.</div><p>The Qiwa contract must contain:</p>
+<ol>
+<li>Name and address of the employer</li>
+<li>Name and nationality of the employee</li>
+<li>Identity proof (e.g. Iqama or passport number)</li>
+<li>Place of residence</li>
+<li>Salary</li>
+<li>Start date of employment</li>
+<li>Duration (for fixed-term contracts)</li>
+</ol>
+<p>Companies may still issue an internal company contract alongside the Qiwa contract, but in any dispute the Qiwa contract is definitive. In the event of a discrepancy, whichever term is more favourable to the employee will apply.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 51 as amended by Royal Decree M/44 · Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what is the probation period">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the probation period?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change:</strong> The probation period can now be agreed upfront at up to <strong>180 calendar days</strong> (previously: 90 days, with a separate written agreement needed to extend by another 90 days). Both parties now explicitly have the right to terminate during probation. The probation period can also be waived entirely by mutual agreement.</div><p>Key rules:</p>
+<ul>
+<li>Must be stated in the employment contract to be valid</li>
+<li>Either party may terminate during probation without compensation</li>
+<li>Implementing Regulations specify which leave types are excluded from the probation count</li>
+<li>An employee may only serve one probation period per employer</li>
+</ul><div class="source-cite"><span class="src-dot"></span>Labour Law as amended by Royal Decree M/44 · Effective Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="what are the rules around fixed-term contract renewal">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What are the rules around fixed-term contract renewal?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change — Default term for non-Saudis:</strong> If a fixed-term contract for a non-KSA national does not specify a duration, it automatically defaults to <strong>one year from the actual start date</strong> and renews automatically for the same duration unless either party gives notice. Previously, it defaulted to the work permit expiry date.</div><p>For <strong>Saudi nationals</strong>: if a fixed-term contract is renewed three times, or the total employment period under fixed-term contracts reaches four years, the employment relationship automatically becomes unlimited.</p>
+<p>For <strong>non-Saudi nationals</strong>: the contract never converts to unlimited. It renews for the same fixed term unless notice is given by either party.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 37 as amended by Royal Decree M/44 · Effective Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="do employment contracts have to be in writing">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">Do employment contracts have to be in writing?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Yes. All Qiwa contracts must be in writing and signed electronically through the Qiwa portal. There is no longer a valid paper-based alternative.</p>
+<p>Every employee must have a Qiwa contract in place — and a valid work permit — before commencing work. The work permit is obtained via the MHRSD and requires a Qiwa contract to be in place first.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 37, 51 · Feb 2025 amendment</div></div></div>
+</div><div class="article-card" data-keywords="what are the minimum age requirements for employment">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What are the minimum age requirements for employment?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>The minimum age for employment is <strong>15 years</strong>. In limited cases, the Minister may allow juveniles aged 13–15 to undertake light work, provided it does not harm their health, morals, or interrupt school attendance.</p>
+<p><strong>Restrictions for juvenile employees (15–18 years):</strong></p>
+<ul>
+<li>Cannot work in harmful industries or professions that endanger health, safety, or morals</li>
+<li>Cannot work during the night; must have at least 12 hours of rest</li>
+<li>Maximum 6 hours per day (4 hours during Ramadan)</li>
+<li>Break of at least 30 minutes after every 4 hours worked</li>
+<li>Cannot work on weekends, public holidays, or annual leave days</li>
+<li>Employer must obtain guardian approval and a health and fitness certificate</li>
+</ul><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 75–81 · Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="are criminal record checks or references required">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">Are criminal record checks or references required?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>There is no express statutory requirement in the KSA Labour Law to conduct criminal record checks. However, it is common practice in sectors working with children or vulnerable people (e.g. education, healthcare).</p>
+<p>Employers may request references from former employers — yes, this is permitted. There are no employee representative bodies or collective bargaining agreements in KSA.</p><div class="source-cite"><span class="src-dot"></span>Labour Law · No specific article · Common practice</div></div></div>
+</div></div>
+      <div class="aside-col"><div class="widget"><div class="widget-title">Key rules at a glance</div><div class="widget-row"><span class="wr-label">Probation period (max)</span><span class="wr-value orange">180 days ★</span></div><div class="widget-row"><span class="wr-label">Fixed-term (non-Saudi)</span><span class="wr-value ">Always required</span></div><div class="widget-row"><span class="wr-label">Fixed-term default</span><span class="wr-value orange">1 year from start ★</span></div><div class="widget-row"><span class="wr-label">Contract form</span><span class="wr-value orange">Qiwa digital only ★</span></div><div class="widget-row"><span class="wr-label">Min. employment age</span><span class="wr-value ">15 years</span></div><div class="widget-row"><span class="wr-label">Saudi unlimited contract</span><span class="wr-value teal">After 3 renewals / 4 yrs</span></div></div><div class="widget"><div class="widget-title">2025 changes in this topic</div><div class="related-item" onclick="toggleByIdx('hiring',1)"><div class="ri-dot orange"></div><div class="ri-title">Qiwa contract now mandatory</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('hiring',2)"><div class="ri-dot orange"></div><div class="ri-title">Probation extended to 180 days</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('hiring',3)"><div class="ri-dot orange"></div><div class="ri-title">Default term now 1 year from start</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget"><div class="widget-title">Related topics</div><div class="related-item" onclick="showView('pay')"><div class="ri-dot"></div><div class="ri-title">Pay &amp; Compensation</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('worker-types')"><div class="ri-dot"></div><div class="ri-title">Worker Types</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('compliance')"><div class="ri-dot"></div><div class="ri-title">Compliance</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7"><div class="widget-title">Sources</div>KSA Labour Law (Royal Decree M/51 as amended by M/44) &middot; MHRSD &middot; Al Tamimi &amp; Company &middot; Addleshaw Goddard</div></div>
+    </div>
+  </div>
+</div>
+<div id="view-pay" class="view">
+  <div class="topic-topbar">
+    <div class="breadcrumb">
+      <span class="bc-link" onclick="showHome()">Overview</span>
+      <span class="bc-sep">&rsaquo;</span>
+      <span class="bc-current">Pay &amp; Compensation</span>
+    </div>
+    <div class="topic-topbar-actions">
+      <span class="upd-badge-top">&#9733; 3 changes in Feb 2025</span>
+      <span class="last-updated">Last verified: April 2025</span>
+    </div>
+  </div>
+  <div class="topic-content">
+    <div class="topic-hero">
+      <div class="th-icon">&#128176;</div>
+      <div>
+        <div class="th-title">Pay &amp; Compensation</div>
+        <div class="th-sub">Wages, overtime, housing allowances, and end-of-service gratuity. Three of the four articles in this section were updated by the February 2025 amendments, including a brand-new obligation on housing and transport.</div>
+        <div class="th-meta"><span class="th-pill upd">★ Updated Feb 2025</span><span class="th-pill">Royal Decree M/44</span><span class="th-pill">Arts. 61–107</span><span class="th-pill">Applies to: All employees</span></div>
+      </div>
+    </div>
+    <div class="sub-nav" data-view="pay">
+      <button class="sub-tab active">All articles</button>
+      <button class="sub-tab">2025 changes only</button>
+    </div>
+    <div class="articles-layout">
+      <div class="articles-col"><div class="article-card upd-card open" data-updated="true" data-keywords="is there a minimum wage in ksa">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">Is there a minimum wage in KSA?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>There is <strong>no statutory minimum wage</strong> in the KSA for private sector employees. Salaries are agreed contractually between employer and employee.</p>
+<p>Wages are due on dates agreed between the parties — typically monthly. Wage transfers are monitored via the <strong>Wages Protection System (WPS)</strong>, which verifies that salaries are paid in full and on time.</p><div class="callout upd"><strong>February 2025 change — Payslip transparency:</strong> Employers must now issue itemised monthly payslips showing basic salary, all allowances, and any deductions. The WPS payment window is strictly 30 days; delays may result in suspension of Ministry services for the employer.</div><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 90 as amended · Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="are housing and transport allowances mandatory">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">Are housing and transport allowances mandatory?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change — New statutory obligation (Article 61):</strong> Employers must now either (a) provide suitable housing and transportation directly, or (b) pay a housing allowance and a transportation allowance in lieu. This is a brand-new obligation not previously addressed in the Labour Law. If no specific amount is stated in the contract, it is determined by prevailing practice and mutual agreement.</div><p>Key implications for employers:</p>
+<ul>
+<li>Must be specified in the Qiwa employment contract</li>
+<li>Housing and transport allowances are now included in the remuneration base for end-of-service gratuity calculations</li>
+<li>Particularly impactful for companies employing large numbers of expatriates</li>
+</ul><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 61 as amended by Royal Decree M/44 · Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="how is overtime compensated">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">How is overtime compensated?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Where an employee works more than their contractually agreed working hours, they are entitled to overtime compensation:</p>
+<ul>
+<li><strong>Rate:</strong> Normal hourly wage plus a <strong>50% uplift</strong> calculated on the basic wage</li>
+<li><strong>Public holidays:</strong> Employees required to work on a public holiday must also receive overtime compensation at the same rate</li>
+</ul>
+<p><strong>Exempt categories</strong> (not entitled to standard overtime):</p>
+<ul>
+<li>Senior management with the same authority as the employer over workers</li>
+<li>Preparatory or complementary work done before or after main working hours</li>
+<li>Work that is inherently intermittent</li>
+<li>Guards and cleaning workers (excluding civil security guards)</li>
+</ul><div class="callout upd"><strong>February 2025 change — Compensatory leave option:</strong> Employers may now offer paid compensatory time off instead of cash for overtime (1.5 hours leave per overtime hour worked), with the employee's written agreement. Any unused compensatory leave must be paid out in cash upon the employee's separation.</div><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 107 as amended · Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what is end-of-service gratuity and how is it calculated">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is end-of-service gratuity and how is it calculated?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>End-of-service gratuity (EOSG) is a lump-sum payment due to all employees (Saudi and non-Saudi) upon termination of employment. It is calculated as follows:</p>
+<div style="overflow-x:auto"><table class="data-tbl">
+<thead><tr><th>Years of service</th><th>Gratuity per year</th></tr></thead>
+<tbody>
+<tr><td>First 5 years</td><td>15 calendar days&rsquo; basic salary per year</td></tr>
+<tr><td>After 5 years</td><td>30 calendar days&rsquo; basic salary per year</td></tr>
+</tbody></table></div>
+<p>No qualifying service period is required &mdash; even employees with less than one year of service receive a pro-rated gratuity. Incomplete years are calculated on a pro-rated basis.</p><div class="callout upd"><strong>February 2025 change — Housing in gratuity base:</strong> Housing and transport allowances must now be included in the remuneration base used to calculate end-of-service gratuity. Previously, only basic salary was the standard base in many contracts.</div><p><strong>Gratuity reduction on voluntary resignation:</strong></p>
+<ul>
+<li>Less than 2 years&rsquo; service: no gratuity</li>
+<li>2&ndash;5 years: one-third of full entitlement</li>
+<li>5&ndash;10 years: two-thirds of full entitlement</li>
+<li>10+ years: full entitlement (no reduction)</li>
+</ul><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 84 as amended · Effective Feb 2025</div></div></div>
+</div></div>
+      <div class="aside-col"><div class="widget"><div class="widget-title">Key numbers</div><div class="widget-row"><span class="wr-label">Minimum wage</span><span class="wr-value ">None</span></div><div class="widget-row"><span class="wr-label">Overtime uplift</span><span class="wr-value teal">50% on basic</span></div><div class="widget-row"><span class="wr-label">EOSG (yr 1&ndash;5)</span><span class="wr-value ">15 days/year</span></div><div class="widget-row"><span class="wr-label">EOSG (yr 5+)</span><span class="wr-value teal">30 days/year</span></div><div class="widget-row"><span class="wr-label">Housing allowance</span><span class="wr-value orange">Mandatory ★</span></div><div class="widget-row"><span class="wr-label">WPS window</span><span class="wr-value orange">30 days max ★</span></div></div><div class="widget"><div class="widget-title">2025 changes in this topic</div><div class="related-item" onclick="toggleByIdx('pay',0)"><div class="ri-dot orange"></div><div class="ri-title">Itemised payslips now required</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('pay',1)"><div class="ri-dot orange"></div><div class="ri-title">Housing &amp; transport: now mandatory</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('pay',2)"><div class="ri-dot orange"></div><div class="ri-title">Comp. leave now an overtime option</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('pay',3)"><div class="ri-dot orange"></div><div class="ri-title">Housing included in gratuity base</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget"><div class="widget-title">Related topics</div><div class="related-item" onclick="showView('leave')"><div class="ri-dot"></div><div class="ri-title">Leave &amp; Time Off</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('termination')"><div class="ri-dot"></div><div class="ri-title">Termination</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('compliance')"><div class="ri-dot"></div><div class="ri-title">Compliance</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7"><div class="widget-title">Sources</div>Labour Law Arts. 61, 84, 90, 107 as amended &middot; MHRSD &middot; Al Tamimi &amp; Company &middot; Morgan Lewis</div></div>
+    </div>
+  </div>
+</div>
+<div id="view-leave" class="view">
+  <div class="topic-topbar">
+    <div class="breadcrumb">
+      <span class="bc-link" onclick="showHome()">Overview</span>
+      <span class="bc-sep">&rsaquo;</span>
+      <span class="bc-current">Leave &amp; Time Off</span>
+    </div>
+    <div class="topic-topbar-actions">
+      <span class="upd-badge-top">&#9733; 3 changes in Feb 2025</span>
+      <span class="last-updated">Last verified: April 2025</span>
+    </div>
+  </div>
+  <div class="topic-content">
+    <div class="topic-hero">
+      <div class="th-icon">&#127958;</div>
+      <div>
+        <div class="th-title">Leave &amp; Time Off</div>
+        <div class="th-sub">All leave entitlements in KSA &mdash; statutory minimums, pay rates, and who qualifies. The 2025 amendments introduced three changes: extended maternity leave, a new paternity window, and a new sibling bereavement entitlement.</div>
+        <div class="th-meta"><span class="th-pill upd">★ Updated Feb 2025</span><span class="th-pill">Royal Decree M/44</span><span class="th-pill">Arts. 109&ndash;160</span><span class="th-pill">Applies to: Employees</span></div>
+      </div>
+    </div>
+    <div class="sub-nav" data-view="leave">
+      <button class="sub-tab active">All articles</button>
+      <button class="sub-tab">2025 changes only</button>
+    </div>
+    <div class="articles-layout">
+      <div class="articles-col"><div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;margin-bottom:10px">
+<div style="font-size:12px;font-weight:600;color:var(--body);margin-bottom:10px">Leave entitlements at a glance</div>
+<div style="overflow-x:auto"><table class="data-tbl">
+<thead><tr><th>Leave type</th><th>Duration</th><th>Pay</th><th>Who</th></tr></thead>
+<tbody>
+<tr><td><strong>Annual</strong></td><td>21 days (yr 1&ndash;5) / 30 days (yr 5+)</td><td>Full pay</td><td>All employees</td></tr>
+<tr><td><strong>Sick</strong></td><td>120 calendar days/year</td><td>Full / 75% / unpaid</td><td>All employees</td></tr>
+<tr class="new-row"><td><strong>&#9733; Maternity</strong></td><td>12 weeks + 1 month unpaid</td><td>Full pay (12 wks)</td><td>Female employees</td></tr>
+<tr class="new-row"><td><strong>&#9733; Paternity</strong></td><td>3 days (within 7 days of birth)</td><td>Full pay</td><td>Male employees</td></tr>
+<tr><td><strong>Bereavement</strong></td><td>3 days (spouse / family)</td><td>Full pay</td><td>All employees</td></tr>
+<tr class="new-row"><td><strong>&#9733; Bereavement &mdash; Sibling</strong></td><td>3 days (NEW)</td><td>Full pay</td><td>All employees</td></tr>
+<tr><td><strong>Hajj</strong></td><td>10&ndash;15 days (once per employment)</td><td>Full pay</td><td>Muslim employees</td></tr>
+<tr><td><strong>Marriage</strong></td><td>5 days</td><td>Full pay</td><td>All employees</td></tr>
+<tr><td><strong>Study</strong></td><td>As agreed</td><td>As agreed</td><td>As agreed</td></tr>
+</tbody></table></div></div><div class="article-card" data-keywords="what is the annual leave entitlement">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the annual leave entitlement?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><ul><li><strong>First 5 years of service:</strong> not less than 21 working days per year</li><li><strong>After 5 years:</strong> not less than 30 working days per year</li></ul>
+<p>Employees receive their full usual salary during annual leave. Accrued but untaken annual leave must be compensated in cash upon termination.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 109 &middot; Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="what is the sick leave entitlement">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the sick leave entitlement?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Employees are entitled to a total of <strong>120 calendar days of sick leave per year</strong>:</p>
+<ul><li><strong>First 30 days:</strong> full pay</li><li><strong>Next 60 days:</strong> 75% pay</li><li><strong>Final 30 days:</strong> no pay</li></ul>
+<p>A medical certificate is required. There is no additional entitlement to unpaid sick leave beyond the 30 days above.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 117 &middot; Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card upd-card open" data-updated="true" data-keywords="what is the maternity leave entitlement">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the maternity leave entitlement?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change:</strong> Maternity leave increased from 10 weeks to <strong>12 weeks on full pay</strong>. At least 6 weeks must be taken immediately after childbirth. The remaining 6 weeks may be taken flexibly, starting no earlier than 4 weeks before the expected due date.</div><ul><li><strong>12 weeks on full pay</strong> (up from 10 weeks)</li><li>Minimum 6 weeks must be taken <em>after</em> childbirth</li><li>Up to 4 weeks may be taken before the expected due date</li><li>An additional <strong>1 month unpaid</strong> may follow</li><li>If the child has special needs requiring constant care: additional 1 month on full pay, extendable by 1 month unpaid</li></ul><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 151 as amended by Royal Decree M/44 &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what is the paternity leave entitlement">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the paternity leave entitlement?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Employees are entitled to <strong>3 days of paid paternity leave</strong>.</p><div class="callout upd"><strong>February 2025 change:</strong> The leave must now be taken <strong>within 7 days following the child's birth</strong>. Previously there was no time limit, creating uncertainty for both parties. There is no unpaid paternity leave entitlement.</div><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 113 as amended by Royal Decree M/44 &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what bereavement leave is available">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What bereavement leave is available?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change &mdash; New sibling entitlement:</strong> 3 days of paid leave are now granted upon the death of a sibling. Previously, bereavement leave only covered spouses, ascendants, and descendants.</div><p>Full bereavement entitlements:</p>
+<ul>
+<li><strong>Death of spouse, ascendants, or descendants:</strong> 3 days paid</li>
+<li><strong>Death of a sibling:</strong> 3 days paid (NEW &mdash; Feb 2025)</li>
+<li><strong>Female Muslim employees upon death of spouse:</strong> Iddah leave &mdash; 4 months and 10 days paid</li>
+<li><strong>Non-Muslim female employees upon death of spouse:</strong> 15 days paid</li>
+</ul><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 113 as amended by Royal Decree M/44 &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="what public holidays are employees entitled to">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What public holidays are employees entitled to?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Employees are entitled to paid time off on national holidays. Fixed public holidays:</p>
+<ul><li><strong>Eid Al-Fitr:</strong> 4 days</li><li><strong>Eid Al-Adha:</strong> 4 days</li><li><strong>Saudi National Day:</strong> 1 day (23 September)</li></ul>
+<p>Exact dates for Eid depend on moon-sighting and are announced annually by authorities. Employees required to work on a public holiday must receive overtime compensation (normal wage + 50% uplift on basic).</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 112 &middot; Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="what special leave types exist (hajj, marriage, study)">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What special leave types exist (Hajj, marriage, study)?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><ul>
+<li><strong>Hajj leave:</strong> 10&ndash;15 days on full pay, granted once during the entire employment period (not once per employer). Includes Eid Al-Adha holidays.</li>
+<li><strong>Marriage leave:</strong> 5 days paid upon the employee&rsquo;s own marriage.</li>
+<li><strong>Study leave:</strong> Duration and pay as agreed between employer and employee. Certain conditions and documentation requirements apply.</li>
+</ul>
+<p>Employers cannot require employees to use annual leave in place of a statutory special leave entitlement.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 113&ndash;116 &middot; Unchanged in Feb 2025</div></div></div>
+</div></div>
+      <div class="aside-col"><div class="widget"><div class="widget-title">Key numbers</div><div class="widget-row"><span class="wr-label">Annual leave (yr 1&ndash;5)</span><span class="wr-value teal">21 days</span></div><div class="widget-row"><span class="wr-label">Annual leave (yr 5+)</span><span class="wr-value teal">30 days</span></div><div class="widget-row"><span class="wr-label">Sick leave (total)</span><span class="wr-value ">120 days</span></div><div class="widget-row"><span class="wr-label">Maternity leave</span><span class="wr-value orange">12 weeks ★</span></div><div class="widget-row"><span class="wr-label">Paternity leave</span><span class="wr-value ">3 days</span></div><div class="widget-row"><span class="wr-label">Bereavement (family)</span><span class="wr-value ">3 days</span></div><div class="widget-row"><span class="wr-label">Bereavement (sibling)</span><span class="wr-value orange">3 days ★ New</span></div></div><div class="widget"><div class="widget-title">2025 changes in this topic</div><div class="related-item" onclick="toggleByIdx('leave',2)"><div class="ri-dot orange"></div><div class="ri-title">Maternity: 10 &rarr; 12 weeks</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('leave',3)"><div class="ri-dot orange"></div><div class="ri-title">Paternity: must use within 7 days</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('leave',4)"><div class="ri-dot orange"></div><div class="ri-title">New: sibling bereavement leave</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget"><div class="widget-title">Related topics</div><div class="related-item" onclick="showView('pay')"><div class="ri-dot"></div><div class="ri-title">Pay &amp; Compensation</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('termination')"><div class="ri-dot"></div><div class="ri-title">Termination</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('worker-types')"><div class="ri-dot"></div><div class="ri-title">Worker Types</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7"><div class="widget-title">Sources</div>Labour Law Arts. 109&ndash;160 as amended &middot; MHRSD &middot; Al Tamimi &amp; Company &middot; Clyde &amp; Co</div></div>
+    </div>
+  </div>
+</div>
+<div id="view-termination" class="view">
+  <div class="topic-topbar">
+    <div class="breadcrumb">
+      <span class="bc-link" onclick="showHome()">Overview</span>
+      <span class="bc-sep">&rsaquo;</span>
+      <span class="bc-current">Termination</span>
+    </div>
+    <div class="topic-topbar-actions">
+      <span class="upd-badge-top">&#9733; 2 changes in Feb 2025</span>
+      <span class="last-updated">Last verified: April 2025</span>
+    </div>
+  </div>
+  <div class="topic-content">
+    <div class="topic-hero">
+      <div class="th-icon">&#9878;&#65039;</div>
+      <div>
+        <div class="th-title">Termination</div>
+        <div class="th-sub">Resignation rules, employer termination grounds, final settlement payments, and dispute resolution. The February 2025 amendments formalised the resignation process for the first time and added new grounds for termination.</div>
+        <div class="th-meta"><span class="th-pill upd">★ Updated Feb 2025</span><span class="th-pill">Royal Decree M/44</span><span class="th-pill">Arts. 74&ndash;87</span><span class="th-pill">Applies to: Employees</span></div>
+      </div>
+    </div>
+    <div class="sub-nav" data-view="termination">
+      <button class="sub-tab active">All articles</button>
+      <button class="sub-tab">2025 changes only</button>
+    </div>
+    <div class="articles-layout">
+      <div class="articles-col"><div class="article-card upd-card open" data-updated="true" data-keywords="what is the formal resignation process">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the formal resignation process?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change &mdash; Structured resignation process introduced:</strong> The amendments define resignation for the first time in the law and establish a clear process for fixed-term contracts.</div><ul>
+<li>Resignation must be submitted in <strong>writing</strong></li>
+<li>The employer has <strong>30 days</strong> to respond</li>
+<li>If no response is given within 30 days &rarr; resignation is <strong>automatically accepted</strong></li>
+<li>The employer may delay acceptance for up to <strong>60 days</strong> for operational reasons, with written justification provided before the initial 30-day period expires</li>
+<li>The employee may <strong>withdraw their resignation within 7 days</strong> unless it has already been accepted</li>
+</ul>
+<p>Employees can resign for any reason by adhering to contractual terms. There is no stipulated list of grounds required.</p><div class="source-cite"><span class="src-dot"></span>Labour Law as amended by Royal Decree M/44 &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="on what grounds can an employer terminate a fixed-term contract">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">On what grounds can an employer terminate a fixed-term contract?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>A fixed-term contract can only be terminated before its expiry date for <strong>gross misconduct</strong> as defined under Article 80 of the Labour Law. Examples include:</p>
+<ul>
+<li>False identity or documents submitted by the employee</li>
+<li>Causing substantial financial loss to the employer</li>
+<li>Being under the influence of alcohol or drugs at work</li>
+<li>Physical assault on the employer or colleagues</li>
+<li>Disclosure of confidential business information</li>
+<li>Unauthorised absence for 30+ days in a year (or 15 consecutive days)</li>
+</ul>
+<p>Where termination is not for grounds listed in Article 80, the terminating party must pay compensation. This can be up to the salary for the remaining period of the fixed-term contract, subject to a <strong>minimum of two months&rsquo; remuneration</strong>.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 80 &middot; Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="on what grounds can an employer terminate an unlimited contract">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">On what grounds can an employer terminate an unlimited contract?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Notice under an unlimited term contract can be given at any time for a <strong>valid reason</strong> &mdash; typically poor performance or misconduct.</p>
+<p>Where an unlimited contract is terminated without a valid reason, compensation is payable: <strong>15 days&rsquo; pay per year of service</strong>, subject to a minimum of two months&rsquo; remuneration.</p><div class="callout upd"><strong>February 2025 change &mdash; New termination grounds:</strong> Employer bankruptcy and force majeure are now explicitly recognised as valid grounds for termination. Unlawful dismissal is subject to stricter, enforceable financial penalties under the updated law.</div><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 74–80 as amended &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what payments are due when employment ends">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What payments are due when employment ends?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>On termination, employees are generally entitled to:</p>
+<ol>
+<li><strong>Salary during the notice period</strong> &mdash; minimum 60 calendar days for unlimited contracts</li>
+<li><strong>Compensation for accrued but untaken annual leave</strong></li>
+<li><strong>End-of-service gratuity</strong> &mdash; 15 days&rsquo; basic salary per year for the first 5 years; 30 days&rsquo; per year thereafter. No qualifying service period required.</li>
+<li><strong>Compensation for wrongful or early termination</strong> (where applicable) &mdash; minimum two months&rsquo; remuneration</li>
+<li><strong>Repatriation ticket</strong> to the employee&rsquo;s home country (or agreed destination) unless the employee obtains alternative sponsorship</li>
+</ol><div class="callout upd"><strong>February 2025 change:</strong> Housing and transport allowances are now included in the remuneration base for end-of-service gratuity calculations.</div><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 84–87 as amended &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what dispute resolution process must be followed">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What dispute resolution process must be followed?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Before filing a claim with the Labour Court, employees must first go through a mandatory <strong>MHRSD mediation process</strong>. If mediation fails, the matter is referred to the Labour Court.</p><div class="callout upd"><strong>February 2025 change &mdash; Written grievance process:</strong> When an employer imposes a disciplinary penalty, written notice must now be provided to the employee. The employee may challenge the penalty by submitting a written grievance within <strong>30 days</strong> (excluding official holidays). Digital mediation via the Qiwa platform is the primary channel for dispute escalation.</div><p>There is no principle of vicarious liability under the KSA Labour Law. Termination must always be documented with a written notice to the employee.</p><div class="source-cite"><span class="src-dot"></span>Labour Law as amended &middot; MHRSD mediation framework &middot; Effective Feb 2025</div></div></div>
+</div></div>
+      <div class="aside-col"><div class="widget"><div class="widget-title">Key termination rules</div><div class="widget-row"><span class="wr-label">Notice period (unlimited)</span><span class="wr-value ">Min. 60 days</span></div><div class="widget-row"><span class="wr-label">Wrongful termination min.</span><span class="wr-value ">2 months pay</span></div><div class="widget-row"><span class="wr-label">EOSG (yr 1&ndash;5)</span><span class="wr-value teal">15 days/year</span></div><div class="widget-row"><span class="wr-label">EOSG (yr 5+)</span><span class="wr-value teal">30 days/year</span></div><div class="widget-row"><span class="wr-label">Resignation response window</span><span class="wr-value orange">30 days ★</span></div><div class="widget-row"><span class="wr-label">Grievance window</span><span class="wr-value orange">30 days ★</span></div></div><div class="widget"><div class="widget-title">2025 changes in this topic</div><div class="related-item" onclick="toggleByIdx('termination',0)"><div class="ri-dot orange"></div><div class="ri-title">Formal resignation process: new</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('termination',2)"><div class="ri-dot orange"></div><div class="ri-title">Bankruptcy added as valid ground</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('termination',4)"><div class="ri-dot orange"></div><div class="ri-title">Written grievance process: new</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget"><div class="widget-title">Related topics</div><div class="related-item" onclick="showView('pay')"><div class="ri-dot"></div><div class="ri-title">Pay &amp; Compensation</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('compliance')"><div class="ri-dot"></div><div class="ri-title">Compliance</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('worker-types')"><div class="ri-dot"></div><div class="ri-title">Worker Types</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7"><div class="widget-title">Sources</div>Labour Law Arts. 74&ndash;87 as amended &middot; MHRSD &middot; Morgan Lewis &middot; King &amp; Spalding</div></div>
+    </div>
+  </div>
+</div>
+<div id="view-worker-types" class="view">
+  <div class="topic-topbar">
+    <div class="breadcrumb">
+      <span class="bc-link" onclick="showHome()">Overview</span>
+      <span class="bc-sep">&rsaquo;</span>
+      <span class="bc-current">Worker Types</span>
+    </div>
+    <div class="topic-topbar-actions">
+      
+      <span class="last-updated">Last verified: April 2025</span>
+    </div>
+  </div>
+  <div class="topic-content">
+    <div class="topic-hero">
+      <div class="th-icon">&#128101;</div>
+      <div>
+        <div class="th-title">Worker Types</div>
+        <div class="th-sub">Employees, independent contractors, volunteers, and non-citizens &mdash; how they are defined under KSA law and what rights each category holds. The 2025 amendments strengthened the equal treatment mandate for all workers regardless of nationality.</div>
+        <div class="th-meta"><span class="th-pill">Royal Decree M/44</span><span class="th-pill">Art. 1 (definitions)</span><span class="th-pill">Applies to: All categories</span></div>
+      </div>
+    </div>
+    <div class="sub-nav" data-view="worker-types">
+      <button class="sub-tab active">All articles</button>
+      <button class="sub-tab">2025 changes only</button>
+    </div>
+    <div class="articles-layout">
+      <div class="articles-col"><div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;margin-bottom:10px">
+<div style="font-size:12px;font-weight:600;color:var(--body);margin-bottom:10px">Rights by worker type at a glance</div>
+<div style="overflow-x:auto"><table class="data-tbl">
+<thead><tr><th>Right / Obligation</th><th>Employee</th><th>Contractor</th><th>Volunteer</th></tr></thead>
+<tbody>
+<tr><td>Labour Law applies</td><td class="y">&#10004; Yes</td><td class="n">&#10008; No</td><td class="n">&#10008; No</td></tr>
+<tr><td>Annual &amp; sick leave</td><td class="y">&#10004; Yes</td><td class="n">&#10008; No</td><td class="n">&#10008; No</td></tr>
+<tr><td>End-of-service gratuity</td><td class="y">&#10004; Yes</td><td class="n">&#10008; No</td><td class="n">&#10008; No</td></tr>
+<tr><td>Health insurance</td><td class="y">&#10004; Yes</td><td class="n">&#10008; No</td><td class="n">&#10008; No</td></tr>
+<tr><td>Housing &amp; transport</td><td class="y">&#10004; Mandatory ★</td><td class="n">&#10008; No</td><td class="n">&#10008; No</td></tr>
+<tr><td>Anti-discrimination law</td><td class="y">&#10004; Yes</td><td class="n">&#10008; No</td><td class="n">&#10008; No</td></tr>
+<tr><td>Immigration / right to work</td><td class="y">&#10004; By nationality</td><td class="y">&#10004; By nationality</td><td class="y">&#10004; By nationality</td></tr>
+<tr><td>Personal data (privacy) law</td><td class="y">&#10004; Yes</td><td class="y">&#10004; Yes</td><td class="y">&#10004; Yes</td></tr>
+</tbody></table></div></div><div class="article-card open" data-keywords="what defines an employee vs. a contractor">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What defines an employee vs. a contractor?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Under the KSA Labour Law, an <strong>employee</strong> is defined as every physical person, male or female, working for an employer and under the management or supervision of the latter for a wage, even if away from direct surveillance.</p>
+<p>An <strong>independent contractor or consultant</strong> is not defined in the Labour Law. In practice, a contractor is typically a <em>licensed company</em> providing services to another company. Individuals working directly for a company are almost always classified as employees and require a work permit and employer sponsorship.</p>
+<p><strong>Key distinctions:</strong></p>
+<ul>
+<li>Contractors invoice fees (not a salary)</li>
+<li>Contractors are not entitled to Labour Law benefits from the end-user</li>
+<li>Contractors must hold their own commercial licence to operate in KSA</li>
+<li>Contractors are not sponsored by the end-user for residence visa or work permit</li>
+</ul>
+<p>Consultancy agreements are governed by contract law, not the Labour Law. Termination grounds and liability are entirely determined by the consultancy contract.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Art. 1 (definitions) &middot; Unchanged in Feb 2025</div></div></div>
+</div><div class="article-card" data-keywords="what rights do independent contractors receive (and not receive)">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What rights do independent contractors receive (and not receive)?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Contractors receive <strong>no statutory benefits</strong> from the end-user engager:</p><div class="chips"><span class="chip red">No annual leave</span><span class="chip red">No sick leave</span><span class="chip red">No maternity leave</span><span class="chip red">No paternity leave</span><span class="chip red">No overtime pay</span><span class="chip red">No health insurance</span><span class="chip red">No social security</span><span class="chip red">No workplace injury cover</span><span class="chip red">No unemployment benefits</span><span class="chip red">No EOSG</span><span class="chip red">No housing allowance</span></div><p>There is no minimum pay requirement for contractors. Consultancy agreements should be drafted on a case-by-case basis; no prescribed template exists. Written contracts are strongly recommended as courts rely primarily on written evidence in disputes.</p><div class="source-cite"><span class="src-dot"></span>KSA Labour Law &middot; Commercial law &middot; General contractual principles</div></div></div>
+</div><div class="article-card" data-keywords="what is the status of volunteers">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What is the status of volunteers?</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>There is no definition of &ldquo;volunteer&rdquo; in the KSA Labour Law. A volunteer is understood as someone who works for a charitable cause without receiving remuneration. Volunteers are not considered employees and most employment regulations do not apply.</p>
+<ul>
+<li>No written agreement is required (though recommended)</li>
+<li>Organisations <strong>may</strong> pay stipends and reimburse expenses (transport, food, etc.)</li>
+<li>No income or withholding taxes apply to volunteer stipends in KSA</li>
+<li>No working hour restrictions, leave entitlements, or social security obligations</li>
+<li>Liability for volunteer-caused damages depends on the contractual arrangements between the organisation, the volunteer, and any end beneficiary</li>
+</ul><div class="source-cite"><span class="src-dot"></span>KSA Labour Law &middot; No specific article for volunteers &middot; Common interpretation</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what rights do non-citizen employees and expats have">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What rights do non-citizen employees and expats have?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p>Non-citizen employees are covered by the KSA Labour Law in almost the same way as Saudi nationals. The key differences are:</p>
+<ul>
+<li><strong>Contract type:</strong> Non-Saudi nationals may only hold fixed-term contracts. Unlimited contracts are available to Saudi nationals only.</li>
+<li><strong>State pension (GOSI):</strong> Only Saudi nationals (and GCC nationals under a GCC-wide arrangement) participate in the state pension scheme. Non-GCC expatriates receive end-of-service gratuity only.</li>
+<li><strong>Work authorisation:</strong> Every non-citizen requires a KSA residence visa (Iqama) and a work permit. Employers are responsible for obtaining work permits for their employees.</li>
+</ul><div class="callout upd"><strong>February 2025 change &mdash; Equal treatment mandate:</strong> The law now explicitly prohibits discrimination against any employee regardless of nationality, based on race, colour, gender, age, disability, or marital status. Non-citizens are entitled to equal protection of employment laws in any dispute.</div><p>Asylum-seekers and forcibly displaced persons without a valid residence visa cannot legally work in KSA, regardless of their protection status.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 1, 37 as amended &middot; Effective Feb 2025</div></div></div>
+</div></div>
+      <div class="aside-col"><div class="widget"><div class="widget-title">Worker type quick check</div><div class="widget-row"><span class="wr-label">Employee: Labour Law</span><span class="wr-value teal">Fully applies</span></div><div class="widget-row"><span class="wr-label">Contractor: Labour Law</span><span class="wr-value ">Does not apply</span></div><div class="widget-row"><span class="wr-label">Volunteer: Labour Law</span><span class="wr-value ">Does not apply</span></div><div class="widget-row"><span class="wr-label">Non-citizen: same rights</span><span class="wr-value teal">Yes (with 2 exceptions)</span></div><div class="widget-row"><span class="wr-label">Non-citizen: contract type</span><span class="wr-value ">Fixed-term only</span></div><div class="widget-row"><span class="wr-label">Non-citizen: pension</span><span class="wr-value ">EOSG only (non-GCC)</span></div></div><div class="widget"><div class="widget-title">2025 changes in this topic</div><div class="related-item" onclick="toggleByIdx('worker-types',3)"><div class="ri-dot orange"></div><div class="ri-title">Equal treatment: now explicit law</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget"><div class="widget-title">Related topics</div><div class="related-item" onclick="showView('hiring')"><div class="ri-dot"></div><div class="ri-title">Hiring &amp; Contracts</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('pay')"><div class="ri-dot"></div><div class="ri-title">Pay &amp; Compensation</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('compliance')"><div class="ri-dot"></div><div class="ri-title">Compliance</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7"><div class="widget-title">Sources</div>Labour Law Art. 1 as amended &middot; MHRSD &middot; Al Tamimi &amp; Company &middot; Clyde &amp; Co</div></div>
+    </div>
+  </div>
+</div>
+<div id="view-compliance" class="view">
+  <div class="topic-topbar">
+    <div class="breadcrumb">
+      <span class="bc-link" onclick="showHome()">Overview</span>
+      <span class="bc-sep">&rsaquo;</span>
+      <span class="bc-current">Compliance</span>
+    </div>
+    <div class="topic-topbar-actions">
+      <span class="upd-badge-top">&#9733; 3 changes in Feb 2025</span>
+      <span class="last-updated">Last verified: April 2025</span>
+    </div>
+  </div>
+  <div class="topic-content">
+    <div class="topic-hero">
+      <div class="th-icon">&#9989;</div>
+      <div>
+        <div class="th-title">Compliance</div>
+        <div class="th-sub">Qiwa contract obligations, Saudization enforcement, and the equal opportunity mandate. All three articles in this section were updated by the February 2025 amendments &mdash; compliance is now more strictly monitored through digital enforcement.</div>
+        <div class="th-meta"><span class="th-pill upd">★ Updated Feb 2025</span><span class="th-pill">Royal Decree M/44</span><span class="th-pill">Arts. 35&ndash;43</span><span class="th-pill">Applies to: All employers</span></div>
+      </div>
+    </div>
+    <div class="sub-nav" data-view="compliance">
+      <button class="sub-tab active">All articles</button>
+      <button class="sub-tab">2025 changes only</button>
+    </div>
+    <div class="articles-layout">
+      <div class="articles-col"><div class="article-card upd-card open" data-updated="true" data-keywords="what are the qiwa contract obligations for employers">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What are the Qiwa contract obligations for employers?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change &mdash; Qiwa is now the only valid contract form:</strong> All employment contracts must be documented and signed electronically via the MHRSD Qiwa platform. Paper contracts have no legal effect. Courts will only recognise Qiwa-registered contracts in disputes.</div><p><strong>What must be on Qiwa:</strong></p>
+<ul>
+<li>All new employment contracts</li>
+<li>Remote and hybrid work arrangements (new obligation &mdash; Feb 2025)</li>
+<li>Contract renewals and amendments</li>
+</ul>
+<p><strong>Penalties for non-compliance:</strong></p>
+<ul>
+<li>Ministry of Human Resources and Social Development can withhold work permit renewals</li>
+<li>Fines of SAR 200,000&ndash;500,000 for entities providing manpower services without a proper licence</li>
+</ul><div class="source-cite"><span class="src-dot"></span>Labour Law as amended by Royal Decree M/44 &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="how does saudization (nitaqat) enforcement work in 2025">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">How does Saudization (Nitaqat) enforcement work in 2025?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><p><strong>Saudization</strong> (Nitaqat) refers to the government policy requiring private sector companies to employ a minimum percentage of Saudi nationals, varying by sector and company size. A number of professions are reserved exclusively for Saudi nationals.</p><div class="callout upd"><strong>February 2025 change &mdash; Enhanced enforcement:</strong> The MHRSD now uses digital AI audits that cross-reference employment records, visa data, and payroll information. Non-compliance consequences have been strengthened: the Ministry may now deny work permit renewals for breaches of <em>any</em> labour regulations, not just Saudization requirements. Employees affected by non-compliant employers can transfer to another employer without the current employer&rsquo;s consent.</div><p><strong>Mandatory training obligation (new in 2025):</strong> Employers with 50 or more employees must establish training and qualification programmes focused on Saudi nationals. Non-compliance may result in work permit suspensions.</p><div class="source-cite"><span class="src-dot"></span>Labour Law Arts. 35, 42&ndash;43 as amended &middot; Effective Feb 2025</div></div></div>
+</div><div class="article-card upd-card" data-updated="true" data-keywords="what are the equal opportunity and anti-discrimination obligations">
+  <button class="art-header" onclick="toggleCard(this)">
+    <span class="art-q">What are the equal opportunity and anti-discrimination obligations?</span><span class="art-upd">&#9733; Updated Feb 2025</span><span class="art-chev">&#9660;</span>
+  </button>
+  <div class="art-body"><div class="art-answer"><div class="callout upd"><strong>February 2025 change &mdash; Explicit legal duty:</strong> The 2025 amendments add a specific obligation on employers to ensure equal opportunities and prohibit discrimination based on race, colour, gender, age, disability, marital status, or any other characteristic. This applies across all employment decisions: hiring, promotion, compensation, training, and dismissal.</div><p><strong>What employers should do:</strong></p>
+<ul>
+<li>Update HR policies, recruitment criteria, and job descriptions to reflect equal opportunity principles</li>
+<li>Put in place mechanisms for receiving and investigating harassment complaints (Anti-Harassment Law)</li>
+<li>Ensure the workforce is aware of these mechanisms</li>
+<li>Review disciplinary procedures for consistency</li>
+</ul>
+<p>Non-discrimination and anti-harassment policies are strongly recommended even where not explicitly mandated by law.</p><div class="source-cite"><span class="src-dot"></span>Labour Law as amended by Royal Decree M/44 &middot; Anti-Harassment Law &middot; Effective Feb 2025</div></div></div>
+</div></div>
+      <div class="aside-col"><div class="widget"><div class="widget-title">Compliance checklist</div><div class="widget-row"><span class="wr-label">All contracts on Qiwa</span><span class="wr-value orange">Mandatory ★</span></div><div class="widget-row"><span class="wr-label">Remote work on Qiwa</span><span class="wr-value orange">Mandatory ★</span></div><div class="widget-row"><span class="wr-label">Housing/transport stated</span><span class="wr-value orange">Mandatory ★</span></div><div class="widget-row"><span class="wr-label">Itemised payslips</span><span class="wr-value orange">Mandatory ★</span></div><div class="widget-row"><span class="wr-label">Training plan (50+ staff)</span><span class="wr-value orange">Mandatory ★</span></div><div class="widget-row"><span class="wr-label">Anti-harassment mechanism</span><span class="wr-value ">Strongly recommended</span></div></div><div class="widget"><div class="widget-title">2025 changes in this topic</div><div class="related-item" onclick="toggleByIdx('compliance',0)"><div class="ri-dot orange"></div><div class="ri-title">Qiwa: only valid contract form</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('compliance',1)"><div class="ri-dot orange"></div><div class="ri-title">Saudization: AI-based enforcement</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="toggleByIdx('compliance',2)"><div class="ri-dot orange"></div><div class="ri-title">Equal opportunity: explicit legal duty</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget"><div class="widget-title">Related topics</div><div class="related-item" onclick="showView('hiring')"><div class="ri-dot"></div><div class="ri-title">Hiring &amp; Contracts</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('pay')"><div class="ri-dot"></div><div class="ri-title">Pay &amp; Compensation</div><div class="ri-arr">&rsaquo;</div></div><div class="related-item" onclick="showView('worker-types')"><div class="ri-dot"></div><div class="ri-title">Worker Types</div><div class="ri-arr">&rsaquo;</div></div></div><div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7"><div class="widget-title">Sources</div>Labour Law Arts. 35, 42&ndash;43 as amended &middot; MHRSD &middot; Al Tamimi &amp; Company &middot; Morgan Lewis</div></div>
+    </div>
+  </div>
+</div>
+<div id="searchResults" style="display:none;position:fixed;top:var(--top-h);left:var(--sidebar-w);right:0;bottom:0;background:var(--bg);z-index:450;overflow-y:auto;padding:24px 32px 60px">
+  <div class="sr-header" id="searchHeader"></div>
+  <div id="searchList"></div>
+</div>
+</main>
+</div>
+
+<!-- SUBSCRIBE MODAL -->
+<div class="modal-overlay" id="subscribeModal" onclick="closeSubscribeOnBg(event)">
+<div class="modal">
+  <button class="modal-close" onclick="closeSubscribe()">&#10005;</button>
+  <div id="subscribeForm">
+    <div class="modal-icon">&#128276;</div>
+    <h2>Stay up to date</h2>
+    <p>Get notified when KSA labour regulations change. Choose the topics you care about and how often you want to hear from us.</p>
+    <div class="modal-form">
+      <label>Your name</label>
+      <input type="text" id="subName" placeholder="Full name"/>
+      <label>Work email</label>
+      <input type="email" id="subEmail" placeholder="you@company.com"/>
+      <div class="topics-label">Topics to follow</div>
+      <div class="topic-checks">
+        <label class="topic-check selected" onclick="toggleTopic(this)"><input type="checkbox" checked/><span class="topic-check-ico">&#128203;</span>Hiring</label>
+        <label class="topic-check selected" onclick="toggleTopic(this)"><input type="checkbox" checked/><span class="topic-check-ico">&#128176;</span>Pay</label>
+        <label class="topic-check selected" onclick="toggleTopic(this)"><input type="checkbox" checked/><span class="topic-check-ico">&#127958;</span>Leave</label>
+        <label class="topic-check selected" onclick="toggleTopic(this)"><input type="checkbox" checked/><span class="topic-check-ico">&#9878;&#65039;</span>Termination</label>
+        <label class="topic-check selected" onclick="toggleTopic(this)"><input type="checkbox" checked/><span class="topic-check-ico">&#128101;</span>Worker Types</label>
+        <label class="topic-check selected" onclick="toggleTopic(this)"><input type="checkbox" checked/><span class="topic-check-ico">&#9989;</span>Compliance</label>
+      </div>
+      <div class="topics-label">Notification frequency</div>
+      <div class="freq-row">
+        <button class="freq-btn" onclick="selectFreq(this)">Immediately</button>
+        <button class="freq-btn selected" onclick="selectFreq(this)">Weekly digest</button>
+        <button class="freq-btn" onclick="selectFreq(this)">Monthly digest</button>
+      </div>
+      <button class="submit-btn" onclick="submitSubscribe()">Subscribe to updates</button>
+    </div>
+  </div>
+  <div class="success-state" id="subscribeSuccess">
+    <div class="success-icon">&#10003;</div>
+    <h3>You&rsquo;re subscribed</h3>
+    <p>We&rsquo;ll notify you when the regulations you follow change. You can update your preferences at any time.</p>
+  </div>
+</div>
+</div>
+
+<script>
+var allArticles=[
+  {id:'h0',topic:'Hiring & Contracts',topicView:'hiring',q:'What types of employment contracts are available?',body:'Unlimited contracts for Saudi nationals, fixed-term for expatriates. Part-time contracts also exist.',updated:false},
+  {id:'h1',topic:'Hiring & Contracts',topicView:'hiring',q:'What must a Qiwa contract contain?',body:'Qiwa electronic contract is now the sole legally recognised form. Paper contracts have no legal effect from Feb 2025. Must include name, nationality, salary, start date, duration.',updated:true},
+  {id:'h2',topic:'Hiring & Contracts',topicView:'hiring',q:'What is the probation period?',body:'Up to 180 calendar days (extended from 90 days in 2025). Must be stated in the contract. Either party can terminate during probation.',updated:true},
+  {id:'h3',topic:'Hiring & Contracts',topicView:'hiring',q:'What are the rules around fixed-term contract renewal?',body:'Non-Saudi: fixed-term only, defaults to 1 year from start date (2025). Saudi nationals: becomes unlimited after 3 renewals or 4 years.',updated:true},
+  {id:'h4',topic:'Hiring & Contracts',topicView:'hiring',q:'Do employment contracts have to be in writing?',body:'Yes. All contracts must be on Qiwa. No paper alternatives. Work permit requires Qiwa contract to be in place first.',updated:false},
+  {id:'h5',topic:'Hiring & Contracts',topicView:'hiring',q:'What are the minimum age requirements for employment?',body:'Minimum age 15 years. Restrictions for juveniles 15-18: no harmful work, no night work, max 6 hours per day.',updated:false},
+  {id:'h6',topic:'Hiring & Contracts',topicView:'hiring',q:'Are criminal record checks or references required?',body:'No statutory requirement. Common practice in education and healthcare. References from former employers are permitted.',updated:false},
+  {id:'p0',topic:'Pay & Compensation',topicView:'pay',q:'Is there a minimum wage in KSA?',body:'No statutory minimum wage. Wages monitored via WPS. Itemised payslips now mandatory as of Feb 2025.',updated:true},
+  {id:'p1',topic:'Pay & Compensation',topicView:'pay',q:'Are housing and transport allowances mandatory?',body:'Yes — mandatory from Feb 2025 (Article 61). Employer must provide housing and transport or pay allowances in lieu. New statutory obligation.',updated:true},
+  {id:'p2',topic:'Pay & Compensation',topicView:'pay',q:'How is overtime compensated?',body:'Normal hourly wage plus 50% uplift on basic wage. New in 2025: compensatory time off option at 1.5 hours per overtime hour.',updated:true},
+  {id:'p3',topic:'Pay & Compensation',topicView:'pay',q:'What is end-of-service gratuity and how is it calculated?',body:'15 days basic salary per year for first 5 years, 30 days per year thereafter. Housing allowances now included in gratuity base (2025).',updated:true},
+  {id:'l0',topic:'Leave & Time Off',topicView:'leave',q:'What is the annual leave entitlement?',body:'21 working days per year for the first 5 years. 30 working days per year after 5 years. Full salary during leave.',updated:false},
+  {id:'l1',topic:'Leave & Time Off',topicView:'leave',q:'What is the sick leave entitlement?',body:'120 calendar days per year. Full pay for first 30 days, 75% for next 60, unpaid for final 30.',updated:false},
+  {id:'l2',topic:'Leave & Time Off',topicView:'leave',q:'What is the maternity leave entitlement?',body:'12 weeks on full pay (extended from 10 weeks in 2025). At least 6 weeks after birth. Additional 1 month unpaid.',updated:true},
+  {id:'l3',topic:'Leave & Time Off',topicView:'leave',q:'What is the paternity leave entitlement?',body:'3 days paid. Must be taken within 7 days of birth (new 2025 rule). No unpaid paternity leave.',updated:true},
+  {id:'l4',topic:'Leave & Time Off',topicView:'leave',q:'What bereavement leave is available?',body:'3 days for spouse, ascendants, descendants. NEW in 2025: 3 days for death of a sibling. Iddah leave for Muslim women.',updated:true},
+  {id:'l5',topic:'Leave & Time Off',topicView:'leave',q:'What public holidays are employees entitled to?',body:'Eid Al-Fitr (4 days), Eid Al-Adha (4 days), Saudi National Day (1 day). Overtime pay if working on holiday.',updated:false},
+  {id:'l6',topic:'Leave & Time Off',topicView:'leave',q:'What special leave types exist (Hajj, marriage, study)?',body:'Hajj: 10-15 days, once per employment. Marriage: 5 days. Study leave as agreed.',updated:false},
+  {id:'t0',topic:'Termination',topicView:'termination',q:'What is the formal resignation process?',body:'New in 2025: written resignation, 30-day employer response, auto-accepted if no response, 7-day withdrawal right.',updated:true},
+  {id:'t1',topic:'Termination',topicView:'termination',q:'On what grounds can an employer terminate a fixed-term contract?',body:'Only for gross misconduct under Article 80. Otherwise compensation up to remaining salary (minimum 2 months).',updated:false},
+  {id:'t2',topic:'Termination',topicView:'termination',q:'On what grounds can an employer terminate an unlimited contract?',body:'Valid reason at any time. Without valid reason: 15 days pay per year of service. Bankruptcy now a valid ground (2025).',updated:true},
+  {id:'t3',topic:'Termination',topicView:'termination',q:'What payments are due when employment ends?',body:'Notice pay (min 60 days unlimited), accrued leave, EOSG, potential wrongful termination pay, repatriation ticket.',updated:true},
+  {id:'t4',topic:'Termination',topicView:'termination',q:'What dispute resolution process must be followed?',body:'Mandatory MHRSD mediation before Labour Court. Written grievance now required. 30-day challenge window for employees.',updated:true},
+  {id:'w0',topic:'Worker Types',topicView:'worker-types',q:'What defines an employee vs. a contractor?',body:'Employee: under employer management for a wage. Contractor: licensed company providing services. Individuals are almost always employees.',updated:false},
+  {id:'w1',topic:'Worker Types',topicView:'worker-types',q:'What rights do independent contractors receive (and not receive)?',body:'Contractors receive no Labour Law benefits: no leave, no EOSG, no health insurance, no social security, no housing allowance.',updated:false},
+  {id:'w2',topic:'Worker Types',topicView:'worker-types',q:'What is the status of volunteers?',body:'Not defined in Labour Law. No working hour restrictions, no leave, no social security. Organisations may pay stipends.',updated:false},
+  {id:'w3',topic:'Worker Types',topicView:'worker-types',q:'What rights do non-citizen employees and expats have?',body:'Same as Saudi employees except: fixed-term contracts only, GOSI pension not available. Equal treatment mandate now explicit (2025).',updated:true},
+  {id:'c0',topic:'Compliance',topicView:'compliance',q:'What are the Qiwa contract obligations for employers?',body:'All contracts must be on Qiwa. Paper contracts have no legal effect. Remote work arrangements must also be on Qiwa.',updated:true},
+  {id:'c1',topic:'Compliance',topicView:'compliance',q:'How does Saudization (Nitaqat) enforcement work in 2025?',body:'Digital AI audits cross-referencing records and payroll. Non-compliance can block all work permit renewals. 50+ employees: training plans mandatory.',updated:true},
+  {id:'c2',topic:'Compliance',topicView:'compliance',q:'What are the equal opportunity and anti-discrimination obligations?',body:'Explicit legal duty from Feb 2025: no discrimination on race, gender, age, disability, marital status across all employment decisions.',updated:true}
+];
+
+var currentView='home';
+var currentAud='all';
+
+function showView(v){
+  document.querySelectorAll('.view').forEach(function(el){el.classList.remove('active')});
+  var el=document.getElementById('view-'+v);
+  if(el){el.classList.add('active');currentView=v}
+  document.querySelectorAll('.sb-item[data-view]').forEach(function(b){b.classList.remove('active')});
+  var sb=document.querySelector('.sb-item[data-view="'+v+'"]');
+  if(sb)sb.classList.add('active');
+  document.getElementById('searchResults').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showHome(){showView('home')}
+
+function toggleCard(btn){btn.closest('.article-card').classList.toggle('open')}
+
+function toggleByIdx(view,idx){
+  showView(view);
+  setTimeout(function(){
+    var cards=document.querySelectorAll('#view-'+view+' .article-card');
+    if(cards[idx]){cards[idx].classList.add('open');cards[idx].scrollIntoView({behavior:'smooth',block:'center'})}
+  },200);
+}
+
+function setAud(a){
+  currentAud=a;
+  document.querySelectorAll('.aud-btn').forEach(function(b){b.classList.remove('active')});
+  document.querySelectorAll('.aud-btn[data-aud="'+a+'"]').forEach(function(b){b.classList.add('active')});
+}
+document.querySelectorAll('.aud-btn').forEach(function(b){b.addEventListener('click',function(){setAud(this.dataset.aud)})});
+document.querySelectorAll('.sb-item[data-view]').forEach(function(b){b.addEventListener('click',function(){showView(this.dataset.view)})});
+
+/* Sub-nav tabs */
+document.querySelectorAll('.sub-nav').forEach(function(nav){
+  var tabs=nav.querySelectorAll('.sub-tab');
+  var viewId=nav.dataset.view;
+  tabs.forEach(function(tab,i){
+    tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('active')});
+      this.classList.add('active');
+      var cards=document.querySelectorAll('#view-'+viewId+' .article-card');
+      cards.forEach(function(c){
+        if(i===0){c.classList.remove('hidden')}
+        else if(i===1){c.classList.toggle('hidden',c.dataset.updated!=='true')}
+      });
+    });
+  });
+});
+
+/* Search */
+var searchInput=document.getElementById('searchInput');
+var searchClear=document.getElementById('searchClear');
+var resultBadge=document.getElementById('resultBadge');
+var searchResults=document.getElementById('searchResults');
+var searchList=document.getElementById('searchList');
+var searchHeader=document.getElementById('searchHeader');
+
+searchInput.addEventListener('input', doSearch);
+function doSearch() {
+  var q = searchInput.value.trim().toLowerCase();
+  searchClear.style.display = q ? 'block' : 'none';
+  if (!q) { searchResults.style.display = 'none'; resultBadge.style.display = 'none'; return; }
+  var matches = allArticles.filter(function(a) {
+    return (a.q + ' ' + a.body + ' ' + a.topic).toLowerCase().indexOf(q) !== -1;
+  });
+  resultBadge.textContent = matches.length + (matches.length === 1 ? ' result' : ' results');
+  resultBadge.style.display = 'block';
+  searchHeader.innerHTML = '<strong>' + matches.length + ' result' + (matches.length !== 1 ? 's' : '') + '</strong> for &ldquo;' + escH(searchInput.value.trim()) + '&rdquo;';
+  searchList.innerHTML = '';
+  matches.forEach(function(a) {
+    var card = document.createElement('div');
+    card.className = 'sr-card' + (a.updated ? ' has-upd' : '');
+    card.style.cursor = 'pointer';
+    card.innerHTML =
+      '<div class="src-topic">' + escH(a.topic) + (a.updated ? ' &nbsp;&#9733; Updated 2025' : '') + ' &rsaquo;</div>' +
+      '<div class="src-title">' + hlT(escH(a.q), q) + '</div>' +
+      '<div class="src-excerpt">' + hlT(escH(a.body), q) + '</div>';
+    (function(view) {
+      card.addEventListener('click', function() { showView(view); });
+    })(a.topicView);
+    searchList.appendChild(card);
+  });
+  searchResults.style.display = 'block';
+}
+searchClear.addEventListener('click',function(){searchInput.value='';searchInput.dispatchEvent(new Event('input'));searchInput.focus()});
+
+function escH(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function hlT(s,q){var i=s.toLowerCase().indexOf(q);if(i===-1)return s;return s.slice(0,i)+'<mark>'+s.slice(i,i+q.length)+'</mark>'+s.slice(i+q.length)}
+
+/* Active nav on scroll */
+var secIds=['home','hiring','pay','leave','termination','worker-types','compliance'];
+window.addEventListener('scroll',function(){
+  var curr=currentView;
+  document.querySelectorAll('.sb-item[data-view]').forEach(function(b){b.classList.toggle('active',b.dataset.view===curr)});
+},{passive:true});
+
+/* Subscribe modal */
+function openSubscribe(){document.getElementById('subscribeModal').classList.add('open')}
+function closeSubscribe(){
+  document.getElementById('subscribeModal').classList.remove('open');
+  setTimeout(function(){
+    document.getElementById('subscribeForm').style.display='block';
+    document.getElementById('subscribeSuccess').style.display='none';
+  },300);
+}
+function closeSubscribeOnBg(e){if(e.target===document.getElementById('subscribeModal'))closeSubscribe()}
+function toggleTopic(label){label.classList.toggle('selected')}
+function selectFreq(btn){
+  document.querySelectorAll('.freq-btn').forEach(function(b){b.classList.remove('selected')});
+  btn.classList.add('selected');
+}
+function submitSubscribe(){
+  var name=document.getElementById('subName').value.trim();
+  var email=document.getElementById('subEmail').value.trim();
+  if(!email||!email.includes('@')){document.getElementById('subEmail').focus();return}
+  document.getElementById('subscribeForm').style.display='none';
+  document.getElementById('subscribeSuccess').style.display='block';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSubscribe()});
+</script>
+</body>
+</html>
