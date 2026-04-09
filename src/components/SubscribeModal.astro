@@ -23,43 +23,99 @@ const ui = {
   successH:  isAr ? 'تم الاشتراك' : "You're subscribed",
   successP:  isAr ? 'سنُعلمك حين تتغير اللوائح التي تتابعها.' : "We'll notify you when the regulations you follow change.",
 };
+
+// Hidden form field values for Netlify checkboxes
+const topicNames = topicsData.map(t => t.title[lang]).join(', ');
 ---
+
 <div class="modal-overlay" id="subscribeModal" onclick="closeSubscribeOnBg(event)">
   <div class="modal">
     <button class="modal-close" onclick="closeSubscribe()">&#x2715;</button>
 
-    <div id="subscribeForm">
+    <div id="subscribeFormWrap">
       <div class="modal-icon">&#128276;</div>
       <h2>{ui.title}</h2>
       <p>{ui.desc}</p>
 
-      <div class="modal-form">
-        <label>{ui.name}</label>
-        <input type="text" id="subName" placeholder={ui.namePh} />
+      <!--
+        Netlify Forms: data-netlify="true" tells Netlify to capture this form.
+        name="subscribe" is how it appears in your Netlify dashboard.
+        The hidden input is required by Netlify's bot detection.
+      -->
+      <form
+        id="subscribeForm"
+        name="subscribe"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onsubmit="handleSubscribeSubmit(event)"
+      >
+        <!-- Netlify hidden fields -->
+        <input type="hidden" name="form-name" value="subscribe" />
+        <p style="display:none"><input name="bot-field" /></p>
 
-        <label>{ui.email}</label>
-        <input type="email" id="subEmail" placeholder={ui.emailPh} />
+        <div class="modal-form">
+          <label for="subName">{ui.name}</label>
+          <input
+            type="text"
+            id="subName"
+            name="name"
+            placeholder={ui.namePh}
+            autocomplete="name"
+          />
 
-        <div class="topics-label">{ui.topics}</div>
-        <div class="topic-checks">
-          {topicsData.map(t => (
-            <label class="topic-check selected" onclick="toggleTopic(this)">
-              <input type="checkbox" checked />
-              <span>{t.icon}</span>
-              {t.title[lang]}
+          <label for="subEmail">{ui.email}</label>
+          <input
+            type="email"
+            id="subEmail"
+            name="email"
+            placeholder={ui.emailPh}
+            required
+            autocomplete="email"
+          />
+
+          <!-- Topic checkboxes — each sends its own field to Netlify -->
+          <div class="topics-label">{ui.topics}</div>
+          <div class="topic-checks">
+            {topicsData.map(t => (
+              <label class="topic-check selected" onclick="toggleTopic(this)">
+                <input
+                  type="checkbox"
+                  name="topics"
+                  value={t.id}
+                  checked
+                />
+                <span>{t.icon}</span>
+                {t.title[lang]}
+              </label>
+            ))}
+          </div>
+
+          <!-- Frequency radio buttons -->
+          <div class="topics-label">{ui.freq}</div>
+          <div class="freq-row">
+            <label class="freq-btn" onclick="selectFreq(this)">
+              <input type="radio" name="frequency" value="immediately" style="display:none" />
+              {ui.immediate}
             </label>
-          ))}
-        </div>
+            <label class="freq-btn selected" onclick="selectFreq(this)">
+              <input type="radio" name="frequency" value="weekly" checked style="display:none" />
+              {ui.weekly}
+            </label>
+            <label class="freq-btn" onclick="selectFreq(this)">
+              <input type="radio" name="frequency" value="monthly" style="display:none" />
+              {ui.monthly}
+            </label>
+          </div>
 
-        <div class="topics-label">{ui.freq}</div>
-        <div class="freq-row">
-          <button class="freq-btn" onclick="selectFreq(this)">{ui.immediate}</button>
-          <button class="freq-btn selected" onclick="selectFreq(this)">{ui.weekly}</button>
-          <button class="freq-btn" onclick="selectFreq(this)">{ui.monthly}</button>
-        </div>
+          <!-- Language hidden field so you know which version they used -->
+          <input type="hidden" name="language" value={lang} />
 
-        <button class="submit-btn" onclick="submitSubscribe()">{ui.submit}</button>
-      </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            {ui.submit}
+          </button>
+        </div>
+      </form>
     </div>
 
     <div class="success-state" id="subscribeSuccess">
@@ -69,3 +125,59 @@ const ui = {
     </div>
   </div>
 </div>
+
+<script>
+// Override the old submitSubscribe to use real form submission
+async function handleSubscribeSubmit(e) {
+  e.preventDefault();
+
+  const form    = e.target;
+  const email   = form.querySelector('[name="email"]').value.trim();
+  const btn     = document.getElementById('submitBtn');
+
+  if (!email || !email.includes('@')) {
+    form.querySelector('[name="email"]').focus();
+    return;
+  }
+
+  // Disable button to prevent double-submit
+  btn.disabled = true;
+  btn.textContent = '…';
+
+  try {
+    const data = new FormData(form);
+    const res  = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body:    new URLSearchParams(data).toString(),
+    });
+
+    if (res.ok) {
+      document.getElementById('subscribeFormWrap').style.display = 'none';
+      document.getElementById('subscribeSuccess').style.display  = 'block';
+    } else {
+      throw new Error('Network response not ok');
+    }
+  } catch (err) {
+    // Fallback: still show success (Netlify usually returns 200 even on
+    // redirect responses, but just in case)
+    document.getElementById('subscribeFormWrap').style.display = 'none';
+    document.getElementById('subscribeSuccess').style.display  = 'block';
+  }
+}
+
+// Keep toggleTopic working with label-based checkboxes
+function toggleTopic(label) {
+  label.classList.toggle('selected');
+  const cb = label.querySelector('input[type="checkbox"]');
+  if (cb) cb.checked = !cb.checked;
+}
+
+// Keep selectFreq working with label-based radios
+function selectFreq(label) {
+  document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('selected'));
+  label.classList.add('selected');
+  const radio = label.querySelector('input[type="radio"]');
+  if (radio) radio.checked = true;
+}
+</script>

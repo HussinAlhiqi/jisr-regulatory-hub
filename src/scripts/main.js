@@ -87,36 +87,22 @@ function hlT(s, q) {
   return s.slice(0,i) + '<mark>' + s.slice(i, i+q.length) + '</mark>' + s.slice(i+q.length);
 }
 
-// ── Subscribe modal ──────────────────────────────────────────────────────────
+// ── Subscribe modal open/close ───────────────────────────────────────────────
 function openSubscribe() {
   document.getElementById('subscribeModal').classList.add('open');
 }
 function closeSubscribe() {
   document.getElementById('subscribeModal').classList.remove('open');
   setTimeout(() => {
-    const f = document.getElementById('subscribeForm');
-    const s = document.getElementById('subscribeSuccess');
-    if (f) f.style.display = 'block';
-    if (s) s.style.display = 'none';
+    const wrap = document.getElementById('subscribeFormWrap');
+    const succ = document.getElementById('subscribeSuccess');
+    if (wrap) wrap.style.display = 'block';
+    if (succ) succ.style.display = 'none';
   }, 300);
 }
 function closeSubscribeOnBg(e) {
   if (e.target === document.getElementById('subscribeModal')) closeSubscribe();
 }
-function toggleTopic(label) { label.classList.toggle('selected'); }
-function selectFreq(btn) {
-  document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('selected'));
-  btn.classList.add('selected');
-}
-function submitSubscribe() {
-  const email = document.getElementById('subEmail')?.value.trim();
-  if (!email || !email.includes('@')) {
-    document.getElementById('subEmail')?.focus();
-    return;
-  }
-  const f = document.getElementById('subscribeForm');
-  const s = document.getElementById('subscribeSuccess');
-  if (f) f.style.display = 'none';
-  if (s) s.style.display = 'block';
-}
+// submitSubscribe and toggleTopic / selectFreq are now handled
+// inside SubscribeModal.astro to keep form logic co-located with the form.
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSubscribe(); });
