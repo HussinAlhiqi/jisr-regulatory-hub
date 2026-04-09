@@ -1,0 +1,129 @@
+[
+  {
+    "id": "resignation",
+    "topic": "termination",
+    "updated": true,
+    "lawRef": "Art. 74",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is the formal resignation process?",
+      "ar": "ما إجراءات الاستقالة الرسمية؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Structured resignation process introduced:</strong> The amendments define resignation for the first time in the law and establish a clear process.",
+      "ar": "<strong>تغيير فبراير 2025 — إرساء إجراءات رسمية للاستقالة:</strong> عرَّفت التعديلات الاستقالةَ لأول مرة في النظام وأرست إجراءات واضحة لها."
+    },
+    "answer": {
+      "en": "<ul><li>Resignation must be submitted in <strong>writing</strong></li><li>The employer has <strong>30 days</strong> to respond</li><li>If no response within 30 days → resignation is <strong>automatically accepted</strong></li><li>The employer may delay acceptance for up to <strong>60 days</strong> for operational reasons, with written justification before the initial 30-day period expires</li><li>The employee may <strong>withdraw their resignation within 7 days</strong> unless it has already been accepted</li></ul>",
+      "ar": "<ul><li>يجب تقديم الاستقالة <strong>كتابيًا</strong></li><li>لدى صاحب العمل <strong>30 يومًا</strong> للرد</li><li>في حال عدم الرد خلال 30 يومًا → تُعدّ الاستقالة <strong>مقبولة تلقائيًا</strong></li><li>يجوز لصاحب العمل تأجيل القبول حتى <strong>60 يومًا</strong> لأسباب تشغيلية، مع تقديم مبرر كتابي قبل انتهاء فترة الـ 30 يومًا الأولى</li><li>يحق للموظف <strong>سحب استقالته خلال 7 أيام</strong> ما لم يُقبَل بها بعد</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "نظام العمل بصيغته المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "fixed-term-termination",
+    "topic": "termination",
+    "updated": false,
+    "lawRef": "Art. 80",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "On what grounds can an employer terminate a fixed-term contract?",
+      "ar": "ما الأسباب التي تُجيز لصاحب العمل إنهاء عقد محدد المدة؟"
+    },
+    "answer": {
+      "en": "<p>A fixed-term contract can only be terminated before its expiry for <strong>gross misconduct</strong> as defined under Article 80. Examples include:</p><ul><li>False identity or documents submitted by the employee</li><li>Causing substantial financial loss to the employer</li><li>Being under the influence of alcohol or drugs at work</li><li>Physical assault on the employer or colleagues</li><li>Disclosure of confidential business information</li><li>Unauthorised absence for 30+ days in a year (or 15 consecutive days)</li></ul><p>Where termination is not for Article 80 grounds, the terminating party must pay compensation — up to the salary for the remaining period, with a <strong>minimum of two months' remuneration</strong>.</p>",
+      "ar": "<p>لا يجوز إنهاء العقد محدد المدة قبل انتهاء مدته إلا في حالات <strong>الإخلال الجسيم</strong> المنصوص عليها في المادة 80. تشمل الأمثلة:</p><ul><li>تقديم الموظف هوية أو وثائق مزورة</li><li>إلحاق خسارة مالية فادحة بصاحب العمل</li><li>الحضور تحت تأثير الكحول أو المخدرات</li><li>الاعتداء الجسدي على صاحب العمل أو الزملاء</li><li>إفشاء أسرار العمل التجارية</li><li>الغياب غير المبرر 30 يومًا فأكثر في السنة (أو 15 يومًا متتالية)</li></ul><p>إذا لم يكن الإنهاء لأسباب المادة 80، يلتزم الطرف المُنهي بدفع تعويض — يبلغ الراتب عن الفترة المتبقية كحد أقصى، مع <strong>حد أدنى شهرَي أجر</strong>.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 80 · Unchanged in Feb 2025",
+      "ar": "المادة 80 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  },
+  {
+    "id": "unlimited-termination",
+    "topic": "termination",
+    "updated": true,
+    "lawRef": "Arts. 74–80",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "On what grounds can an employer terminate an unlimited contract?",
+      "ar": "ما الأسباب التي تُجيز لصاحب العمل إنهاء عقد غير محدد المدة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — New termination grounds:</strong> Employer bankruptcy and force majeure are now explicitly recognised as valid grounds for termination. Unlawful dismissal is subject to stricter, enforceable financial penalties.",
+      "ar": "<strong>تغيير فبراير 2025 — أسباب جديدة لإنهاء الخدمة:</strong> أصبح إفلاس صاحب العمل والقوة القاهرة من الأسباب المعترف بها صراحةً لإنهاء الخدمة. يخضع الفصل التعسفي لعقوبات مالية أشد وقابلة للتطبيق."
+    },
+    "answer": {
+      "en": "<p>Notice under an unlimited contract can be given at any time for a <strong>valid reason</strong> — typically poor performance or misconduct.</p><p>Where an unlimited contract is terminated without a valid reason, compensation is payable: <strong>15 days' pay per year of service</strong>, with a minimum of two months' remuneration.</p>",
+      "ar": "<p>يجوز الإشعار بإنهاء العقد غير محدد المدة في أي وقت <strong>لسبب وجيه</strong> — عادةً ضعف الأداء أو سوء السلوك.</p><p>إذا أُنهي العقد دون سبب وجيه، يستحق الموظف تعويضًا بواقع <strong>15 يوم أجر عن كل سنة خدمة</strong>، بحد أدنى شهرَي أجر.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 74–80 as amended · Effective Feb 2025",
+      "ar": "المواد 74–80 من نظام العمل بصيغتها المعدَّلة · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "final-settlement",
+    "topic": "termination",
+    "updated": true,
+    "lawRef": "Arts. 84–87",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What payments are due when employment ends?",
+      "ar": "ما المدفوعات المستحقة عند انتهاء عقد العمل؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change:</strong> Housing and transport allowances are now included in the remuneration base for end-of-service gratuity calculations.",
+      "ar": "<strong>تغيير فبراير 2025:</strong> تُدرج بدلات السكن والنقل الآن في أساس الأجر لحساب مكافأة نهاية الخدمة."
+    },
+    "answer": {
+      "en": "<ol><li><strong>Salary during the notice period</strong> — minimum 60 calendar days for unlimited contracts</li><li><strong>Compensation for accrued but untaken annual leave</strong></li><li><strong>End-of-service gratuity</strong> — 15 days' basic salary per year (first 5 yrs); 30 days' per year thereafter</li><li><strong>Compensation for wrongful or early termination</strong> (where applicable) — minimum two months' remuneration</li><li><strong>Repatriation ticket</strong> to the employee's home country unless alternative sponsorship is obtained</li></ol>",
+      "ar": "<ol><li><strong>الراتب خلال فترة الإشعار</strong> — 60 يومًا تقويميًا كحد أدنى للعقود غير محددة المدة</li><li><strong>تعويض الإجازة السنوية المستحقة غير المستهلكة</strong></li><li><strong>مكافأة نهاية الخدمة</strong> — 15 يومًا من الراتب الأساسي لكل سنة (أول 5 سنوات)؛ 30 يومًا لكل سنة بعد ذلك</li><li><strong>تعويض الإنهاء التعسفي أو المبكر</strong> (حيثما ينطبق) — حد أدنى شهرَي أجر</li><li><strong>تذكرة العودة</strong> إلى بلد الموظف الأصلي ما لم يحصل على كفالة بديلة</li></ol>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 84–87 as amended · Effective Feb 2025",
+      "ar": "المواد 84–87 من نظام العمل بصيغتها المعدَّلة · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "dispute-resolution",
+    "topic": "termination",
+    "updated": true,
+    "lawRef": "Arts. 77–78",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What dispute resolution process applies?",
+      "ar": "ما إجراءات تسوية النزاعات المعمول بها؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Written grievance process:</strong> When an employer imposes a disciplinary penalty, written notice must now be provided. The employee may challenge the penalty by submitting a written grievance within <strong>30 days</strong> (excluding official holidays).",
+      "ar": "<strong>تغيير فبراير 2025 — إجراءات التظلم الكتابي:</strong> يُلزَم صاحب العمل الآن بإبلاغ الموظف كتابيًا عند توقيع عقوبة تأديبية. يحق للموظف الطعن في العقوبة بتقديم تظلم كتابي خلال <strong>30 يومًا</strong> (باستثناء العطل الرسمية)."
+    },
+    "answer": {
+      "en": "<p>Before filing a claim with the Labour Court, employees must first go through mandatory <strong>MHRSD mediation</strong>. If mediation fails, the matter is referred to the Labour Court. Digital mediation via the Qiwa platform is the primary channel.</p>",
+      "ar": "<p>يجب على الموظف قبل اللجوء إلى المحكمة العمالية المرور بإجراءات <strong>الوساطة الإلزامية</strong> لدى وزارة الموارد البشرية. إذا فشلت الوساطة، يُحال الأمر إلى المحكمة العمالية. تُعدّ منصة قيوة القناة الرئيسية للوساطة الرقمية.</p>"
+    },
+    "cite": {
+      "en": "Labour Law as amended · MHRSD mediation framework · Effective Feb 2025",
+      "ar": "نظام العمل بصيغته المعدَّلة · إطار الوساطة لدى وزارة الموارد البشرية · نافذ من فبراير 2025"
+    }
+  }
+]

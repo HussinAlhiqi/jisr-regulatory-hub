@@ -1,0 +1,80 @@
+[
+  {
+    "id": "qiwa-obligations",
+    "topic": "compliance",
+    "updated": true,
+    "lawRef": "Art. 51",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the Qiwa contract obligations for employers?",
+      "ar": "ما التزامات أصحاب العمل المتعلقة بمنصة قيوة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Qiwa is now the only valid contract form:</strong> All employment contracts must be documented and signed electronically via the MHRSD Qiwa platform. Paper contracts have no legal effect.",
+      "ar": "<strong>تغيير فبراير 2025 — قيوة الشكل الوحيد المعتمد للعقود:</strong> يجب توثيق جميع عقود العمل وإبرامها إلكترونيًا عبر منصة قيوة التابعة لوزارة الموارد البشرية. لا أثر قانوني للعقود الورقية."
+    },
+    "answer": {
+      "en": "<p><strong>What must be on Qiwa:</strong></p><ul><li>All new employment contracts</li><li>Remote and hybrid work arrangements (new obligation — Feb 2025)</li><li>Contract renewals and amendments</li></ul><p><strong>Penalties for non-compliance:</strong></p><ul><li>Ministry can withhold work permit renewals for any labour regulation breach</li><li>Fines of SAR 200,000–500,000 for entities providing manpower services without a proper licence</li></ul>",
+      "ar": "<p><strong>ما يجب توثيقه على قيوة:</strong></p><ul><li>جميع عقود العمل الجديدة</li><li>ترتيبات العمل عن بُعد والعمل المختلط (التزام جديد — فبراير 2025)</li><li>تجديدات العقود وتعديلاتها</li></ul><p><strong>عقوبات عدم الامتثال:</strong></p><ul><li>يجوز للوزارة حجب تجديد تصاريح العمل لأي مخالفة لأنظمة العمل</li><li>غرامات من 200,000 إلى 500,000 ريال للكيانات التي تُمارس نشاط استقدام العمالة دون ترخيص</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "نظام العمل بصيغته المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "saudization",
+    "topic": "compliance",
+    "updated": true,
+    "lawRef": "Arts. 35, 42–43",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How does Saudization (Nitaqat) enforcement work in 2025?",
+      "ar": "كيف يعمل تطبيق نظام نطاقات (السعودة) في 2025؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Enhanced enforcement:</strong> The MHRSD now uses digital AI audits that cross-reference employment records, visa data, and payroll. Non-compliance can block all work permit renewals. Employees affected by non-compliant employers can transfer to another employer without the current employer's consent.",
+      "ar": "<strong>تغيير فبراير 2025 — تعزيز التطبيق:</strong> تستخدم وزارة الموارد البشرية الآن عمليات تدقيق رقمية بالذكاء الاصطناعي تُقاطع سجلات التوظيف وبيانات التأشيرة وكشوف الرواتب. يمكن أن يؤدي عدم الامتثال إلى حجب جميع تجديدات تصاريح العمل. يحق للموظفين المتضررين جراء مخالفات أصحاب عملهم الانتقال لصاحب عمل آخر دون الحاجة لموافقة صاحب العمل الحالي."
+    },
+    "answer": {
+      "en": "<p>Saudization (Nitaqat) requires private sector companies to employ a minimum percentage of Saudi nationals, varying by sector and company size. Certain professions are reserved exclusively for Saudi nationals.</p><p><strong>New mandatory training obligation (2025):</strong> Employers with 50 or more employees must establish training and qualification programmes focused on Saudi nationals. Non-compliance may result in work permit suspensions.</p>",
+      "ar": "<p>يُلزم نظام نطاقات (السعودة) شركات القطاع الخاص بتوظيف نسبة دنيا من المواطنين السعوديين تتفاوت بحسب القطاع وحجم الشركة. تُخصَّص بعض المهن للمواطنين السعوديين حصرًا.</p><p><strong>الالتزام الجديد بالتدريب (2025):</strong> يُلزَم أصحاب العمل الذين يوظفون 50 موظفًا فأكثر بإنشاء برامج تدريب وتأهيل تستهدف المواطنين السعوديين. قد يؤدي عدم الامتثال إلى تعليق تصاريح العمل.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 35, 42–43 as amended · Effective Feb 2025",
+      "ar": "المواد 35 و42–43 من نظام العمل بصيغتها المعدَّلة · نافذة من فبراير 2025"
+    }
+  },
+  {
+    "id": "equal-opportunity",
+    "topic": "compliance",
+    "updated": true,
+    "lawRef": "Art. 3",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the equal opportunity and anti-discrimination obligations?",
+      "ar": "ما التزامات تكافؤ الفرص ومناهضة التمييز؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Explicit legal duty:</strong> Employers are now legally required to ensure equal opportunities and are prohibited from discriminating based on race, colour, gender, age, disability, marital status, or any other characteristic — across all employment decisions.",
+      "ar": "<strong>تغيير فبراير 2025 — التزام قانوني صريح:</strong> يُلزَم أصحاب العمل قانونيًا بضمان تكافؤ الفرص، ويُحظر عليهم التمييز على أساس العرق أو اللون أو الجنس أو السن أو الإعاقة أو الحالة الاجتماعية أو أي صفة أخرى — في جميع قرارات التوظيف."
+    },
+    "answer": {
+      "en": "<p><strong>What employers should do:</strong></p><ul><li>Update HR policies, recruitment criteria, and job descriptions to reflect equal opportunity principles</li><li>Put in place mechanisms for receiving and investigating harassment complaints (Anti-Harassment Law)</li><li>Ensure the workforce is aware of these mechanisms</li><li>Review disciplinary procedures for consistency</li></ul><p>Non-discrimination and anti-harassment policies are strongly recommended even where not explicitly mandated.</p>",
+      "ar": "<p><strong>ما على أصحاب العمل فعله:</strong></p><ul><li>تحديث سياسات الموارد البشرية ومعايير التوظيف والوصف الوظيفي لتعكس مبادئ تكافؤ الفرص</li><li>وضع آليات لتلقي شكاوى التحرش والتحقيق فيها (نظام مناهضة التحرش)</li><li>التأكد من اطلاع القوى العاملة على هذه الآليات</li><li>مراجعة الإجراءات التأديبية لضمان التطبيق المتسق</li></ul><p>يُوصى بشدة بسياسات مناهضة التمييز والتحرش حتى حين لا يُوجبها النظام صراحةً.</p>"
+    },
+    "cite": {
+      "en": "Labour Law as amended by Royal Decree M/44 · Anti-Harassment Law · Effective Feb 2025",
+      "ar": "نظام العمل بصيغته المعدَّلة بالمرسوم الملكي م/44 · نظام مناهضة التحرش · نافذ من فبراير 2025"
+    }
+  }
+]

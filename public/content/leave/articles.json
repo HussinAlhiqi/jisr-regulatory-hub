@@ -1,0 +1,147 @@
+[
+  {
+    "id": "annual-leave",
+    "topic": "leave",
+    "updated": false,
+    "lawRef": "Art. 109",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What is the annual leave entitlement?",
+      "ar": "ما استحقاق الإجازة السنوية؟"
+    },
+    "answer": {
+      "en": "<ul><li><strong>First 5 years of service:</strong> not less than 21 working days per year</li><li><strong>After 5 years:</strong> not less than 30 working days per year</li></ul><p>Employees receive their full usual salary during annual leave. Accrued but untaken annual leave must be compensated in cash upon termination.</p>",
+      "ar": "<ul><li><strong>أول 5 سنوات خدمة:</strong> لا تقل عن 21 يوم عمل سنويًا</li><li><strong>بعد 5 سنوات:</strong> لا تقل عن 30 يوم عمل سنويًا</li></ul><p>يتقاضى الموظفون راتبهم المعتاد كاملًا خلال الإجازة السنوية. تُعوَّض الإجازة السنوية المستحقة غير المستهلكة نقدًا عند إنهاء الخدمة.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 109 · Unchanged in Feb 2025",
+      "ar": "المادة 109 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  },
+  {
+    "id": "sick-leave",
+    "topic": "leave",
+    "updated": false,
+    "lawRef": "Art. 117",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What is the sick leave entitlement?",
+      "ar": "ما استحقاق إجازة المرض؟"
+    },
+    "answer": {
+      "en": "<p>Employees are entitled to a total of <strong>120 calendar days of sick leave per year</strong>:</p><ul><li><strong>First 30 days:</strong> full pay</li><li><strong>Next 60 days:</strong> 75% pay</li><li><strong>Final 30 days:</strong> no pay</li></ul><p>A medical certificate is required. There is no additional entitlement to unpaid sick leave beyond the 30 days above.</p>",
+      "ar": "<p>يستحق الموظف <strong>120 يومًا تقويميًا من إجازة المرض سنويًا</strong>:</p><ul><li><strong>أول 30 يومًا:</strong> بالراتب الكامل</li><li><strong>الـ 60 يومًا التالية:</strong> بنسبة 75% من الراتب</li><li><strong>الـ 30 يومًا الأخيرة:</strong> بدون أجر</li></ul><p>يُشترط تقديم شهادة طبية. لا يوجد استحقاق إضافي للإجازة المرضية بدون أجر فيما يتجاوز الـ 30 يومًا أعلاه.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 117 · Unchanged in Feb 2025",
+      "ar": "المادة 117 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  },
+  {
+    "id": "maternity-leave",
+    "topic": "leave",
+    "updated": true,
+    "lawRef": "Art. 151",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What is the maternity leave entitlement?",
+      "ar": "ما استحقاق إجازة الأمومة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change:</strong> Maternity leave increased from 10 weeks to <strong>12 weeks on full pay</strong>. At least 6 weeks must be taken immediately after childbirth. The remaining 6 weeks may be taken flexibly, starting no earlier than 4 weeks before the expected due date.",
+      "ar": "<strong>تغيير فبراير 2025:</strong> مُدِّدت إجازة الأمومة من 10 أسابيع إلى <strong>12 أسبوعًا بالراتب الكامل</strong>. يجب أخذ 6 أسابيع على الأقل فور الولادة. يمكن أخذ الـ 6 أسابيع المتبقية بمرونة، بشرط ألا يبدأ ذلك قبل 4 أسابيع من التاريخ المتوقع للوضع."
+    },
+    "answer": {
+      "en": "<ul><li><strong>12 weeks on full pay</strong> (up from 10 weeks)</li><li>Minimum 6 weeks must be taken <em>after</em> childbirth</li><li>Up to 4 weeks may be taken before the expected due date</li><li>An additional <strong>1 month unpaid</strong> may follow</li><li>If the child has special needs requiring constant care: additional 1 month on full pay, extendable by 1 month unpaid</li></ul>",
+      "ar": "<ul><li><strong>12 أسبوعًا بالراتب الكامل</strong> (بدلًا من 10 أسابيع)</li><li>يجب أخذ 6 أسابيع على الأقل <em>بعد</em> الولادة</li><li>يمكن أخذ ما يصل إلى 4 أسابيع قبل التاريخ المتوقع للوضع</li><li>يمكن أن يعقب ذلك <strong>شهر واحد بدون أجر</strong></li><li>إذا وُلد الطفل بحالة خاصة تستلزم مرافقًا دائمًا: شهر إضافي بالراتب الكامل، قابل للتمديد بشهر آخر بدون أجر</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 151 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المادة 151 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "paternity-leave",
+    "topic": "leave",
+    "updated": true,
+    "lawRef": "Art. 113",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What is the paternity leave entitlement?",
+      "ar": "ما استحقاق إجازة الأبوة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change:</strong> The leave must now be taken <strong>within 7 days following the child's birth</strong>. Previously there was no time limit, creating uncertainty for both parties.",
+      "ar": "<strong>تغيير فبراير 2025:</strong> يجب الآن أخذ الإجازة <strong>خلال 7 أيام من ولادة الطفل</strong>. في السابق لم يكن هناك أي قيد زمني، مما كان يُولِّد غموضًا لدى الطرفين."
+    },
+    "answer": {
+      "en": "<p>Employees are entitled to <strong>3 days of paid paternity leave</strong>. There is no unpaid paternity leave entitlement.</p>",
+      "ar": "<p>يستحق الموظف <strong>3 أيام إجازة أبوة مدفوعة الأجر</strong>. لا يوجد استحقاق لإجازة أبوة بدون أجر.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 113 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المادة 113 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "bereavement-leave",
+    "topic": "leave",
+    "updated": true,
+    "lawRef": "Art. 113",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What bereavement leave is available?",
+      "ar": "ما إجازات الوفاة المتاحة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — New sibling entitlement:</strong> 3 days of paid leave are now granted upon the death of a sibling. Previously, bereavement leave only covered spouses, ascendants, and descendants.",
+      "ar": "<strong>تغيير فبراير 2025 — استحقاق جديد لوفاة الأشقاء:</strong> مُنح الآن 3 أيام إجازة مدفوعة الأجر عند وفاة الأخ أو الأخت. في السابق، كانت إجازة الوفاة مقتصرة على الزوج/الزوجة والأصول والفروع."
+    },
+    "answer": {
+      "en": "<ul><li><strong>Death of spouse, ascendants, or descendants:</strong> 3 days paid</li><li><strong>Death of a sibling:</strong> 3 days paid (NEW — Feb 2025)</li><li><strong>Female Muslim employees upon death of spouse:</strong> Iddah leave — 4 months and 10 days paid</li><li><strong>Non-Muslim female employees upon death of spouse:</strong> 15 days paid</li></ul>",
+      "ar": "<ul><li><strong>وفاة الزوج/الزوجة أو الأصول أو الفروع:</strong> 3 أيام مدفوعة</li><li><strong>وفاة أخ أو أخت:</strong> 3 أيام مدفوعة (جديد — فبراير 2025)</li><li><strong>الموظفات المسلمات عند وفاة الزوج:</strong> إجازة العدة — 4 أشهر و10 أيام مدفوعة</li><li><strong>الموظفات غير المسلمات عند وفاة الزوج:</strong> 15 يومًا مدفوعة</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 113 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المادة 113 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "public-holidays",
+    "topic": "leave",
+    "updated": false,
+    "lawRef": "Art. 112",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What public holidays are employees entitled to?",
+      "ar": "ما العطل الرسمية التي يستحقها الموظفون؟"
+    },
+    "answer": {
+      "en": "<p>Employees are entitled to paid time off on national holidays. Fixed public holidays:</p><ul><li><strong>Eid Al-Fitr:</strong> 4 days</li><li><strong>Eid Al-Adha:</strong> 4 days</li><li><strong>Saudi National Day:</strong> 1 day (23 September)</li></ul><p>Exact Eid dates depend on moon-sighting and are announced annually. Employees required to work on a public holiday must receive overtime compensation.</p>",
+      "ar": "<p>يستحق الموظفون إجازة مدفوعة في العطل الوطنية. العطل الرسمية الثابتة:</p><ul><li><strong>عيد الفطر:</strong> 4 أيام</li><li><strong>عيد الأضحى:</strong> 4 أيام</li><li><strong>اليوم الوطني السعودي:</strong> يوم واحد (23 سبتمبر)</li></ul><p>تعتمد مواعيد العيدين على رؤية الهلال وتُعلَن سنويًا. يستحق الموظفون المكلَّفون بالعمل في العطل الرسمية تعويضًا وفق أحكام العمل الإضافي.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 112 · Unchanged in Feb 2025",
+      "ar": "المادة 112 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  }
+]

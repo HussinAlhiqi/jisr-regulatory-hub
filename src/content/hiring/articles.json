@@ -1,0 +1,127 @@
+[
+  {
+    "id": "contract-types",
+    "topic": "hiring",
+    "updated": false,
+    "lawRef": "Art. 37",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What types of employment contracts are available?",
+      "ar": "ما أنواع عقود العمل المتاحة؟"
+    },
+    "answer": {
+      "en": "<p>The KSA Labour Law provides for two main contract types:</p><ul><li><strong>Unlimited (indefinite) contracts</strong> — available to Saudi nationals only. No fixed end date.</li><li><strong>Fixed-term contracts</strong> — mandatory for all non-Saudi (expatriate) employees. Typically one year, renewable.</li></ul><p>Part-time contracts also exist, defined as working fewer than half the usual daily hours. There are no specific contract types for non-profit organisations.</p>",
+      "ar": "<p>يُتيح نظام العمل السعودي نوعين رئيسيين من العقود:</p><ul><li><strong>عقود غير محددة المدة</strong> — متاحة للمواطنين السعوديين فقط، دون تاريخ انتهاء محدد.</li><li><strong>عقود محددة المدة</strong> — إلزامية لجميع الموظفين غير السعوديين (الوافدين)، عادةً سنة واحدة قابلة للتجديد.</li></ul><p>تتوفر أيضًا عقود الدوام الجزئي، وتُعرَّف بأنها العمل لأقل من نصف ساعات العمل اليومية المعتادة. لا توجد أنواع عقود خاصة للمنظمات غير الربحية.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 37 · Unchanged in Feb 2025",
+      "ar": "المادة 37 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  },
+  {
+    "id": "qiwa-contract",
+    "topic": "hiring",
+    "updated": true,
+    "lawRef": "Art. 51",
+    "audiences": [
+      "hr",
+      "founder",
+      "expat"
+    ],
+    "question": {
+      "en": "What must a Qiwa contract contain?",
+      "ar": "ما الذي يجب أن يتضمنه عقد قيوة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change:</strong> The Qiwa electronic contract is now the <em>sole legally recognised form</em>. Paper contracts have no legal effect. All contracts must be executed and signed via the MHRSD Qiwa portal.",
+      "ar": "<strong>تغيير فبراير 2025:</strong> أصبح عقد قيوة الإلكتروني الشكلَ <em>الوحيد المعترف به قانونيًا</em>. لا أثر قانوني للعقود الورقية. يجب توثيع جميع العقود وإبرامها عبر بوابة قيوة التابعة لوزارة الموارد البشرية."
+    },
+    "answer": {
+      "en": "<p>The Qiwa contract must contain:</p><ol><li>Name and address of the employer</li><li>Name and nationality of the employee</li><li>Identity proof (e.g. Iqama or passport number)</li><li>Place of residence</li><li>Salary</li><li>Start date of employment</li><li>Duration (for fixed-term contracts)</li></ol><p>Companies may still issue an internal contract alongside the Qiwa contract, but in any dispute the Qiwa contract is definitive. In the event of a discrepancy, whichever term is more favourable to the employee applies.</p>",
+      "ar": "<p>يجب أن يتضمن عقد قيوة:</p><ol><li>اسم وعنوان صاحب العمل</li><li>اسم وجنسية الموظف</li><li>إثبات الهوية (مثل رقم الإقامة أو جواز السفر)</li><li>محل الإقامة</li><li>الراتب</li><li>تاريخ بدء العمل</li><li>المدة (للعقود محددة المدة)</li></ol><p>يمكن للشركات إصدار عقد داخلي إلى جانب عقد قيوة، لكن في أي نزاع يكون عقد قيوة هو الفيصل. في حال التعارض، يُطبَّق البند الأكثر فائدة للموظف.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 51 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المادة 51 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "probation",
+    "topic": "hiring",
+    "updated": true,
+    "lawRef": "Art. 53",
+    "audiences": [
+      "hr",
+      "founder",
+      "expat"
+    ],
+    "question": {
+      "en": "What is the probation period?",
+      "ar": "ما هي فترة الاختبار؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Extended to 180 days:</strong> The probation period can now be agreed upfront at up to <strong>180 calendar days</strong> (previously: 90 days, with a separate written agreement needed to extend by another 90 days). Both parties now explicitly have the right to terminate during probation.",
+      "ar": "<strong>تغيير فبراير 2025 — التمديد إلى 180 يومًا:</strong> يمكن الآن الاتفاق مسبقًا على فترة اختبار تصل إلى <strong>180 يومًا تقويميًا</strong> (سابقًا: 90 يومًا، مع الحاجة إلى اتفاق كتابي منفصل لتمديد 90 يومًا إضافية). يحق لكلا الطرفين صراحةً إنهاء العقد خلال فترة الاختبار."
+    },
+    "answer": {
+      "en": "<p>Key rules:</p><ul><li>Must be stated in the employment contract to be valid</li><li>Either party may terminate during probation without compensation</li><li>Implementing Regulations specify which leave types are excluded from the probation count</li><li>An employee may only serve one probation period per employer</li><li>The probation period can be waived entirely by mutual agreement</li></ul>",
+      "ar": "<p>القواعد الرئيسية:</p><ul><li>يجب أن تُنص عليها في عقد العمل لتكون سارية</li><li>يحق لأي من الطرفين إنهاء العقد خلال الاختبار دون تعويض</li><li>تحدد اللائحة التنفيذية أنواع الإجازات المستثناة من حساب فترة الاختبار</li><li>لا يجوز إخضاع الموظف لأكثر من فترة اختبار واحدة لدى صاحب العمل ذاته</li><li>يمكن الإعفاء من فترة الاختبار كليًا باتفاق الطرفين</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "نظام العمل بصيغته المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "fixed-term-renewal",
+    "topic": "hiring",
+    "updated": true,
+    "lawRef": "Art. 37",
+    "audiences": [
+      "hr",
+      "founder",
+      "expat"
+    ],
+    "question": {
+      "en": "What are the rules around fixed-term contract renewal?",
+      "ar": "ما قواعد تجديد العقود محددة المدة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Default term for non-Saudis:</strong> If a fixed-term contract for a non-KSA national does not specify a duration, it automatically defaults to <strong>one year from the actual start date</strong> and renews automatically for the same duration unless either party gives notice.",
+      "ar": "<strong>تغيير فبراير 2025 — المدة الافتراضية لغير السعوديين:</strong> إذا لم يُحدِّد العقد مدته لغير المواطن السعودي، تُعدّ مدته تلقائيًا <strong>سنة واحدة من تاريخ البدء الفعلي</strong> وتتجدد تلقائيًا للمدة ذاتها ما لم يُبلِّغ أحد الطرفين برغبته في عدم التجديد."
+    },
+    "answer": {
+      "en": "<p>For <strong>Saudi nationals</strong>: if a fixed-term contract is renewed three times, or the total employment period under fixed-term contracts reaches four years, the contract automatically becomes unlimited.</p><p>For <strong>non-Saudi nationals</strong>: the contract never converts to unlimited. It renews for the same fixed term unless notice is given by either party.</p>",
+      "ar": "<p>بالنسبة <strong>للمواطنين السعوديين</strong>: إذا جُدِّد العقد محدد المدة ثلاث مرات، أو بلغت مدة العمل الإجمالية أربع سنوات، يصبح العقد تلقائيًا غير محدد المدة.</p><p>بالنسبة <strong>لغير المواطنين السعوديين</strong>: لا يتحول العقد أبدًا إلى غير محدد المدة، بل يتجدد للمدة ذاتها ما لم يُبلِّغ أحد الطرفين برغبته في عدم التجديد.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 37 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المادة 37 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "min-age",
+    "topic": "hiring",
+    "updated": false,
+    "lawRef": "Arts. 75–81",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the minimum age requirements for employment?",
+      "ar": "ما الحد الأدنى لسن التوظيف؟"
+    },
+    "answer": {
+      "en": "<p>The minimum age for employment is <strong>15 years</strong>. In limited cases, the Minister may allow juveniles aged 13–15 to undertake light work, provided it does not harm their health or interrupt school attendance.</p><p><strong>Restrictions for juvenile employees (15–18 years):</strong></p><ul><li>Cannot work in harmful industries or at night; must have at least 12 hours' rest</li><li>Maximum 6 hours per day (4 hours during Ramadan)</li><li>Break of at least 30 minutes after every 4 hours worked</li><li>Cannot work on weekends, public holidays, or annual leave days</li><li>Employer must obtain guardian approval and a health and fitness certificate</li></ul>",
+      "ar": "<p>الحد الأدنى لسن التوظيف هو <strong>15 عامًا</strong>. في حالات محدودة، يجوز للوزير السماح للأحداث بين 13 و15 عامًا بالعمل الخفيف، شريطة ألا يضر بصحتهم أو يقطع دراستهم.</p><p><strong>قيود على الموظفين الأحداث (15–18 عامًا):</strong></p><ul><li>لا يجوز تشغيلهم في الصناعات الضارة أو ليلًا؛ ويجب أن تكون فترة الراحة 12 ساعة على الأقل</li><li>الحد الأقصى 6 ساعات يوميًا (4 ساعات في رمضان)</li><li>استراحة لا تقل عن 30 دقيقة بعد كل 4 ساعات عمل</li><li>لا يجوز تشغيلهم في عطل نهاية الأسبوع أو العطل الرسمية أو أيام الإجازة السنوية</li><li>يجب الحصول على موافقة وليّ الأمر وشهادة لياقة صحية</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 75–81 · Unchanged in Feb 2025",
+      "ar": "المواد 75–81 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  }
+]

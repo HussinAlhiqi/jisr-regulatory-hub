@@ -1,0 +1,123 @@
+---
+import Base     from '../../layouts/Base.astro';
+import Topbar   from '../../components/Topbar.astro';
+import Sidebar  from '../../components/Sidebar.astro';
+import SubscribeModal from '../../components/SubscribeModal.astro';
+import topicsData from '../../content/topics.json';
+import changesData from '../../content/changes.json';
+
+const lang  = 'ar';
+const title = 'المركز التنظيمي — جسر | المملكة العربية السعودية';
+---
+<Base title={title} lang={lang}>
+  <Topbar lang={lang} />
+  <div class="layout">
+    <Sidebar lang={lang} active="home" />
+    <main class="main">
+      <div style="padding:28px 32px 80px;max-width:880px">
+
+        <div class="hero">
+          <div class="hero-ey">المملكة العربية السعودية &middot; إصدار 2025</div>
+          <h1>المركز التنظيمي <em>لجسر</em></h1>
+          <p>نظام العمل السعودي بلغة بسيطة لجميع العاملين في المملكة. محدَّث ليعكس تعديلات فبراير 2025 — أشمل إصلاح منذ 2015.</p>
+          <div class="hero-stats">
+            <div class="h-stat"><strong>6</strong><span>مجالات موضوعية</span></div>
+            <div class="h-stat"><strong>27</strong><span>مقالة</span></div>
+            <div class="h-stat"><strong>10</strong><span>تغييرات 2025</span></div>
+            <div class="h-stat"><strong>EN / عربي</strong><span>ثنائي اللغة</span></div>
+          </div>
+        </div>
+
+        <div class="sec-hd"><h2>تصفح حسب الموضوع</h2><span>انقر على أي موضوع لاستكشاف المقالات</span></div>
+        <div class="topic-grid">
+          {topicsData.map(t => (
+            <a href={`/ar/topics/${t.id}/`} class="topic-card">
+              <div class="tc-head">
+                <div class={`tc-icon ${t.hasUpdates ? 'orange' : 'navy'}`}>{t.icon}</div>
+                {t.hasUpdates && <div class="tc-update-dot"></div>}
+              </div>
+              <div class="tc-title">{t.title.ar}</div>
+              <div class="tc-sub">{t.sub.ar}</div>
+              <div class="tc-footer">
+                <span class="tc-count">{t.articleCount} مقالة</span>
+                {t.hasUpdates && <span class="tc-update">{t.updateCount} تغييرات في 2025</span>}
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="sec-hd"><h2>أحدث التغييرات التنظيمية</h2><span>تعديلات فبراير 2025 &middot; المرسوم الملكي م/44</span></div>
+        <div class="change-feed">
+          {changesData.map(c => (
+            <a href={`/ar/topics/${c.topic}/`} class="change-item">
+              <div class={`ci-dot ${c.severity === 'high' ? 'orange' : 'teal'}`}></div>
+              <div class="ci-title">{c.title.ar}</div>
+              <div class="ci-meta">{c.lawRef} &middot; {c.date}</div>
+              <div class={`ci-badge ${c.topic === 'leave' ? 'leave' : c.topic === 'pay' ? 'pay' : c.topic === 'hiring' ? 'hiring' : 'comp'}`}>
+                {topicsData.find(t => t.id === c.topic)?.title.ar}
+              </div>
+              <div class="ci-arrow">&lsaquo;</div>
+            </a>
+          ))}
+        </div>
+
+        <div class="sec-hd"><h2>ابدأ من وضعك</h2><span>نقاط انطلاق مخصصة لك</span></div>
+        <div class="aud-cards">
+          <a href="/ar/topics/leave/" class="aud-card">
+            <div class="ac-role">&#9992;&#65039; &nbsp;موظف وافد جديد</div>
+            <div class="ac-desc">انضممت للتو إلى شركة في المملكة؟ ابدأ بحقوقك الأساسية في الإجازات والرواتب وعقدك.</div>
+            <div class="ac-tags"><span class="ac-tag">الإجازات</span><span class="ac-tag">العقود</span><span class="ac-tag">تصاريح العمل</span></div>
+            <div class="ac-start">ابدأ من هنا &nbsp;&lsaquo;</div>
+          </a>
+          <a href="/ar/topics/compliance/" class="aud-card">
+            <div class="ac-role">&#128193; &nbsp;مدير موارد بشرية</div>
+            <div class="ac-desc">تدير فريقًا؟ ركّز على امتثال قيوة وحصص نطاقات وقائمة تعديلات 2025.</div>
+            <div class="ac-tags"><span class="ac-tag">الامتثال</span><span class="ac-tag">إنهاء الخدمة</span><span class="ac-tag">السعودة</span></div>
+            <div class="ac-start">ابدأ من هنا &nbsp;&lsaquo;</div>
+          </a>
+          <a href="/ar/topics/hiring/" class="aud-card">
+            <div class="ac-role">&#128640; &nbsp;مؤسس / شركة ناشئة</div>
+            <div class="ac-desc">توظف أول موظفيك؟ افهم ما يجب توفيره وأساسيات نظام نطاقات.</div>
+            <div class="ac-tags"><span class="ac-tag">التوظيف</span><span class="ac-tag">الرواتب</span><span class="ac-tag">فئات العمال</span></div>
+            <div class="ac-start">ابدأ من هنا &nbsp;&lsaquo;</div>
+          </a>
+        </div>
+
+        <div class="disclaimer">
+          <strong>إخلاء المسؤولية القانونية</strong> — هذا المركز مُعدّ من قِبل جسر للموارد البشرية لأغراض إعلامية فحسب
+          ولا يُعدّ استشارة قانونية. يعكس المحتوى نظام العمل السعودي بصيغته المعدَّلة بالمرسوم الملكي م/44
+          (نافذ من فبراير 2025). استشر دائمًا مستشارًا قانونيًا سعوديًا مؤهَّلًا للحالات الخاصة.
+        </div>
+      </div>
+
+      <div id="searchResults">
+        <div class="sr-header" id="searchHeader"></div>
+        <div id="searchList"></div>
+      </div>
+    </main>
+  </div>
+
+  <SubscribeModal lang={lang} />
+  <script src="../../scripts/main.js"></script>
+  <script>
+    window.__ARTICLES__ = [];
+    (async () => {
+      const topics = ['hiring','pay','leave','termination','worker-types','compliance'];
+      for (const t of topics) {
+        try {
+          const res  = await fetch(`/content/${t}/articles.json`);
+          const arts = await res.json();
+          arts.forEach(a => {
+            window.__ARTICLES__.push({
+              q:       a.question.ar,
+              body:    a.answer.ar.replace(/<[^>]+>/g,'').slice(0,160),
+              topic:   t,
+              updated: a.updated,
+              href:    `/ar/topics/${t}/`,
+            });
+          });
+        } catch(e) {}
+      }
+    })();
+  </script>
+</Base>

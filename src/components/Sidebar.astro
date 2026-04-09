@@ -1,0 +1,76 @@
+---
+import topicsData from '../content/topics.json';
+
+interface Props {
+  lang:    'en' | 'ar';
+  active?: string;
+}
+const { lang, active = 'home' } = Astro.props;
+const isAr = lang === 'ar';
+const base  = isAr ? '/ar' : '';
+
+const ui = {
+  topics:    isAr ? 'الموضوعات' : 'Topics',
+  overview:  isAr ? 'نظرة عامة' : 'Overview',
+  audience:  isAr ? 'حسب الجمهور' : 'By Audience',
+  expat:     isAr ? 'موظف وافد جديد' : 'New expat employee',
+  hr:        isAr ? 'مدير موارد بشرية' : 'HR manager',
+  founder:   isAr ? 'مؤسس / شركة ناشئة' : 'Founder / startup',
+  tools:     isAr ? 'أدوات' : 'Tools',
+  subscribe: isAr ? 'اشترك في التحديثات' : 'Subscribe to updates',
+  gratuity:  isAr ? 'حاسبة مكافأة نهاية الخدمة' : 'Gratuity calculator',
+  nitaqat:   isAr ? 'فاحص نطاقات' : 'Saudization checker',
+  soon:      isAr ? 'قريبًا' : 'soon',
+};
+---
+<nav class="sidebar">
+  <div class="sb-label">{ui.topics}</div>
+  <div class="sb-group">
+    <a href={`${base}/`} class={`sb-item${active==='home'?' active':''}`}>
+      <span class="sb-ico">&#8862;</span>{ui.overview}
+    </a>
+    {topicsData.map(t => (
+      <a href={`${base}/topics/${t.id}/`}
+         class={`sb-item${t.hasUpdates?' has-update':''}${active===t.id?' active':''}`}>
+        <span class="sb-ico">{t.icon}</span>
+        {t.title[lang]}
+        {t.hasUpdates && (
+          <span class="sb-badge">{t.updateCount}&#9733;</span>
+        )}
+        {!t.hasUpdates && (
+          <span class="sb-badge">{t.articleCount}</span>
+        )}
+      </a>
+    ))}
+  </div>
+
+  <div class="sb-divider"></div>
+  <div class="sb-label">{ui.audience}</div>
+  <div class="sb-group">
+    <button class="sb-item" onclick="setAud('expat')">
+      <span class="sb-ico">&#9992;&#65039;</span>{ui.expat}
+    </button>
+    <button class="sb-item" onclick="setAud('hr')">
+      <span class="sb-ico">&#128193;</span>{ui.hr}
+    </button>
+    <button class="sb-item" onclick="setAud('founder')">
+      <span class="sb-ico">&#128640;</span>{ui.founder}
+    </button>
+  </div>
+
+  <div class="sb-divider"></div>
+  <div class="sb-label">{ui.tools}</div>
+  <div class="sb-group">
+    <button class="sb-item" onclick="openSubscribe()">
+      <span class="sb-ico">&#128276;</span>{ui.subscribe}
+    </button>
+    <button class="sb-item">
+      <span class="sb-ico">&#129518;</span>{ui.gratuity}
+      <span class="sb-badge" style="background:var(--teal-lt);color:var(--teal-dk)">{ui.soon}</span>
+    </button>
+    <button class="sb-item">
+      <span class="sb-ico">&#128202;</span>{ui.nitaqat}
+      <span class="sb-badge" style="background:var(--teal-lt);color:var(--teal-dk)">{ui.soon}</span>
+    </button>
+  </div>
+</nav>

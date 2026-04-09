@@ -1,0 +1,71 @@
+---
+import topicsData from '../content/topics.json';
+
+interface Props {
+  lang: 'en' | 'ar';
+}
+const { lang } = Astro.props;
+const isAr = lang === 'ar';
+
+const ui = {
+  title:     isAr ? 'ابقَ على اطلاع' : 'Stay up to date',
+  desc:      isAr ? 'احصل على إشعار عند تغيير لوائح العمل السعودية. اختر الموضوعات التي تهمك وتكرار الإشعارات.' : 'Get notified when KSA labour regulations change. Choose the topics you care about and how often.',
+  name:      isAr ? 'الاسم' : 'Your name',
+  namePh:    isAr ? 'الاسم الكامل' : 'Full name',
+  email:     isAr ? 'البريد الإلكتروني' : 'Work email',
+  emailPh:   isAr ? 'you@company.com' : 'you@company.com',
+  topics:    isAr ? 'الموضوعات المتابَعة' : 'Topics to follow',
+  freq:      isAr ? 'تكرار الإشعارات' : 'Notification frequency',
+  immediate: isAr ? 'فوري' : 'Immediately',
+  weekly:    isAr ? 'أسبوعي' : 'Weekly digest',
+  monthly:   isAr ? 'شهري' : 'Monthly digest',
+  submit:    isAr ? 'اشترك في التحديثات' : 'Subscribe to updates',
+  successH:  isAr ? 'تم الاشتراك' : "You're subscribed",
+  successP:  isAr ? 'سنُعلمك حين تتغير اللوائح التي تتابعها.' : "We'll notify you when the regulations you follow change.",
+};
+---
+<div class="modal-overlay" id="subscribeModal" onclick="closeSubscribeOnBg(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeSubscribe()">&#x2715;</button>
+
+    <div id="subscribeForm">
+      <div class="modal-icon">&#128276;</div>
+      <h2>{ui.title}</h2>
+      <p>{ui.desc}</p>
+
+      <div class="modal-form">
+        <label>{ui.name}</label>
+        <input type="text" id="subName" placeholder={ui.namePh} />
+
+        <label>{ui.email}</label>
+        <input type="email" id="subEmail" placeholder={ui.emailPh} />
+
+        <div class="topics-label">{ui.topics}</div>
+        <div class="topic-checks">
+          {topicsData.map(t => (
+            <label class="topic-check selected" onclick="toggleTopic(this)">
+              <input type="checkbox" checked />
+              <span>{t.icon}</span>
+              {t.title[lang]}
+            </label>
+          ))}
+        </div>
+
+        <div class="topics-label">{ui.freq}</div>
+        <div class="freq-row">
+          <button class="freq-btn" onclick="selectFreq(this)">{ui.immediate}</button>
+          <button class="freq-btn selected" onclick="selectFreq(this)">{ui.weekly}</button>
+          <button class="freq-btn" onclick="selectFreq(this)">{ui.monthly}</button>
+        </div>
+
+        <button class="submit-btn" onclick="submitSubscribe()">{ui.submit}</button>
+      </div>
+    </div>
+
+    <div class="success-state" id="subscribeSuccess">
+      <div class="success-icon">&#10003;</div>
+      <h3>{ui.successH}</h3>
+      <p>{ui.successP}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+[
+  {
+    "date": "2025-02",
+    "topic": "leave",
+    "articleId": "maternity-leave",
+    "title": {
+      "en": "Maternity leave extended from 10 to 12 weeks on full pay",
+      "ar": "تمديد إجازة الأمومة من 10 إلى 12 أسبوعًا بالراتب الكامل"
+    },
+    "lawRef": "Art. 151",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "pay",
+    "articleId": "housing-transport",
+    "title": {
+      "en": "Housing and transport allowances are now a statutory obligation",
+      "ar": "أصبحت بدلات السكن والنقل التزامًا قانونيًا"
+    },
+    "lawRef": "Art. 61",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "hiring",
+    "articleId": "probation",
+    "title": {
+      "en": "Probation period extended from 90 to 180 days",
+      "ar": "تمديد فترة الاختبار من 90 إلى 180 يومًا"
+    },
+    "lawRef": "Art. 53",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "leave",
+    "articleId": "bereavement-leave",
+    "title": {
+      "en": "New 3-day paid bereavement leave for death of a sibling",
+      "ar": "إجازة وفاة جديدة لمدة 3 أيام مدفوعة عند وفاة الأشقاء"
+    },
+    "lawRef": "Art. 113",
+    "severity": "medium"
+  },
+  {
+    "date": "2025-02",
+    "topic": "termination",
+    "articleId": "resignation",
+    "title": {
+      "en": "Formal resignation process introduced — 30-day employer response rule",
+      "ar": "إرساء إجراءات رسمية للاستقالة — قاعدة الرد خلال 30 يومًا"
+    },
+    "lawRef": "Art. 74",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "compliance",
+    "articleId": "equal-opportunity",
+    "title": {
+      "en": "Equal opportunity mandate now an explicit legal duty for employers",
+      "ar": "أصبح مبدأ تكافؤ الفرص التزامًا قانونيًا صريحًا على أصحاب العمل"
+    },
+    "lawRef": "Art. 3",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "leave",
+    "articleId": "paternity-leave",
+    "title": {
+      "en": "Paternity leave must now be taken within 7 days of birth",
+      "ar": "يجب أخذ إجازة الأبوة خلال 7 أيام من الولادة"
+    },
+    "lawRef": "Art. 113",
+    "severity": "medium"
+  },
+  {
+    "date": "2025-02",
+    "topic": "hiring",
+    "articleId": "qiwa-contract",
+    "title": {
+      "en": "Paper contracts no longer legally recognised — Qiwa digital only",
+      "ar": "لم تعد العقود الورقية معترفًا بها — قيوة الرقمية فقط"
+    },
+    "lawRef": "Art. 51",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "termination",
+    "articleId": "unlimited-termination",
+    "title": {
+      "en": "Bankruptcy and force majeure added as valid termination grounds",
+      "ar": "إضافة الإفلاس والقوة القاهرة كأسباب مشروعة لإنهاء الخدمة"
+    },
+    "lawRef": "Arts. 74–80",
+    "severity": "medium"
+  },
+  {
+    "date": "2025-02",
+    "topic": "compliance",
+    "articleId": "qiwa-obligations",
+    "title": {
+      "en": "Remote and hybrid work must now be registered on Qiwa",
+      "ar": "يجب الآن تسجيل العمل عن بُعد والمختلط على قيوة"
+    },
+    "lawRef": "Art. 51",
+    "severity": "medium"
+  }
+]

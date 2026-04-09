@@ -1,0 +1,159 @@
+---
+import Base     from '../../../layouts/Base.astro';
+import Topbar   from '../../../components/Topbar.astro';
+import Sidebar  from '../../../components/Sidebar.astro';
+import SubscribeModal from '../../../components/SubscribeModal.astro';
+import topicsData from '../../../content/topics.json';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  return topicsData.map(t => ({ params: { topic: t.id } }));
+}
+
+const { topic } = Astro.params;
+const lang = 'ar';
+
+const topicMeta = topicsData.find(t => t.id === topic);
+if (!topicMeta) return Astro.redirect('/ar/');
+
+const articlesPath = join(process.cwd(), 'src/content', topic, 'articles.json');
+const articles = JSON.parse(readFileSync(articlesPath, 'utf-8'));
+
+const related = topicsData.filter(t => t.id !== topic).slice(0, 3);
+const pageTitle = `${topicMeta.title.ar} — المركز التنظيمي لجسر`;
+---
+<Base title={pageTitle} lang={lang}>
+  <Topbar lang={lang} />
+  <div class="layout">
+    <Sidebar lang={lang} active={topic} />
+    <main class="main">
+
+      <div class="topic-topbar">
+        <div class="breadcrumb">
+          <a href="/ar/" class="bc-link">نظرة عامة</a>
+          <span class="bc-sep">&rsaquo;</span>
+          <span class="bc-current">{topicMeta.title.ar}</span>
+        </div>
+        <div class="topic-topbar-actions">
+          {topicMeta.updBadge && (
+            <span class="upd-badge-top">&#9733; {topicMeta.updBadge.ar}</span>
+          )}
+          <span class="last-updated">آخر مراجعة: أبريل 2025</span>
+        </div>
+      </div>
+
+      <div class="topic-content">
+
+        <div class="topic-hero">
+          <div class="th-icon">{topicMeta.icon}</div>
+          <div>
+            <div class="th-title">{topicMeta.title.ar}</div>
+            <div class="th-sub">{topicMeta.heroSub.ar}</div>
+            <div class="th-meta">
+              {topicMeta.pills.ar.map((p: string) => (
+                <span class={`th-pill${p.includes('★') || p.includes('محدّث') ? ' upd' : ''}`}>{p}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-nav">
+          <button class="sub-tab active">جميع المقالات</button>
+          <button class="sub-tab">تغييرات 2025 فقط</button>
+        </div>
+
+        <div class="articles-layout">
+          <div class="articles-col">
+            {articles.map((art: any) => (
+              <div
+                class={`article-card${art.updated ? ' upd-card' : ''}`}
+                data-updated={art.updated ? 'true' : 'false'}
+              >
+                <button class="art-header" onclick="toggleCard(this)">
+                  <span class="art-q">{art.question.ar}</span>
+                  {art.updated && <span class="art-upd">&#9733; محدَّث فبراير 2025</span>}
+                  <span class="art-chev">&#9660;</span>
+                </button>
+                <div class="art-body">
+                  <div class="art-answer">
+                    {art.callout && (
+                      <div class="callout upd" set:html={art.callout.ar} />
+                    )}
+                    <div set:html={art.answer.ar} />
+                    <div class="source-cite">
+                      <span class="src-dot"></span>
+                      {art.cite.ar}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div class="aside-col">
+            <div class="widget">
+              <div class="widget-title">أرقام رئيسية</div>
+              {topicMeta.facts.ar.map(([label, value]: [string, string]) => (
+                <div class="widget-row">
+                  <span class="wr-label">{label}</span>
+                  <span class={`wr-value${value.includes('★') ? ' orange' : ''}`}>{value}</span>
+                </div>
+              ))}
+            </div>
+
+            <div class="widget">
+              <div class="widget-title">موضوعات ذات صلة</div>
+              {related.map(r => (
+                <a href={`/ar/topics/${r.id}/`} class="related-item">
+                  <div class="ri-dot"></div>
+                  <div class="ri-title">{r.title.ar}</div>
+                  <div class="ri-arr">&lsaquo;</div>
+                </a>
+              ))}
+            </div>
+
+            <div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7">
+              <div class="widget-title">المصادر</div>
+              نظام العمل السعودي (المرسوم الملكي م/51 بصيغته المعدَّلة بم/44) &middot;
+              وزارة الموارد البشرية &middot;
+              مكتب التميمي &middot; مورغان لويس &middot; كلايد وشركاه
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="searchResults">
+        <div class="sr-header" id="searchHeader"></div>
+        <div id="searchList"></div>
+      </div>
+    </main>
+  </div>
+
+  <SubscribeModal lang={lang} />
+  <script src="../../../scripts/main.js"></script>
+  <script>
+    const firstUpd = document.querySelector('.article-card.upd-card');
+    if (firstUpd) firstUpd.classList.add('open');
+
+    window.__ARTICLES__ = [];
+    (async () => {
+      const topics = ['hiring','pay','leave','termination','worker-types','compliance'];
+      for (const t of topics) {
+        try {
+          const res  = await fetch(`/content/${t}/articles.json`);
+          const arts = await res.json();
+          arts.forEach((a: any) => {
+            window.__ARTICLES__.push({
+              q:       a.question.ar,
+              body:    a.answer.ar.replace(/<[^>]+>/g,'').slice(0,160),
+              topic:   t,
+              updated: a.updated,
+              href:    `/ar/topics/${t}/`,
+            });
+          });
+        } catch(e) {}
+      }
+    })();
+  </script>
+</Base>

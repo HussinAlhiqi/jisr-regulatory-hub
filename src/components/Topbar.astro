@@ -1,0 +1,63 @@
+---
+interface Props {
+  lang: 'en' | 'ar';
+}
+const { lang } = Astro.props;
+const isAr = lang === 'ar';
+
+const ui = {
+  hub:       isAr ? 'المركز التنظيمي' : 'Regulatory Hub',
+  search:    isAr ? 'ابحث عن أي لائحة أو حق أو موضوع…' : 'Search any regulation, right, or topic…',
+  viewingAs: isAr ? 'عرض بوصفك' : 'Viewing as',
+  all:       isAr ? 'الكل' : 'All',
+  expat:     isAr ? 'موظف وافد' : 'New expat',
+  hr:        isAr ? 'مدير موارد بشرية' : 'HR manager',
+  founder:   isAr ? 'مؤسس' : 'Founder',
+  subscribe: isAr ? 'اشترك' : 'Subscribe',
+};
+
+const arHref = isAr ? '/' : '/ar/';
+const enHref = isAr ? '/' : '/ar/';
+---
+<header class="topbar">
+  <a class="logo" href={isAr ? '/ar/' : '/'}>
+    <div class="logo-mark">J</div>
+    <div>
+      <span class="logo-name">Jisr</span>
+      <span class="logo-sub">jisr.net</span>
+    </div>
+  </a>
+  <div class="top-divider"></div>
+  <span class="top-title">{ui.hub}</span>
+
+  <div class="top-search">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="text" id="searchInput" placeholder={ui.search} autocomplete="off" spellcheck="false" />
+    <span id="resultBadge"></span>
+    <button id="searchClear" title="Clear">&#x2715;</button>
+  </div>
+
+  <div class="aud-toggle">
+    <span class="aud-label">{ui.viewingAs}</span>
+    <button class="aud-btn active" data-aud="all">{ui.all}</button>
+    <button class="aud-btn" data-aud="expat">{ui.expat}</button>
+    <button class="aud-btn" data-aud="hr">{ui.hr}</button>
+    <button class="aud-btn" data-aud="founder">{ui.founder}</button>
+  </div>
+
+  <!-- Language toggle -->
+  <div class="lang-toggle">
+    <a href="/" class={`lang-btn${!isAr ? ' active' : ''}`}>EN</a>
+    <a href="/ar/" class={`lang-btn${isAr ? ' active' : ''}`}>عربي</a>
+  </div>
+
+  <button class="subscribe-btn" onclick="openSubscribe()">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+    </svg>
+    {ui.subscribe}
+  </button>
+</header>

@@ -1,0 +1,177 @@
+---
+import Base     from '../../layouts/Base.astro';
+import Topbar   from '../../components/Topbar.astro';
+import Sidebar  from '../../components/Sidebar.astro';
+import SubscribeModal from '../../components/SubscribeModal.astro';
+import topicsData from '../../content/topics.json';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+export function getStaticPaths() {
+  return topicsData.map(t => ({ params: { topic: t.id } }));
+}
+
+const { topic } = Astro.params;
+const lang = 'en';
+
+const topicMeta = topicsData.find(t => t.id === topic);
+if (!topicMeta) return Astro.redirect('/');
+
+// Load articles
+const articlesPath = join(process.cwd(), 'src/content', topic, 'articles.json');
+const articles = JSON.parse(readFileSync(articlesPath, 'utf-8'));
+
+// Related topics (all except current)
+const related = topicsData.filter(t => t.id !== topic).slice(0, 3);
+
+const pageTitle = `${topicMeta.title.en} — Jisr Regulatory Hub`;
+---
+<Base title={pageTitle} lang={lang}>
+  <Topbar lang={lang} />
+  <div class="layout">
+    <Sidebar lang={lang} active={topic} />
+    <main class="main">
+
+      <!-- Topic breadcrumb bar -->
+      <div class="topic-topbar">
+        <div class="breadcrumb">
+          <a href="/" class="bc-link">Overview</a>
+          <span class="bc-sep">&rsaquo;</span>
+          <span class="bc-current">{topicMeta.title.en}</span>
+        </div>
+        <div class="topic-topbar-actions">
+          {topicMeta.updBadge && (
+            <span class="upd-badge-top">&#9733; {topicMeta.updBadge.en}</span>
+          )}
+          <span class="last-updated">Last verified: April 2025</span>
+        </div>
+      </div>
+
+      <div class="topic-content">
+
+        <!-- Topic hero -->
+        <div class="topic-hero">
+          <div class="th-icon">{topicMeta.icon}</div>
+          <div>
+            <div class="th-title">{topicMeta.title.en}</div>
+            <div class="th-sub">{topicMeta.heroSub.en}</div>
+            <div class="th-meta">
+              {topicMeta.pills.en.map((p: string) => (
+                <span class={`th-pill${p.includes('Updated') || p.includes('★') ? ' upd' : ''}`}>{p}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-nav -->
+        <div class="sub-nav">
+          <button class="sub-tab active">All articles</button>
+          <button class="sub-tab">2025 changes only</button>
+        </div>
+
+        <!-- Two-column layout -->
+        <div class="articles-layout">
+          <!-- Articles -->
+          <div class="articles-col">
+            {articles.map((art: any) => (
+              <div
+                class={`article-card${art.updated ? ' upd-card' : ''}`}
+                data-updated={art.updated ? 'true' : 'false'}
+              >
+                <button class="art-header" onclick="toggleCard(this)">
+                  <span class="art-q">{art.question.en}</span>
+                  {art.updated && <span class="art-upd">&#9733; Updated Feb 2025</span>}
+                  <span class="art-chev">&#9660;</span>
+                </button>
+                <div class="art-body">
+                  <div class="art-answer">
+                    {art.callout && (
+                      <div class="callout upd" set:html={art.callout.en} />
+                    )}
+                    <div set:html={art.answer.en} />
+                    <div class="source-cite">
+                      <span class="src-dot"></span>
+                      {art.cite.en}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <!-- Aside -->
+          <div class="aside-col">
+            <!-- Key facts widget -->
+            <div class="widget">
+              <div class="widget-title">Key numbers</div>
+              {topicMeta.facts.en.map(([label, value]: [string, string]) => (
+                <div class="widget-row">
+                  <span class="wr-label">{label}</span>
+                  <span class={`wr-value${value.includes('★') ? ' orange' : value.includes('days') || value.includes('weeks') ? ' teal' : ''}`}>
+                    {value}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <!-- Related topics -->
+            <div class="widget">
+              <div class="widget-title">Related topics</div>
+              {related.map(r => (
+                <a href={`/topics/${r.id}/`} class="related-item">
+                  <div class="ri-dot"></div>
+                  <div class="ri-title">{r.title.en}</div>
+                  <div class="ri-arr">&rsaquo;</div>
+                </a>
+              ))}
+            </div>
+
+            <!-- Sources -->
+            <div class="widget" style="font-size:11px;color:var(--mist);line-height:1.7">
+              <div class="widget-title">Sources</div>
+              KSA Labour Law (Royal Decree M/51 as amended by M/44) &middot;
+              MHRSD Official Announcements &middot;
+              Al Tamimi &amp; Company &middot; Morgan Lewis &middot;
+              Clyde &amp; Co &middot; Addleshaw Goddard
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Search overlay -->
+      <div id="searchResults">
+        <div class="sr-header" id="searchHeader"></div>
+        <div id="searchList"></div>
+      </div>
+    </main>
+  </div>
+
+  <SubscribeModal lang={lang} />
+  <script src="../../scripts/main.js"></script>
+  <script>
+    // Auto-open first updated card on load
+    const firstUpd = document.querySelector('.article-card.upd-card');
+    if (firstUpd) firstUpd.classList.add('open');
+
+    window.__ARTICLES__ = [];
+    (async () => {
+      const topics = ['hiring','pay','leave','termination','worker-types','compliance'];
+      for (const t of topics) {
+        try {
+          const res  = await fetch(`/content/${t}/articles.json`);
+          const arts = await res.json();
+          arts.forEach((a: any) => {
+            window.__ARTICLES__.push({
+              q:       a.question.en,
+              body:    a.answer.en.replace(/<[^>]+>/g,'').slice(0,160),
+              topic:   t,
+              updated: a.updated,
+              href:    `/topics/${t}/`,
+            });
+          });
+        } catch(e) {}
+      }
+    })();
+  </script>
+</Base>

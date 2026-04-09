@@ -1,0 +1,94 @@
+[
+  {
+    "id": "employee-vs-contractor",
+    "topic": "worker-types",
+    "updated": false,
+    "lawRef": "Art. 1",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What defines an employee vs. a contractor?",
+      "ar": "ما الفرق بين الموظف والمستقل؟"
+    },
+    "answer": {
+      "en": "<p>An <strong>employee</strong> is defined as every physical person working for an employer under their management or supervision for a wage. An <strong>independent contractor</strong> is typically a licensed company providing services. Individuals working directly for a company are almost always classified as employees and require a work permit and employer sponsorship.</p><p><strong>Key contractor distinctions:</strong></p><ul><li>Invoices fees (not a salary)</li><li>Not entitled to Labour Law benefits from the end-user</li><li>Must hold their own commercial licence to operate in KSA</li><li>Not sponsored by the end-user for visa or work permit</li></ul>",
+      "ar": "<p>يُعرَّف <strong>الموظف</strong> بأنه كل شخص طبيعي يعمل لدى صاحب عمل تحت إشرافه وتوجيهه مقابل أجر. أما <strong>المستقل</strong> فهو في الغالب شركة مرخّصة تقدم خدمات. الأفراد الذين يعملون مباشرةً لدى شركة يُصنَّفون في الغالب موظفين ويحتاجون تصريح عمل وكفالة صاحب عمل.</p><p><strong>الفوارق الرئيسية للمستقل:</strong></p><ul><li>يُصدر فواتير بالأتعاب (لا يتقاضى راتبًا)</li><li>لا يستحق مزايا نظام العمل من المستفيد النهائي</li><li>يجب أن يمتلك ترخيصًا تجاريًا خاصًا به للعمل في المملكة</li><li>لا يكفله المستفيد النهائي للتأشيرة أو تصريح العمل</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 1 (definitions) · Unchanged in Feb 2025",
+      "ar": "المادة 1 من نظام العمل (التعريفات) · لم تتغير في فبراير 2025"
+    }
+  },
+  {
+    "id": "contractor-rights",
+    "topic": "worker-types",
+    "updated": false,
+    "lawRef": "General contract law",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What rights do independent contractors receive (and not receive)?",
+      "ar": "ما الحقوق التي يستحقها المستقل (وما الذي لا يستحقه)؟"
+    },
+    "answer": {
+      "en": "<p>Contractors receive <strong>no statutory benefits</strong> from the end-user: no annual leave, sick leave, maternity leave, paternity leave, overtime pay, health insurance, social security, workplace injury cover, unemployment benefits, end-of-service gratuity, or housing/transport allowance.</p><p>Consultancy agreements should be drafted case-by-case. Written contracts are strongly recommended as courts rely primarily on written evidence in disputes. There is no minimum pay requirement for contractors.</p>",
+      "ar": "<p>لا يستحق المستقل <strong>أي مزايا قانونية</strong> من المستفيد النهائي: لا إجازة سنوية، ولا إجازة مرضية، ولا إجازة أمومة، ولا إجازة أبوة، ولا أجر عمل إضافي، ولا تأمين صحي، ولا ضمان اجتماعي، ولا تغطية لإصابات العمل، ولا إعانة بطالة، ولا مكافأة نهاية خدمة، ولا بدل سكن أو نقل.</p><p>تُصاغ اتفاقيات الاستشارات حسب كل حالة. يُوصى بشدة بالعقود الكتابية إذ تعتمد المحاكم أساسًا على الدليل الكتابي في النزاعات. لا يوجد حد أدنى للأجر بالنسبة للمستقلين.</p>"
+    },
+    "cite": {
+      "en": "KSA Labour Law · Commercial law · General contractual principles",
+      "ar": "نظام العمل السعودي · النظام التجاري · المبادئ العامة للعقود"
+    }
+  },
+  {
+    "id": "volunteer-status",
+    "topic": "worker-types",
+    "updated": false,
+    "lawRef": "No specific article",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is the status of volunteers?",
+      "ar": "ما الوضع القانوني للمتطوعين؟"
+    },
+    "answer": {
+      "en": "<p>There is no definition of 'volunteer' in the KSA Labour Law. A volunteer is understood as someone who works for a charitable cause without remuneration. Volunteers are not considered employees and most employment regulations do not apply.</p><ul><li>No written agreement is required (though recommended)</li><li>Organisations <strong>may</strong> pay stipends and reimburse expenses (transport, food, etc.)</li><li>No income or withholding taxes apply to volunteer stipends in KSA</li><li>No working hour restrictions, leave entitlements, or social security obligations</li></ul>",
+      "ar": "<p>لا يتضمن نظام العمل السعودي تعريفًا للمتطوع. يُفهم المتطوع عمومًا على أنه من يعمل في عمل خيري دون مقابل. لا يُعدّ المتطوعون موظفين وبالتالي لا تنطبق عليهم معظم أنظمة العمل.</p><ul><li>لا يُشترط إبرام اتفاق كتابي (وإن كان موصى به)</li><li>يجوز للمؤسسات <strong>صرف مكافآت</strong> وتعويض المصاريف (نقل، طعام... إلخ)</li><li>لا تسري ضرائب الدخل أو ضرائب الاستقطاع على مكافآت المتطوعين في المملكة</li><li>لا توجد قيود على ساعات العمل أو استحقاقات الإجازة أو التزامات الضمان الاجتماعي</li></ul>"
+    },
+    "cite": {
+      "en": "KSA Labour Law · No specific article · Common interpretation",
+      "ar": "نظام العمل السعودي · لا توجد مادة محددة · تفسير شائع"
+    }
+  },
+  {
+    "id": "non-citizen-rights",
+    "topic": "worker-types",
+    "updated": true,
+    "lawRef": "Art. 1, Art. 37",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "What rights do non-citizen employees and expats have?",
+      "ar": "ما الحقوق التي يتمتع بها الموظفون غير المواطنين والوافدون؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Equal treatment mandate:</strong> The law now explicitly prohibits discrimination against any employee regardless of nationality, based on race, colour, gender, age, disability, or marital status. Non-citizens are entitled to equal protection of employment laws in any dispute.",
+      "ar": "<strong>تغيير فبراير 2025 — مبدأ المعاملة المتساوية:</strong> يحظر النظام الآن صراحةً التمييز ضد أي موظف بصرف النظر عن جنسيته، استنادًا إلى العرق أو اللون أو الجنس أو السن أو الإعاقة أو الحالة الاجتماعية. يستحق غير المواطنين الحماية المتساوية بموجب أنظمة العمل في أي نزاع."
+    },
+    "answer": {
+      "en": "<p>Non-citizen employees are covered by KSA Labour Law almost identically to Saudi nationals. The key differences:</p><ul><li><strong>Contract type:</strong> Non-Saudi nationals may only hold fixed-term contracts. Unlimited contracts are available to Saudi nationals only.</li><li><strong>State pension (GOSI):</strong> Only Saudi nationals (and GCC nationals under a GCC-wide arrangement) participate in the state pension scheme. Non-GCC expatriates receive end-of-service gratuity only.</li><li><strong>Work authorisation:</strong> Every non-citizen requires a KSA residence visa (Iqama) and a work permit. Asylum-seekers without a valid residence visa cannot legally work in KSA.</li></ul>",
+      "ar": "<p>يخضع الموظفون غير المواطنين لنظام العمل السعودي بشكل شبه مماثل للمواطنين السعوديين. الفوارق الرئيسية:</p><ul><li><strong>نوع العقد:</strong> لا يجوز لغير المواطنين السعوديين إبرام إلا عقود محددة المدة. العقود غير محددة المدة حكر على المواطنين السعوديين.</li><li><strong>المعاش التقاعدي (التأمينات الاجتماعية):</strong> يشارك في نظام المعاشات الحكومي المواطنون السعوديون فقط (ومواطنو دول الخليج وفق ترتيب خليجي موحد). يستحق الوافدون من خارج دول الخليج مكافأة نهاية الخدمة فقط.</li><li><strong>تصريح العمل:</strong> يحتاج كل غير مواطن إلى إقامة سارية وتصريح عمل. لا يجوز لطالبي اللجوء الذين لا يحملون إقامة سارية العمل قانونيًا في المملكة.</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 1, 37 as amended · Effective Feb 2025",
+      "ar": "المادتان 1 و37 من نظام العمل بصيغتهما المعدَّلة · نافذتان من فبراير 2025"
+    }
+  }
+]

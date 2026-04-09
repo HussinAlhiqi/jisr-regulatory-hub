@@ -1,0 +1,109 @@
+[
+  {
+    "id": "minimum-wage",
+    "topic": "pay",
+    "updated": true,
+    "lawRef": "Art. 90",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "Is there a minimum wage in KSA?",
+      "ar": "هل يوجد حد أدنى للأجور في المملكة؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Payslip transparency:</strong> Employers must now issue itemised monthly payslips showing basic salary, all allowances, and any deductions. The WPS payment window is strictly 30 days.",
+      "ar": "<strong>تغيير فبراير 2025 — شفافية كشوف الرواتب:</strong> يُلزَم أصحاب العمل الآن بإصدار كشوف رواتب شهرية مفصّلة تُظهر الراتب الأساسي وجميع البدلات وأي خصومات. نافذة الدفع عبر نظام حماية الأجور 30 يومًا بالضبط."
+    },
+    "answer": {
+      "en": "<p>There is <strong>no statutory minimum wage</strong> in the KSA for private sector employees. Salaries are agreed contractually between employer and employee.</p><p>Wages are due on dates agreed between the parties — typically monthly. Wage transfers are monitored via the <strong>Wages Protection System (WPS)</strong>, which verifies that salaries are paid in full and on time.</p>",
+      "ar": "<p>لا يوجد <strong>حد أدنى قانوني للأجور</strong> في القطاع الخاص بالمملكة. تُحدَّد الرواتب تعاقديًا بين صاحب العمل والموظف.</p><p>تستحق الأجور في التواريخ المتفق عليها بين الطرفين — عادةً شهريًا. يُراقَب تحويل الأجور عبر <strong>نظام حماية الأجور</strong> الذي يتحقق من صرف الرواتب كاملةً وفي مواعيدها.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 90 as amended · Effective Feb 2025",
+      "ar": "المادة 90 من نظام العمل بصيغتها المعدَّلة · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "housing-transport",
+    "topic": "pay",
+    "updated": true,
+    "lawRef": "Art. 61",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "Are housing and transport allowances mandatory?",
+      "ar": "هل بدلات السكن والنقل إلزامية؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — New statutory obligation (Article 61):</strong> Employers must now either (a) provide suitable housing and transportation directly, or (b) pay a housing allowance and a transportation allowance in lieu. This is a brand-new obligation not previously addressed in the Labour Law.",
+      "ar": "<strong>تغيير فبراير 2025 — التزام قانوني جديد (المادة 61):</strong> يُلزَم أصحاب العمل الآن إما بـ (أ) توفير سكن ومواصلات مناسبة مباشرةً، أو (ب) صرف بدل سكن وبدل نقل بديلًا عن ذلك. هذا التزام جديد كليًا لم يكن موجودًا في نظام العمل السابق."
+    },
+    "answer": {
+      "en": "<p>Key implications:</p><ul><li>Must be specified in the Qiwa employment contract</li><li>Housing and transport allowances are now included in the remuneration base for end-of-service gratuity calculations</li><li>If no specific amount is stated in the contract, it is determined by prevailing practice and mutual agreement</li><li>Particularly impactful for companies employing large numbers of expatriates</li></ul>",
+      "ar": "<p>أبرز التداعيات:</p><ul><li>يجب تحديده في عقد قيوة</li><li>تُدرج بدلات السكن والنقل الآن في أساس الأجر لحساب مكافأة نهاية الخدمة</li><li>إن لم يُحدَّد مبلغ في العقد، يُحدَّد وفق السائد في السوق والاتفاق المتبادل</li><li>يؤثر تأثيرًا بالغًا على الشركات التي توظف عددًا كبيرًا من الوافدين</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 61 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المادة 61 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "overtime",
+    "topic": "pay",
+    "updated": true,
+    "lawRef": "Art. 107",
+    "audiences": [
+      "expat",
+      "hr"
+    ],
+    "question": {
+      "en": "How is overtime compensated?",
+      "ar": "كيف يُعوَّض عن العمل الإضافي؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Compensatory leave option:</strong> Employers may now offer paid compensatory time off instead of cash for overtime (1.5 hours leave per overtime hour worked), with the employee's written agreement. Any unused compensatory leave must be paid out in cash upon separation.",
+      "ar": "<strong>تغيير فبراير 2025 — خيار الإجازة التعويضية:</strong> يجوز لأصحاب العمل الآن تقديم إجازة تعويضية مدفوعة الأجر بديلًا عن المقابل النقدي للعمل الإضافي (1.5 ساعة إجازة لكل ساعة إضافية)، بموافقة الموظف الكتابية. يُصرف رصيد الإجازات التعويضية غير المستهلكة نقدًا عند إنهاء الخدمة."
+    },
+    "answer": {
+      "en": "<p>Overtime = normal hourly wage + <strong>50% uplift</strong> on basic wage.</p><p><strong>Exempt categories:</strong></p><ul><li>Senior management with the same authority as the employer over workers</li><li>Preparatory or complementary work done before or after main working hours</li><li>Work that is inherently intermittent</li><li>Guards and cleaning workers (excluding civil security guards)</li></ul>",
+      "ar": "<p>العمل الإضافي = الأجر الساعي المعتاد + <strong>زيادة 50%</strong> على الراتب الأساسي.</p><p><strong>الفئات المعفاة:</strong></p><ul><li>كبار المديرين الذين يتمتعون بسلطة صاحب العمل ذاتها</li><li>الأعمال التحضيرية أو التكميلية قبل ساعات العمل أو بعدها</li><li>الأعمال المتقطعة بطبيعتها</li><li>الحراس وعمال النظافة (باستثناء حراس الأمن المدني)</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 107 as amended · Effective Feb 2025",
+      "ar": "المادة 107 من نظام العمل بصيغتها المعدَّلة · نافذ من فبراير 2025"
+    }
+  },
+  {
+    "id": "end-of-service",
+    "topic": "pay",
+    "updated": true,
+    "lawRef": "Art. 84",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is end-of-service gratuity and how is it calculated?",
+      "ar": "ما مكافأة نهاية الخدمة وكيف تُحسَب؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Housing in gratuity base:</strong> Housing and transport allowances must now be included in the remuneration base used to calculate end-of-service gratuity.",
+      "ar": "<strong>تغيير فبراير 2025 — إدراج السكن في أساس المكافأة:</strong> يجب الآن إدراج بدلات السكن والنقل في أساس الأجر المستخدم لحساب مكافأة نهاية الخدمة."
+    },
+    "answer": {
+      "en": "<p><strong>Calculation:</strong></p><ul><li>First 5 years: 15 calendar days' basic salary per year</li><li>After 5 years: 30 calendar days' per year</li></ul><p>No qualifying service period required — even employees with less than one year receive a pro-rated gratuity. Incomplete years calculated on pro-rated basis.</p><p><strong>Gratuity reduction on voluntary resignation:</strong></p><ul><li>Less than 2 years' service: no gratuity</li><li>2–5 years: one-third of full entitlement</li><li>5–10 years: two-thirds of full entitlement</li><li>10+ years: full entitlement (no reduction)</li></ul>",
+      "ar": "<p><strong>الحساب:</strong></p><ul><li>أول 5 سنوات: 15 يومًا من الراتب الأساسي لكل سنة</li><li>بعد 5 سنوات: 30 يومًا لكل سنة</li></ul><p>لا تشترط فترة خدمة مؤهِّلة — حتى الموظف الذي لم تكمل خدمته سنة يستحق مكافأة بالتناسب. تُحتسب السنوات غير المكتملة بالتناسب.</p><p><strong>تخفيض المكافأة عند الاستقالة الطوعية:</strong></p><ul><li>أقل من سنتين: لا توجد مكافأة</li><li>2–5 سنوات: ثلث الاستحقاق الكامل</li><li>5–10 سنوات: ثلثا الاستحقاق الكامل</li><li>10+ سنوات: الاستحقاق الكامل دون تخفيض</li></ul>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 84 as amended · Effective Feb 2025",
+      "ar": "المادة 84 من نظام العمل بصيغتها المعدَّلة · نافذ من فبراير 2025"
+    }
+  }
+]

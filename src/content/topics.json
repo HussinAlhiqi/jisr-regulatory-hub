@@ -1,0 +1,556 @@
+[
+  {
+    "id": "hiring",
+    "icon": "📋",
+    "hasUpdates": true,
+    "articleCount": 7,
+    "updateCount": 2,
+    "title": {
+      "en": "Hiring & Contracts",
+      "ar": "التوظيف والعقود"
+    },
+    "sub": {
+      "en": "Qiwa digital contracts, fixed-term rules, probation, work permits",
+      "ar": "عقود قيوة الرقمية، العقود محددة المدة، الاختبار، تصاريح العمل"
+    },
+    "heroSub": {
+      "en": "Rules governing employment contracts, probation periods, minimum ages, and digital Qiwa requirements. Two significant changes in the February 2025 amendments affect every employer in KSA.",
+      "ar": "قواعد عقود العمل وفترات الاختبار والحد الأدنى للأعمار ومتطلبات منصة قيوة الرقمية. أحدث تعديل فبراير 2025 تغييرين جوهريين يؤثران على كل صاحب عمل في المملكة."
+    },
+    "pills": {
+      "en": [
+        "★ Updated Feb 2025",
+        "Royal Decree M/44",
+        "Arts. 37–81",
+        "Applies to: All employers"
+      ],
+      "ar": [
+        "★ محدّث فبراير 2025",
+        "المرسوم الملكي م/44",
+        "المواد 37–81",
+        "ينطبق على: جميع أصحاب العمل"
+      ]
+    },
+    "updBadge": {
+      "en": "2 changes in Feb 2025",
+      "ar": "تغييران في فبراير 2025"
+    },
+    "relatedKeys": [
+      "widget_probation",
+      "widget_contract_type",
+      "widget_min_age"
+    ],
+    "facts": {
+      "en": [
+        [
+          "Probation period (max)",
+          "180 days ★"
+        ],
+        [
+          "Fixed-term (non-Saudi)",
+          "Always required"
+        ],
+        [
+          "Contract default term",
+          "1 year from start ★"
+        ],
+        [
+          "Contract form",
+          "Qiwa digital only ★"
+        ],
+        [
+          "Min. employment age",
+          "15 years"
+        ],
+        [
+          "Saudi unlimited contract",
+          "After 3 renewals / 4 yrs"
+        ]
+      ],
+      "ar": [
+        [
+          "مدة الاختبار (الحد الأقصى)",
+          "180 يومًا ★"
+        ],
+        [
+          "محدد المدة (غير سعودي)",
+          "إلزامي دائمًا"
+        ],
+        [
+          "المدة الافتراضية للعقد",
+          "سنة من تاريخ البدء ★"
+        ],
+        [
+          "شكل العقد",
+          "قيوة الرقمية فقط ★"
+        ],
+        [
+          "الحد الأدنى لسن العمل",
+          "15 عامًا"
+        ],
+        [
+          "العقد غير محدد المدة للسعودي",
+          "بعد 3 تجديدات / 4 سنوات"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "pay",
+    "icon": "💰",
+    "hasUpdates": true,
+    "articleCount": 4,
+    "updateCount": 3,
+    "title": {
+      "en": "Pay & Compensation",
+      "ar": "الأجور والتعويضات"
+    },
+    "sub": {
+      "en": "WPS, overtime, housing allowances, end-of-service gratuity",
+      "ar": "نظام حماية الأجور، العمل الإضافي، بدلات السكن، مكافأة نهاية الخدمة"
+    },
+    "heroSub": {
+      "en": "Wages, overtime, housing allowances, and end-of-service gratuity. Three of the four articles in this section were updated by the February 2025 amendments, including a brand-new obligation on housing and transport.",
+      "ar": "الأجور والعمل الإضافي وبدلات السكن ومكافأة نهاية الخدمة. ثلاثة من أصل أربعة مقالات في هذا القسم تأثرت بتعديلات فبراير 2025، بما فيها الالتزام الجديد بتوفير السكن والنقل."
+    },
+    "pills": {
+      "en": [
+        "★ Updated Feb 2025",
+        "Royal Decree M/44",
+        "Arts. 61–107",
+        "Applies to: All employees"
+      ],
+      "ar": [
+        "★ محدّث فبراير 2025",
+        "المرسوم الملكي م/44",
+        "المواد 61–107",
+        "ينطبق على: جميع الموظفين"
+      ]
+    },
+    "updBadge": {
+      "en": "3 changes in Feb 2025",
+      "ar": "3 تغييرات في فبراير 2025"
+    },
+    "facts": {
+      "en": [
+        [
+          "Minimum wage",
+          "None"
+        ],
+        [
+          "Overtime uplift",
+          "50% on basic"
+        ],
+        [
+          "EOSG (yr 1–5)",
+          "15 days/year"
+        ],
+        [
+          "EOSG (yr 5+)",
+          "30 days/year"
+        ],
+        [
+          "Housing allowance",
+          "Mandatory ★"
+        ],
+        [
+          "WPS window",
+          "30 days max ★"
+        ]
+      ],
+      "ar": [
+        [
+          "الحد الأدنى للأجر",
+          "لا يوجد"
+        ],
+        [
+          "زيادة العمل الإضافي",
+          "50% على الراتب الأساسي"
+        ],
+        [
+          "مكافأة نهاية الخدمة (1–5 سنوات)",
+          "15 يومًا/سنة"
+        ],
+        [
+          "مكافأة نهاية الخدمة (5+ سنوات)",
+          "30 يومًا/سنة"
+        ],
+        [
+          "بدل السكن",
+          "إلزامي ★"
+        ],
+        [
+          "نافذة نظام حماية الأجور",
+          "30 يومًا كحد أقصى ★"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "leave",
+    "icon": "🏖",
+    "hasUpdates": true,
+    "articleCount": 6,
+    "updateCount": 3,
+    "title": {
+      "en": "Leave & Time Off",
+      "ar": "الإجازات وأوقات الراحة"
+    },
+    "sub": {
+      "en": "Annual, sick, maternity, paternity, bereavement, public holidays",
+      "ar": "الإجازة السنوية، المرضية، الأمومة، الأبوة، الوفاة، والعطل الرسمية"
+    },
+    "heroSub": {
+      "en": "All leave entitlements in KSA — statutory minimums, pay rates, and who qualifies. The 2025 amendments introduced three changes: extended maternity leave, a new paternity window, and a new sibling bereavement entitlement.",
+      "ar": "جميع استحقاقات الإجازات في المملكة — الحد الأدنى القانوني، ومعدلات الأجر، ومن يستحقها. أدخل تعديل 2025 ثلاثة تغييرات: تمديد إجازة الأمومة، وإطار زمني جديد لإجازة الأبوة، وإجازة وفاة الأشقاء."
+    },
+    "pills": {
+      "en": [
+        "★ Updated Feb 2025",
+        "Royal Decree M/44",
+        "Arts. 109–160",
+        "Applies to: Employees"
+      ],
+      "ar": [
+        "★ محدّث فبراير 2025",
+        "المرسوم الملكي م/44",
+        "المواد 109–160",
+        "ينطبق على: الموظفين"
+      ]
+    },
+    "updBadge": {
+      "en": "3 changes in Feb 2025",
+      "ar": "3 تغييرات في فبراير 2025"
+    },
+    "facts": {
+      "en": [
+        [
+          "Annual leave (yr 1–5)",
+          "21 days"
+        ],
+        [
+          "Annual leave (yr 5+)",
+          "30 days"
+        ],
+        [
+          "Sick leave (total)",
+          "120 days"
+        ],
+        [
+          "Maternity leave",
+          "12 weeks ★"
+        ],
+        [
+          "Paternity leave",
+          "3 days"
+        ],
+        [
+          "Bereavement (family)",
+          "3 days"
+        ],
+        [
+          "Bereavement (sibling)",
+          "3 days ★ New"
+        ]
+      ],
+      "ar": [
+        [
+          "الإجازة السنوية (1–5 سنوات)",
+          "21 يومًا"
+        ],
+        [
+          "الإجازة السنوية (5+ سنوات)",
+          "30 يومًا"
+        ],
+        [
+          "إجازة المرض (الإجمالي)",
+          "120 يومًا"
+        ],
+        [
+          "إجازة الأمومة",
+          "12 أسبوعًا ★"
+        ],
+        [
+          "إجازة الأبوة",
+          "3 أيام"
+        ],
+        [
+          "إجازة الوفاة (الأسرة)",
+          "3 أيام"
+        ],
+        [
+          "إجازة وفاة الأشقاء",
+          "3 أيام ★ جديد"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "termination",
+    "icon": "⚖️",
+    "hasUpdates": true,
+    "articleCount": 5,
+    "updateCount": 2,
+    "title": {
+      "en": "Termination",
+      "ar": "إنهاء الخدمة"
+    },
+    "sub": {
+      "en": "Resignation process, dismissal grounds, dispute resolution, MHRSD",
+      "ar": "إجراءات الاستقالة، أسباب الفصل، تسوية النزاعات، وزارة الموارد البشرية"
+    },
+    "heroSub": {
+      "en": "Resignation rules, employer termination grounds, final settlement payments, and dispute resolution. The February 2025 amendments formalised the resignation process for the first time and added new grounds for termination.",
+      "ar": "قواعد الاستقالة وأسباب إنهاء عقد العمل ومدفوعات التسوية النهائية وتسوية النزاعات. رسّمت تعديلات فبراير 2025 إجراءات الاستقالة لأول مرة وأضافت أسبابًا جديدة لإنهاء الخدمة."
+    },
+    "pills": {
+      "en": [
+        "★ Updated Feb 2025",
+        "Royal Decree M/44",
+        "Arts. 74–87",
+        "Applies to: Employees"
+      ],
+      "ar": [
+        "★ محدّث فبراير 2025",
+        "المرسوم الملكي م/44",
+        "المواد 74–87",
+        "ينطبق على: الموظفين"
+      ]
+    },
+    "updBadge": {
+      "en": "2 changes in Feb 2025",
+      "ar": "تغييران في فبراير 2025"
+    },
+    "facts": {
+      "en": [
+        [
+          "Notice period (unlimited)",
+          "Min. 60 days"
+        ],
+        [
+          "Wrongful termination min.",
+          "2 months pay"
+        ],
+        [
+          "EOSG (yr 1–5)",
+          "15 days/year"
+        ],
+        [
+          "EOSG (yr 5+)",
+          "30 days/year"
+        ],
+        [
+          "Resignation response window",
+          "30 days ★"
+        ],
+        [
+          "Grievance window",
+          "30 days ★"
+        ]
+      ],
+      "ar": [
+        [
+          "فترة الإشعار (غير محدد المدة)",
+          "60 يومًا كحد أدنى"
+        ],
+        [
+          "الحد الأدنى للفصل التعسفي",
+          "راتب شهرين"
+        ],
+        [
+          "مكافأة نهاية الخدمة (1–5 سنوات)",
+          "15 يومًا/سنة"
+        ],
+        [
+          "مكافأة نهاية الخدمة (5+ سنوات)",
+          "30 يومًا/سنة"
+        ],
+        [
+          "نافذة الرد على الاستقالة",
+          "30 يومًا ★"
+        ],
+        [
+          "نافذة التظلم",
+          "30 يومًا ★"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "worker-types",
+    "icon": "👥",
+    "hasUpdates": false,
+    "articleCount": 4,
+    "updateCount": 1,
+    "title": {
+      "en": "Worker Types",
+      "ar": "فئات العمال"
+    },
+    "sub": {
+      "en": "Employees, contractors, volunteers, non-citizens, refugees",
+      "ar": "الموظفون، المستقلون، المتطوعون، غير المواطنين، اللاجئون"
+    },
+    "heroSub": {
+      "en": "Employees, independent contractors, volunteers, and non-citizens — how they are defined under KSA law and what rights each category holds. The 2025 amendments strengthened the equal treatment mandate for all workers regardless of nationality.",
+      "ar": "الموظفون والمستقلون والمتطوعون وغير المواطنين — كيف يُعرَّفون بموجب نظام العمل السعودي وما الحقوق التي تكفل لكل فئة. عزّزت تعديلات 2025 مبدأ المساواة في المعاملة لجميع العمال بغض النظر عن الجنسية."
+    },
+    "pills": {
+      "en": [
+        "Royal Decree M/44",
+        "Art. 1 (definitions)",
+        "Applies to: All categories"
+      ],
+      "ar": [
+        "المرسوم الملكي م/44",
+        "المادة 1 (التعريفات)",
+        "ينطبق على: جميع الفئات"
+      ]
+    },
+    "updBadge": null,
+    "facts": {
+      "en": [
+        [
+          "Employee: Labour Law",
+          "Fully applies"
+        ],
+        [
+          "Contractor: Labour Law",
+          "Does not apply"
+        ],
+        [
+          "Volunteer: Labour Law",
+          "Does not apply"
+        ],
+        [
+          "Non-citizen: same rights",
+          "Yes (with 2 exceptions)"
+        ],
+        [
+          "Non-citizen: contract type",
+          "Fixed-term only"
+        ],
+        [
+          "Non-citizen: pension",
+          "EOSG only (non-GCC)"
+        ]
+      ],
+      "ar": [
+        [
+          "الموظف: نظام العمل",
+          "ينطبق بالكامل"
+        ],
+        [
+          "المستقل: نظام العمل",
+          "لا ينطبق"
+        ],
+        [
+          "المتطوع: نظام العمل",
+          "لا ينطبق"
+        ],
+        [
+          "غير المواطن: نفس الحقوق",
+          "نعم (مع استثناءين)"
+        ],
+        [
+          "غير المواطن: نوع العقد",
+          "محدد المدة فقط"
+        ],
+        [
+          "غير المواطن: معاش التقاعد",
+          "مكافأة نهاية الخدمة فقط (غير دول الخليج)"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "compliance",
+    "icon": "✅",
+    "hasUpdates": true,
+    "articleCount": 3,
+    "updateCount": 3,
+    "title": {
+      "en": "Compliance",
+      "ar": "الامتثال"
+    },
+    "sub": {
+      "en": "Qiwa obligations, Saudization enforcement, WPS, penalties",
+      "ar": "التزامات قيوة، تطبيق نظام نطاقات، نظام حماية الأجور، العقوبات"
+    },
+    "heroSub": {
+      "en": "Qiwa contract obligations, Saudization enforcement, and the equal opportunity mandate. All three articles in this section were updated by the February 2025 amendments — compliance is now more strictly monitored through digital enforcement.",
+      "ar": "التزامات عقد قيوة، تطبيق نظام نطاقات، ومبدأ تكافؤ الفرص. الأقسام الثلاثة في هذا المجال تحديثات فبراير 2025 — يُراقَب الامتثال الآن بصرامة أكبر عبر التطبيق الرقمي."
+    },
+    "pills": {
+      "en": [
+        "★ Updated Feb 2025",
+        "Royal Decree M/44",
+        "Arts. 35–43",
+        "Applies to: All employers"
+      ],
+      "ar": [
+        "★ محدّث فبراير 2025",
+        "المرسوم الملكي م/44",
+        "المواد 35–43",
+        "ينطبق على: جميع أصحاب العمل"
+      ]
+    },
+    "updBadge": {
+      "en": "3 changes in Feb 2025",
+      "ar": "3 تغييرات في فبراير 2025"
+    },
+    "facts": {
+      "en": [
+        [
+          "All contracts on Qiwa",
+          "Mandatory ★"
+        ],
+        [
+          "Remote work on Qiwa",
+          "Mandatory ★"
+        ],
+        [
+          "Housing/transport stated",
+          "Mandatory ★"
+        ],
+        [
+          "Itemised payslips",
+          "Mandatory ★"
+        ],
+        [
+          "Training plan (50+ staff)",
+          "Mandatory ★"
+        ],
+        [
+          "Anti-harassment mechanism",
+          "Strongly recommended"
+        ]
+      ],
+      "ar": [
+        [
+          "جميع العقود على قيوة",
+          "إلزامي ★"
+        ],
+        [
+          "العمل عن بُعد على قيوة",
+          "إلزامي ★"
+        ],
+        [
+          "السكن والنقل مُدرَجان",
+          "إلزامي ★"
+        ],
+        [
+          "كشوف الرواتب المفصّلة",
+          "إلزامية ★"
+        ],
+        [
+          "خطة التدريب (50+ موظف)",
+          "إلزامية ★"
+        ],
+        [
+          "آلية مناهضة التحرش",
+          "موصى بها بشدة"
+        ]
+      ]
+    }
+  }
+]

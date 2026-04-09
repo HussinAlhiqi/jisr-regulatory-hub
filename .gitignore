@@ -21,3 +21,6 @@ dist/
 
 # Netlify
 .netlify/
+node_modules/
+dist/
+.astro/

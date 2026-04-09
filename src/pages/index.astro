@@ -1,0 +1,129 @@
+---
+import Base     from '../layouts/Base.astro';
+import Topbar   from '../components/Topbar.astro';
+import Sidebar  from '../components/Sidebar.astro';
+import SubscribeModal from '../components/SubscribeModal.astro';
+import topicsData from '../content/topics.json';
+import changesData from '../content/changes.json';
+
+const lang  = 'en';
+const title = 'Jisr Regulatory Hub — Saudi Arabia';
+---
+<Base title={title} lang={lang}>
+  <Topbar lang={lang} />
+  <div class="layout">
+    <Sidebar lang={lang} active="home" />
+    <main class="main">
+      <div style="padding:28px 32px 80px;max-width:880px">
+
+        <!-- Hero -->
+        <div class="hero">
+          <div class="hero-ey">Saudi Arabia &middot; 2025 Edition</div>
+          <h1>KSA Regulatory <em>Hub</em></h1>
+          <p>Plain-language Saudi HR law for everyone working in the Kingdom. Updated to reflect the February 2025 amendments — the most significant reform since 2015.</p>
+          <div class="hero-stats">
+            <div class="h-stat"><strong>6</strong><span>Topic areas</span></div>
+            <div class="h-stat"><strong>27</strong><span>Articles</span></div>
+            <div class="h-stat"><strong>10</strong><span>2025 changes</span></div>
+            <div class="h-stat"><strong>EN / عربي</strong><span>Bilingual</span></div>
+          </div>
+        </div>
+
+        <!-- Topic cards -->
+        <div class="sec-hd"><h2>Browse by topic</h2><span>Click any topic to explore articles</span></div>
+        <div class="topic-grid">
+          {topicsData.map(t => (
+            <a href={`/topics/${t.id}/`} class="topic-card">
+              <div class="tc-head">
+                <div class={`tc-icon ${t.hasUpdates ? 'orange' : 'navy'}`}>{t.icon}</div>
+                {t.hasUpdates && <div class="tc-update-dot"></div>}
+              </div>
+              <div class="tc-title">{t.title.en}</div>
+              <div class="tc-sub">{t.sub.en}</div>
+              <div class="tc-footer">
+                <span class="tc-count">{t.articleCount} articles</span>
+                {t.hasUpdates && <span class="tc-update">{t.updateCount} changes in 2025</span>}
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <!-- Change feed -->
+        <div class="sec-hd"><h2>Latest regulation changes</h2><span>February 2025 amendments · Royal Decree M/44</span></div>
+        <div class="change-feed">
+          {changesData.map(c => (
+            <a href={`/topics/${c.topic}/`} class="change-item">
+              <div class={`ci-dot ${c.severity === 'high' ? 'orange' : 'teal'}`}></div>
+              <div class="ci-title">{c.title.en}</div>
+              <div class="ci-meta">{c.lawRef} &middot; {c.date}</div>
+              <div class={`ci-badge ${c.topic === 'leave' ? 'leave' : c.topic === 'pay' ? 'pay' : c.topic === 'hiring' ? 'hiring' : 'comp'}`}>
+                {c.topic.charAt(0).toUpperCase() + c.topic.slice(1)}
+              </div>
+              <div class="ci-arrow">&rsaquo;</div>
+            </a>
+          ))}
+        </div>
+
+        <!-- Audience cards -->
+        <div class="sec-hd"><h2>Start by your situation</h2><span>Tailored starting points</span></div>
+        <div class="aud-cards">
+          <a href="/topics/leave/" class="aud-card" onclick="setAud('expat')">
+            <div class="ac-role">&#9992;&#65039; &nbsp;New expat employee</div>
+            <div class="ac-desc">Just joined a company in KSA? Start with your core rights around leave, pay, and your contract.</div>
+            <div class="ac-tags"><span class="ac-tag">Leave</span><span class="ac-tag">Contracts</span><span class="ac-tag">Work permits</span></div>
+            <div class="ac-start">Start here &nbsp;&rsaquo;</div>
+          </a>
+          <a href="/topics/compliance/" class="aud-card" onclick="setAud('hr')">
+            <div class="ac-role">&#128193; &nbsp;HR manager</div>
+            <div class="ac-desc">Managing a team? Focus on Qiwa compliance, Saudization quotas, and the 2025 amendment checklist.</div>
+            <div class="ac-tags"><span class="ac-tag">Compliance</span><span class="ac-tag">Termination</span><span class="ac-tag">Saudization</span></div>
+            <div class="ac-start">Start here &nbsp;&rsaquo;</div>
+          </a>
+          <a href="/topics/hiring/" class="aud-card" onclick="setAud('founder')">
+            <div class="ac-role">&#128640; &nbsp;Founder / startup</div>
+            <div class="ac-desc">Hiring your first employees? Understand what you must provide and Saudization basics.</div>
+            <div class="ac-tags"><span class="ac-tag">Hiring</span><span class="ac-tag">Pay</span><span class="ac-tag">Worker types</span></div>
+            <div class="ac-start">Start here &nbsp;&rsaquo;</div>
+          </a>
+        </div>
+
+        <div class="disclaimer">
+          <strong>Legal disclaimer</strong> — This hub is maintained by Jisr HR for informational purposes only.
+          It does not constitute legal advice. Content reflects KSA Labour Law as amended by Royal Decree M/44
+          (effective February 2025). Always consult qualified Saudi legal counsel for specific situations.
+        </div>
+      </div>
+
+      <!-- Search results overlay -->
+      <div id="searchResults">
+        <div class="sr-header" id="searchHeader"></div>
+        <div id="searchList"></div>
+      </div>
+    </main>
+  </div>
+
+  <SubscribeModal lang={lang} />
+  <script src="../scripts/main.js"></script>
+  <script>
+    // Build search index from all topics
+    window.__ARTICLES__ = [];
+    (async () => {
+      const topics = ['hiring','pay','leave','termination','worker-types','compliance'];
+      for (const t of topics) {
+        try {
+          const res  = await fetch(`/content/${t}/articles.json`);
+          const arts = await res.json();
+          arts.forEach(a => {
+            window.__ARTICLES__.push({
+              q:       a.question.en,
+              body:    a.answer.en.replace(/<[^>]+>/g,'').slice(0,160),
+              topic:   t.charAt(0).toUpperCase() + t.slice(1).replace('-',' '),
+              updated: a.updated,
+              href:    `/topics/${t}/`,
+            });
+          });
+        } catch(e) {}
+      }
+    })();
+  </script>
+</Base>
