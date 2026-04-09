@@ -125,5 +125,31 @@
       "en": "Labour Law as amended · MHRSD mediation framework · Effective Feb 2025",
       "ar": "نظام العمل بصيغته المعدَّلة · إطار الوساطة لدى وزارة الموارد البشرية · نافذ من فبراير 2025"
     }
+  },
+  {
+    "id": "disciplinary-procedure",
+    "topic": "termination",
+    "updated": true,
+    "lawRef": "Labour Law Arts. 66–70 as amended Feb 2025",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What disciplinary procedure must be followed before dismissal?",
+      "ar": "ما إجراءات التأديب الواجب اتباعها قبل الفصل؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Written notice and appeals now mandatory:</strong> Employers must issue written notice of any disciplinary penalty. Employees now have a formal 30-day window to challenge penalties through a written grievance.",
+      "ar": "<strong>تغيير فبراير 2025 — الإشعار الكتابي والتظلم أصبحا إلزاميين:</strong> يُلزَم أصحاب العمل بإصدار إشعار كتابي بأي عقوبة تأديبية. يحق للموظفين الآن الطعن في العقوبات خلال نافذة تظلم كتابية مدتها 30 يومًا."
+    },
+    "answer": {
+      "en": "<p>Before dismissing an employee for disciplinary reasons, employers must follow a formal procedure. Skipping steps exposes the employer to wrongful dismissal claims even when the underlying conduct justifies termination.</p><p><strong>Required steps:</strong></p><ol><li><strong>Investigation:</strong> Conduct a documented inquiry into the alleged misconduct before imposing any penalty</li><li><strong>Hear the employee:</strong> Give the employee a written opportunity to respond to the allegations — this must be documented</li><li><strong>Issue written notice:</strong> Any disciplinary penalty (warning, suspension, dismissal) must be communicated in writing, specifying the grounds and the penalty imposed</li><li><strong>30-day appeal window:</strong> The employee has 30 calendar days (excluding official holidays) to submit a written grievance challenging the penalty</li><li><strong>Employer response to grievance:</strong> The employer must consider and respond to the grievance before the penalty becomes final</li></ol><p><strong>Escalation path (new Feb 2025):</strong></p><ul><li>Unresolved grievances can be escalated via the Qiwa platform to MHRSD mediation</li><li>If mediation fails, the matter proceeds to the Labour Court</li></ul><p><strong>Documentation is everything:</strong> In any Labour Court dispute, the burden of proof lies with the employer. Written records of the investigation, the employee's response, the penalty notice, and any appeal correspondence are essential.</p>",
+      "ar": "<p>قبل فصل موظف لأسباب تأديبية، يجب على صاحب العمل اتباع إجراء رسمي. تخطي الخطوات يُعرِّض صاحب العمل لدعاوى الفصل التعسفي حتى حين تستوجب السلوكية المعنية الإنهاء.</p><p><strong>الخطوات المطلوبة:</strong></p><ol><li><strong>التحقيق:</strong> إجراء تحقيق موثَّق في المخالفة المزعومة قبل فرض أي عقوبة</li><li><strong>الاستماع للموظف:</strong> منح الموظف فرصة كتابية للرد على الاتهامات — يجب توثيق ذلك</li><li><strong>إصدار إشعار كتابي:</strong> يجب إبلاغ أي عقوبة تأديبية (إنذار، إيقاف، فصل) كتابيًا مع تحديد الأسباب والعقوبة المفروضة</li><li><strong>نافذة التظلم 30 يومًا:</strong> يملك الموظف 30 يومًا تقويميًا (باستثناء الإجازات الرسمية) لتقديم تظلم كتابي للطعن في العقوبة</li><li><strong>رد صاحب العمل على التظلم:</strong> يجب على صاحب العمل النظر في التظلم والرد عليه قبل أن تصبح العقوبة نهائية</li></ol><p><strong>مسار التصعيد (جديد فبراير 2025):</strong></p><ul><li>يمكن تصعيد التظلمات غير المحسومة عبر منصة قيوة إلى الوساطة لدى وزارة الموارد البشرية</li><li>في حال فشل الوساطة، يُحال الأمر إلى المحكمة العمالية</li></ul><p><strong>التوثيق هو كل شيء:</strong> في أي نزاع أمام المحكمة العمالية، يقع عبء الإثبات على صاحب العمل. السجلات الكتابية للتحقيق وردّ الموظف وإشعار العقوبة وأي مراسلات بشأن التظلم أمر لا غنى عنه.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 66–70 as amended by Royal Decree M/44 · Effective Feb 2025",
+      "ar": "المواد 66–70 من نظام العمل بصيغتها المعدَّلة بالمرسوم الملكي م/44 · نافذة من فبراير 2025"
+    }
   }
 ]

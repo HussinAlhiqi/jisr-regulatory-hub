@@ -1,0 +1,122 @@
+[
+  {
+    "id": "safety-employer-obligations",
+    "topic": "safety",
+    "updated": false,
+    "lawRef": "Labour Law Chapter 8, Arts. 120–141",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the employer's general occupational safety obligations?",
+      "ar": "ما التزامات صاحب العمل العامة في مجال السلامة والصحة المهنية؟"
+    },
+    "answer": {
+      "en": "<p>Chapter 8 of the Labour Law requires every employer to provide a safe and healthy workplace. Key obligations:</p><ul><li>Inform workers of occupational hazards related to their job before they start work</li><li>Provide necessary protective equipment at no cost to the employee</li><li>Maintain machinery and equipment in safe working condition</li><li>Provide first aid facilities appropriate to the size and nature of the establishment</li><li>Report work injuries to GOSI and MHRSD within specified timeframes</li><li>Maintain a register of all work injuries and occupational diseases</li><li>Train workers on safe work practices relevant to their role</li></ul><p><strong>Employer liability:</strong> If an employer fails to provide required safety measures and a work injury results, the employer bears full liability for treatment costs and compensation — even if GOSI would otherwise cover the claim.</p><p>MHRSD inspectors may conduct unannounced workplace inspections. Violations result in warnings, fines, and potential suspension of operations.</p>",
+      "ar": "<p>يُلزم الفصل الثامن من نظام العمل كل صاحب عمل بتوفير بيئة عمل آمنة وصحية. تشمل الالتزامات الرئيسية:</p><ul><li>إحاطة العمال بالمخاطر المهنية المرتبطة بوظائفهم قبل الشروع في العمل</li><li>توفير معدات الوقاية اللازمة مجانًا للموظف</li><li>الحفاظ على الآلات والمعدات في حالة تشغيل آمنة</li><li>توفير مرافق الإسعافات الأولية المناسبة لحجم المنشأة وطبيعتها</li><li>الإبلاغ عن إصابات العمل لدى التأمينات الاجتماعية ووزارة الموارد البشرية في المواعيد المحددة</li><li>مسك سجل بجميع إصابات العمل والأمراض المهنية</li><li>تدريب العمال على ممارسات العمل الآمنة المتعلقة بأدوارهم</li></ul><p><strong>مسؤولية صاحب العمل:</strong> إذا قصَّر في توفير تدابير السلامة المطلوبة ونتجت عن ذلك إصابة عمل، تحمَّل كامل مسؤولية تكاليف العلاج والتعويض — حتى لو كانت التأمينات ستغطي المطالبة في الأحوال الاعتيادية.</p><p>يملك مفتشو وزارة الموارد البشرية صلاحية إجراء تفتيش مفاجئ على أماكن العمل. تؤدي المخالفات إلى تحذيرات وغرامات وتعليق العمليات المحتمل.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Chapter 8, Arts. 120–141 · MHRSD National Portal",
+      "ar": "الفصل الثامن من نظام العمل، المواد 120–141 · البوابة الوطنية لوزارة الموارد البشرية"
+    }
+  },
+  {
+    "id": "safety-outdoor-work-ban",
+    "topic": "safety",
+    "updated": false,
+    "lawRef": "Ministerial Decision No. 3337 (15 May 2014)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is the outdoor work ban and when does it apply?",
+      "ar": "ما حظر العمل في الهواء الطلق ومتى يُطبَّق؟"
+    },
+    "callout": {
+      "en": "<strong>Actively enforced:</strong> MHRSD inspectors conduct field visits during the ban period. Violations result in fines, and repeat offences can result in suspension of work permit renewals for the entire establishment.",
+      "ar": "<strong>تطبيق فعلي:</strong> يُجري مفتشو وزارة الموارد البشرية زيارات ميدانية خلال فترة الحظر. تؤدي المخالفات إلى غرامات، وقد يؤدي تكرارها إلى تعليق تجديد تصاريح العمل للمنشأة بأكملها."
+    },
+    "answer": {
+      "en": "<p>All private sector employers are prohibited from assigning workers to outdoor work under direct sunlight during the following period:</p><ul><li><strong>Hours:</strong> 12:00 pm to 3:00 pm</li><li><strong>Period:</strong> 15 June to 15 September (every year)</li></ul><p><strong>Applies to:</strong> All outdoor work in direct sunlight — construction, landscaping, loading, delivery, and similar roles.</p><p><strong>Exemptions:</strong></p><ul><li>Workers in oil and gas companies (due to the special nature of their operations)</li><li>Maintenance workers responding to emergency situations, provided protective measures are taken</li></ul><p><strong>Employer obligations during the ban:</strong></p><ul><li>Shift outdoor work to before 12pm or after 3pm</li><li>Provide shaded rest areas, adequate water, and cooling for outdoor workers</li><li>Display the MHRSD ban notice at the worksite</li></ul>",
+      "ar": "<p>يُحظر على جميع أصحاب العمل في القطاع الخاص تكليف العمال بأعمال في الهواء الطلق تحت أشعة الشمس المباشرة خلال الفترة التالية:</p><ul><li><strong>الساعات:</strong> من 12:00 ظهرًا حتى 3:00 عصرًا</li><li><strong>المدة:</strong> من 15 يونيو إلى 15 سبتمبر (كل عام)</li></ul><p><strong>ينطبق على:</strong> جميع أعمال الهواء الطلق تحت أشعة الشمس المباشرة — البناء والتشجير والتحميل والتوصيل والمهن المماثلة.</p><p><strong>الاستثناءات:</strong></p><ul><li>العمال في شركات النفط والغاز نظرًا لطبيعة عملياتهم الخاصة</li><li>عمال الصيانة في حالات الطوارئ، شريطة اتخاذ التدابير الوقائية اللازمة</li></ul><p><strong>التزامات صاحب العمل خلال فترة الحظر:</strong></p><ul><li>تحويل أعمال الهواء الطلق إلى ما قبل الساعة 12 ظهرًا أو ما بعد الساعة 3 عصرًا</li><li>توفير مناطق استراحة مظللة ومياه كافية ووسائل تبريد للعمال في الخارج</li><li>تعليق إشعار حظر وزارة الموارد البشرية في موقع العمل</li></ul>"
+    },
+    "cite": {
+      "en": "Ministerial Decision No. 3337 (15 May 2014) · MHRSD National Portal",
+      "ar": "القرار الوزاري رقم 3337 (15 مايو 2014) · البوابة الوطنية لوزارة الموارد البشرية"
+    }
+  },
+  {
+    "id": "safety-health-insurance",
+    "topic": "safety",
+    "updated": false,
+    "lawRef": "Compulsory Health Insurance (CHI) Scheme",
+    "audiences": [
+      "hr",
+      "founder",
+      "expat"
+    ],
+    "question": {
+      "en": "Is health insurance mandatory for employees in KSA?",
+      "ar": "هل التأمين الصحي إلزامي للموظفين في المملكة؟"
+    },
+    "answer": {
+      "en": "<p>Yes. The <strong>Compulsory Health Insurance (CHI)</strong> scheme requires all private sector employers to provide health insurance for their employees and dependants. It is administered by the Council of Cooperative Health Insurance (CCHI).</p><p><strong>Who must be covered:</strong></p><ul><li>All employees (Saudi and non-Saudi)</li><li>Dependants of non-Saudi employees (spouse and children)</li></ul><p><strong>Employer obligations:</strong></p><ul><li>Obtain a policy from a CCHI-approved insurer before the employee's work permit or Iqama is issued or renewed</li><li>Health insurance must be in place before the employee starts work — it is a prerequisite for the Iqama process</li><li>The employer bears the full premium cost for the employee; dependant coverage cost-sharing is negotiable</li></ul><p><strong>Minimum coverage:</strong> CCHI sets minimum benefit schedules. The most basic approved plan covers essential outpatient and inpatient care within the Kingdom.</p><p><strong>Penalty for non-compliance:</strong> MHRSD and the Ministry of Interior can withhold Iqama issuance and renewal until valid health insurance is confirmed. Fines also apply to establishments that allow employees to work without valid CHI.</p>",
+      "ar": "<p>نعم. يُلزم نظام <strong>التأمين الصحي التعاوني الإلزامي</strong> جميع أصحاب العمل في القطاع الخاص بتوفير تأمين صحي لموظفيهم وذويهم. يُدار النظام من قِبل مجلس الضمان الصحي التعاوني.</p><p><strong>من يجب أن يشمله التأمين:</strong></p><ul><li>جميع الموظفين (سعوديون وغير سعوديين)</li><li>ذوو الموظفين غير السعوديين (الزوج/الزوجة والأبناء)</li></ul><p><strong>التزامات صاحب العمل:</strong></p><ul><li>الحصول على وثيقة تأمين من شركة معتمدة لدى مجلس الضمان قبل إصدار تصريح العمل أو الإقامة أو تجديدهما</li><li>يجب أن يكون التأمين الصحي سارياً قبل أن يبدأ الموظف عمله — إذ يُعدّ شرطًا مسبقًا لإجراءات الإقامة</li><li>يتحمل صاحب العمل كامل تكلفة قسط الموظف؛ أما مشاركة تكلفة تغطية الذوي فقابلة للتفاوض</li></ul><p><strong>الحد الأدنى للتغطية:</strong> يضع مجلس الضمان جداول الحد الأدنى للمزايا. تشمل الخطة المعتمدة الأساسية الرعاية الضرورية للعيادات الخارجية والمرضى المقيمين داخل المملكة.</p><p><strong>عقوبة عدم الامتثال:</strong> يجوز لوزارة الموارد البشرية ووزارة الداخلية تعليق إصدار الإقامة وتجديدها حتى يتأكد صحة التأمين الصحي. كما تُطبَّق غرامات على المنشآت التي تسمح للموظفين بالعمل دون تأمين صحي ساري.</p>"
+    },
+    "cite": {
+      "en": "Compulsory Health Insurance (CHI) Scheme · CCHI · MHRSD",
+      "ar": "نظام التأمين الصحي التعاوني الإلزامي · مجلس الضمان الصحي التعاوني · وزارة الموارد البشرية"
+    }
+  },
+  {
+    "id": "safety-skill-classification",
+    "topic": "safety",
+    "updated": true,
+    "lawRef": "MHRSD — Qiwa Skill Classification 2025",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is Qiwa worker skill classification and why does it matter?",
+      "ar": "ما تصنيف مستوى مهارة العمال على قيوة ولماذا يهم؟"
+    },
+    "callout": {
+      "en": "<strong>2025 requirement:</strong> Qiwa now mandates that every employee be classified by skill level before visa processing and Iqama renewals proceed. Misclassification causes MHRSD audit discrepancies.",
+      "ar": "<strong>متطلب 2025:</strong> تُلزم قيوة الآن بتصنيف كل موظف وفق مستوى مهارته قبل معالجة التأشيرة وتجديد الإقامة. يتسبب التصنيف الخاطئ في تناقضات أثناء تدقيقات وزارة الموارد البشرية."
+    },
+    "answer": {
+      "en": "<p>Qiwa requires all employees to be assigned one of three skill tiers:</p><ul><li><strong>High Skill:</strong> Specialist, professional, or managerial roles requiring advanced qualifications or significant expertise</li><li><strong>Skilled:</strong> Technical and trade roles requiring specific training or experience</li><li><strong>Basic / Labour:</strong> General labour roles requiring no specialist training</li></ul><p><strong>Why classification matters:</strong></p><ul><li>Directly affects <strong>visa processing timelines</strong> — higher-skilled classifications are processed faster</li><li>Impacts <strong>Saudization (Nitaqat) scoring</strong> — skill tier affects how much an employee counts toward the quota</li><li>MHRSD uses classification data in <strong>inspection ratings</strong> — misaligned job titles and skill levels flag anomalies</li><li>Skill classification is used in <strong>work permit renewals</strong> — wrong classification can delay renewals</li></ul><p><strong>HR action required:</strong></p><ul><li>Review all employee job titles and map them to the MHRSD skill tier definitions</li><li>Update classifications on Qiwa before the next Iqama or work permit renewal cycle</li><li>Implement a structured training programme to support skill tier elevation where relevant</li></ul>",
+      "ar": "<p>تُلزم قيوة بتعيين إحدى درجات المهارة الثلاث لكل موظف:</p><ul><li><strong>مهارة عالية:</strong> الأدوار المتخصصة والمهنية والإدارية التي تستلزم مؤهلات متقدمة أو خبرة واسعة</li><li><strong>مهاري:</strong> الأدوار التقنية والحرفية التي تتطلب تدريبًا أو خبرة محددة</li><li><strong>أساسي / عمالة:</strong> أدوار العمالة العامة التي لا تستلزم تدريبًا متخصصًا</li></ul><p><strong>أهمية التصنيف:</strong></p><ul><li>يؤثر مباشرةً على <strong>مدد معالجة التأشيرات</strong> — تُعالَج التصنيفات الأعلى مهارةً بشكل أسرع</li><li>يؤثر على <strong>درجات نطاقات (السعودة)</strong> — يؤثر مستوى المهارة على مدى احتساب الموظف ضمن الحصة</li><li>تستخدم وزارة الموارد البشرية بيانات التصنيف في <strong>تقييمات التفتيش</strong> — تكشف المسميات الوظيفية غير المتوافقة مع مستويات المهارة عن شذوذات</li><li>يُوظَّف التصنيف في <strong>تجديدات تصاريح العمل</strong> — قد يتأخر التجديد بسبب التصنيف الخاطئ</li></ul><p><strong>الإجراء المطلوب من الموارد البشرية:</strong></p><ul><li>مراجعة جميع المسميات الوظيفية وربطها بتعريفات مستويات المهارة لدى وزارة الموارد البشرية</li><li>تحديث التصنيفات على قيوة قبل دورة تجديد الإقامة أو تصاريح العمل القادمة</li><li>تطبيق برنامج تدريب منظَّم لدعم الارتقاء بمستوى المهارة حيثما كان ذلك مناسبًا</li></ul>"
+    },
+    "cite": {
+      "en": "MHRSD Qiwa Platform — Skill Classification 2025 · TASC Outsourcing",
+      "ar": "منصة قيوة — تصنيف المهارة 2025 · تاسك للاستعانة بمصادر خارجية"
+    }
+  },
+  {
+    "id": "safety-working-hours",
+    "topic": "safety",
+    "updated": false,
+    "lawRef": "Labour Law Arts. 98–107",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the legal limits on working hours and rest periods?",
+      "ar": "ما الحدود القانونية لساعات العمل وفترات الراحة؟"
+    },
+    "answer": {
+      "en": "<p><strong>Standard working hours:</strong></p><ul><li>Maximum <strong>8 hours per day</strong> and <strong>48 hours per week</strong></li><li>Hours may be redistributed within the week but cannot exceed 48 hours total</li></ul><p><strong>Ramadan hours (Muslim employees):</strong></p><ul><li>Maximum <strong>6 hours per day</strong> and <strong>36 hours per week</strong></li></ul><p><strong>Rest breaks:</strong></p><ul><li>Employees may not work more than <strong>5 consecutive hours</strong> without a break</li><li>Breaks must total at least <strong>30 minutes</strong> and must be sufficient for prayer, rest, and eating</li><li>Break time is not counted as working time</li></ul><p><strong>Weekly rest day:</strong></p><ul><li>All employees are entitled to a <strong>minimum of one full day of rest per week</strong></li><li>Friday is the official weekly rest day — but employers may designate a different day with MHRSD approval</li><li>Employees required to work on their rest day must receive equivalent compensatory rest or overtime pay</li></ul><p><strong>Night work:</strong> Specific restrictions apply to juveniles (under 18) and to certain industries. Female employees may not be required to work between 10pm and 7am except in certain sectors with MHRSD approval.</p>",
+      "ar": "<p><strong>ساعات العمل المعيارية:</strong></p><ul><li>الحد الأقصى <strong>8 ساعات يوميًا</strong> و<strong>48 ساعة أسبوعيًا</strong></li><li>يجوز إعادة توزيع الساعات خلال الأسبوع شريطة عدم تجاوز 48 ساعة إجمالًا</li></ul><p><strong>ساعات رمضان (للموظفين المسلمين):</strong></p><ul><li>الحد الأقصى <strong>6 ساعات يوميًا</strong> و<strong>36 ساعة أسبوعيًا</strong></li></ul><p><strong>فترات الراحة:</strong></p><ul><li>لا يجوز للموظف العمل أكثر من <strong>5 ساعات متواصلة</strong> دون استراحة</li><li>يجب أن تبلغ فترات الراحة الإجمالية <strong>30 دقيقة على الأقل</strong> وأن تكفي للصلاة والراحة وتناول الطعام</li><li>لا تُحتسب مدة الاستراحة ضمن وقت العمل</li></ul><p><strong>يوم الراحة الأسبوعي:</strong></p><ul><li>يحق لجميع الموظفين الحصول على <strong>يوم راحة كامل على الأقل أسبوعيًا</strong></li><li>الجمعة هو يوم الراحة الرسمي — لكن يجوز لصاحب العمل تحديد يوم آخر بموافقة وزارة الموارد البشرية</li><li>يستحق الموظف المكلَّف بالعمل في يوم راحته إجازة تعويضية مماثلة أو أجر عمل إضافي</li></ul><p><strong>العمل الليلي:</strong> تنطبق قيود خاصة على الأحداث (أقل من 18 سنة) وعلى بعض القطاعات. لا يجوز تكليف الموظفات بالعمل بين الساعة 10 مساءً و7 صباحًا إلا في قطاعات معينة بموافقة وزارة الموارد البشرية.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 98–107 · Unchanged in Feb 2025",
+      "ar": "المواد 98–107 من نظام العمل · لم تتغير في فبراير 2025"
+    }
+  }
+]

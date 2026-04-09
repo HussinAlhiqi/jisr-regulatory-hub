@@ -105,5 +105,31 @@
       "en": "Labour Law Art. 84 as amended · Effective Feb 2025",
       "ar": "المادة 84 من نظام العمل بصيغتها المعدَّلة · نافذ من فبراير 2025"
     }
+  },
+  {
+    "id": "mudad-wps",
+    "topic": "pay",
+    "updated": true,
+    "lawRef": "Wages Protection System (WPS) · Mudad Platform",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How does the Wages Protection System (WPS) and Mudad platform work?",
+      "ar": "كيف يعمل نظام حماية الأجور ومنصة مدد؟"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — itemised payslips mandatory:</strong> Employers must now issue itemised monthly payslips showing basic salary, all allowances, and deductions. Violation of WPS rules can result in suspension of all Ministry services for the establishment.",
+      "ar": "<strong>تغيير فبراير 2025 — كشوف الرواتب المفصّلة إلزامية:</strong> يُلزَم أصحاب العمل الآن بإصدار كشوف رواتب شهرية مفصّلة تُظهر الراتب الأساسي وجميع البدلات والخصومات. قد تؤدي مخالفة قواعد نظام حماية الأجور إلى تعليق جميع خدمات الوزارة للمنشأة."
+    },
+    "answer": {
+      "en": "<p>The <strong>Wages Protection System (WPS)</strong> is a mandatory government system that verifies salaries are paid in full and on time. The <strong>Mudad platform</strong> is the technical interface through which employers upload payroll data to comply with WPS.</p><p><strong>How it works:</strong></p><ul><li>Employers upload monthly payroll data to Mudad, linked to each employee's Saudi bank account</li><li>Mudad automatically cross-references payment records and flags delays, underpayments, or discrepancies</li><li>MHRSD receives real-time compliance data from Mudad</li></ul><p><strong>Mandatory requirements:</strong></p><ul><li><strong>Salaries must be paid in SAR</strong> — payment in foreign currencies is not permitted</li><li><strong>Payment must go to a local Saudi bank account in the employee's name</strong> — cash or international transfers do not satisfy WPS</li><li>Payment must be made <strong>at least once per month</strong>, within 30 days of the due date</li><li>Monthly itemised payslips must be issued to every employee (soft or hard copy)</li></ul><p><strong>Penalties for WPS violations:</strong></p><ul><li>Automatic flagging in the MHRSD compliance system</li><li>Suspension of work permit issuance and renewal for the establishment</li><li>Repeated violations escalate to fines and potential referral to prosecution</li></ul>",
+      "ar": "<p><strong>نظام حماية الأجور</strong> نظام حكومي إلزامي يتحقق من صرف الرواتب كاملةً وفي مواعيدها. <strong>منصة مدد</strong> هي الواجهة التقنية التي يرفع من خلالها أصحاب العمل بيانات كشوف رواتبهم للامتثال للنظام.</p><p><strong>آلية العمل:</strong></p><ul><li>يرفع أصحاب العمل بيانات الرواتب الشهرية على منصة مدد، مرتبطةً بحساب بنكي سعودي لكل موظف</li><li>تُقاطع مدد سجلات الدفع تلقائيًا وتُعلم عن التأخير أو القصور أو التناقضات</li><li>تتلقى وزارة الموارد البشرية بيانات الامتثال في الوقت الفعلي من مدد</li></ul><p><strong>المتطلبات الإلزامية:</strong></p><ul><li><strong>يجب صرف الرواتب بالريال السعودي</strong> — لا يُسمح بالدفع بالعملات الأجنبية</li><li><strong>يجب تحويل الراتب إلى حساب بنكي سعودي باسم الموظف</strong> — لا يُعدّ الدفع نقدًا أو عبر تحويلات دولية امتثالًا للنظام</li><li>يجب الدفع <strong>مرة واحدة على الأقل شهريًا</strong> وخلال 30 يومًا من تاريخ الاستحقاق</li><li>يجب إصدار كشوف رواتب مفصّلة شهرية لكل موظف (ورقية أو إلكترونية)</li></ul><p><strong>عقوبات مخالفات نظام حماية الأجور:</strong></p><ul><li>الإبلاغ التلقائي في نظام امتثال وزارة الموارد البشرية</li><li>تعليق إصدار تصاريح العمل وتجديدها للمنشأة</li><li>تتصاعد المخالفات المتكررة إلى غرامات وإحالة محتملة للنيابة</li></ul>"
+    },
+    "cite": {
+      "en": "WPS Regulations · Mudad Platform (mudad.com.sa) · MHRSD · BIPO Employment Guide 2025",
+      "ar": "لوائح نظام حماية الأجور · منصة مدد (mudad.com.sa) · وزارة الموارد البشرية · دليل توظيف BIPO 2025"
+    }
   }
 ]

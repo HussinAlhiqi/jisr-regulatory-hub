@@ -76,5 +76,31 @@
       "en": "Labour Law as amended by Royal Decree M/44 · Anti-Harassment Law · Effective Feb 2025",
       "ar": "نظام العمل بصيغته المعدَّلة بالمرسوم الملكي م/44 · نظام مناهضة التحرش · نافذ من فبراير 2025"
     }
+  },
+  {
+    "id": "training-disclosure",
+    "topic": "compliance",
+    "updated": false,
+    "lawRef": "Ministerial Resolution No. 3568 (25 July 2023)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is the annual training disclosure obligation and when is the deadline?",
+      "ar": "ما الالتزام بالإفصاح السنوي عن التدريب وما الموعد النهائي له؟"
+    },
+    "callout": {
+      "en": "<strong>Annual deadline: 31 January.</strong> Employers with 50+ employees must disclose training data via Qiwa by 31 January each year. Missing the deadline triggers fines — doubled for repeat offenders.",
+      "ar": "<strong>الموعد النهائي السنوي: 31 يناير.</strong> يُلزَم أصحاب العمل الذين يوظفون 50 موظفًا فأكثر بالإفصاح عن بيانات التدريب عبر قيوة بحلول 31 يناير من كل عام. يُفضي فوات الموعد إلى غرامات مضاعفة للمخالفين المتكررين."
+    },
+    "answer": {
+      "en": "<p>Under Ministerial Resolution No. 3568 (2023), all private sector employers with 50 or more employees must disclose annual employee training data through the Qiwa platform.</p><p><strong>What must be disclosed:</strong></p><ul><li>Number of Saudi employees trained during the year</li><li>Types of training provided (courses, workshops, seminars, online, on-the-job, etc.)</li><li>Training hours per employee</li><li>Minimum requirement: <strong>8 training units per trainee</strong></li></ul><p><strong>What counts as training:</strong></p><ul><li>Training courses, workshops, lectures, seminars</li><li>Online training programmes</li><li>Saudi employees completing studies where the employer covers tuition</li><li>Career guidance and on-the-job training</li><li>Career rotation programmes</li></ul><p><strong>Fines for non-compliance:</strong></p><ul><li>SAR <strong>5,000 to SAR 15,000</strong> depending on the number of employees</li><li>Fine is <strong>doubled</strong> for a repeat offence</li></ul><p><strong>Also note:</strong> Employers with 50+ employees must train a minimum of <strong>12% of Saudi workers annually</strong> in addition to disclosing the data. The 12% training obligation is separate from the disclosure requirement.</p>",
+      "ar": "<p>بموجب القرار الوزاري رقم 3568 (2023)، يُلزَم جميع أصحاب العمل في القطاع الخاص الذين يوظفون 50 موظفًا فأكثر بالإفصاح عن بيانات تدريب موظفيهم السنوية عبر منصة قيوة.</p><p><strong>ما يجب الإفصاح عنه:</strong></p><ul><li>عدد الموظفين السعوديين الذين تلقوا تدريبًا خلال العام</li><li>أنواع التدريب المقدَّم (دورات، ورش عمل، ندوات، إلكتروني، أثناء العمل، إلخ)</li><li>ساعات التدريب لكل موظف</li><li>الحد الأدنى: <strong>8 وحدات تدريبية لكل متدرب</strong></li></ul><p><strong>ما يُعدّ تدريبًا:</strong></p><ul><li>الدورات والورش والمحاضرات والندوات</li><li>برامج التدريب الإلكترونية</li><li>الموظفون السعوديون المتابعون لدراستهم حين يتحمل صاحب العمل الرسوم</li><li>التوجيه المهني والتدريب أثناء العمل</li><li>برامج التناوب الوظيفي</li></ul><p><strong>غرامات عدم الامتثال:</strong></p><ul><li>من <strong>5,000 إلى 15,000 ريال</strong> بحسب عدد الموظفين</li><li>تُضاعَف الغرامة في حالة <strong>التكرار</strong></li></ul><p><strong>ملاحظة أيضًا:</strong> يجب على أصحاب العمل الذين يوظفون 50 موظفًا فأكثر تدريب <strong>12% من العمال السعوديين سنويًا</strong> على الأقل إضافةً إلى الإفصاح عن البيانات. يُعدّ الالتزام بالتدريب البالغ 12% متطلبًا منفصلًا عن الإفصاح.</p>"
+    },
+    "cite": {
+      "en": "Ministerial Resolution No. 3568 (25 July 2023) · Paul Hastings · MHRSD Qiwa",
+      "ar": "القرار الوزاري رقم 3568 (25 يوليو 2023) · بول هاستينغز · قيوة"
+    }
   }
 ]

@@ -108,5 +108,38 @@
     },
     "lawRef": "Art. 51",
     "severity": "medium"
+  },
+  {
+    "date": "2025-07",
+    "topic": "gosi",
+    "articleId": "gosi-new-2025-law",
+    "title": {
+      "en": "New GOSI Social Insurance Law takes effect — retirement age 65 for new entrants",
+      "ar": "نظام التأمين الاجتماعي الجديد يدخل حيز التنفيذ — سن التقاعد 65 للمستجدين"
+    },
+    "lawRef": "New Social Insurance Law",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "internal-work-regulations",
+    "articleId": "iwr-mandatory-clauses",
+    "title": {
+      "en": "New MHRSD standard IWR form — all employers must update and resubmit",
+      "ar": "نموذج اللائحة الداخلية المعياري الجديد — يجب على جميع أصحاب العمل التحديث وإعادة التقديم"
+    },
+    "lawRef": "Implementing Regulations Arts. 3–4",
+    "severity": "high"
+  },
+  {
+    "date": "2025-02",
+    "topic": "termination",
+    "articleId": "disciplinary-procedure",
+    "title": {
+      "en": "Written disciplinary notice now mandatory — employees get 30-day grievance right",
+      "ar": "الإشعار التأديبي الكتابي أصبح إلزاميًا — للموظفين حق التظلم خلال 30 يومًا"
+    },
+    "lawRef": "Arts. 66–70",
+    "severity": "medium"
   }
 ]
