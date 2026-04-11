@@ -3,7 +3,7 @@
     "id": "hiring",
     "icon": "📋",
     "hasUpdates": true,
-    "articleCount": 6,
+    "articleCount": 7,
     "updateCount": 2,
     "title": {
       "en": "Hiring & Contracts",
@@ -99,7 +99,7 @@
     "id": "pay",
     "icon": "💰",
     "hasUpdates": true,
-    "articleCount": 5,
+    "articleCount": 6,
     "updateCount": 3,
     "title": {
       "en": "Pay & Compensation",
@@ -190,7 +190,7 @@
     "id": "leave",
     "icon": "🏖",
     "hasUpdates": true,
-    "articleCount": 6,
+    "articleCount": 7,
     "updateCount": 3,
     "title": {
       "en": "Leave & Time Off",
@@ -289,7 +289,7 @@
     "id": "termination",
     "icon": "⚖️",
     "hasUpdates": true,
-    "articleCount": 6,
+    "articleCount": 5,
     "updateCount": 2,
     "title": {
       "en": "Termination",
@@ -466,7 +466,7 @@
     "id": "compliance",
     "icon": "✅",
     "hasUpdates": true,
-    "articleCount": 4,
+    "articleCount": 5,
     "updateCount": 3,
     "title": {
       "en": "Compliance",
@@ -555,194 +555,184 @@
   },
   {
     "id": "gosi",
-    "icon": "🏥",
+    "icon": "🏛",
     "hasUpdates": true,
     "articleCount": 6,
-    "updateCount": 1,
+    "updateCount": 3,
     "title": {
       "en": "GOSI & Social Insurance",
-      "ar": "التأمينات الاجتماعية (قوسي)"
+      "ar": "التأمينات الاجتماعية (GOSI)"
     },
     "sub": {
-      "en": "Registration, Occupational Hazards, pensions, the new July 2025 law, and HASM",
-      "ar": "التسجيل، الأخطار المهنية، المعاشات، قانون يوليو 2025 الجديد، وحافز"
+      "en": "Registration, contribution rates, occupational hazards, pensions",
+      "ar": "التسجيل، نسب الاشتراكات، الأخطار المهنية، المعاشات"
     },
     "heroSub": {
-      "en": "Every private sector employer must register with GOSI and pay contributions. The Occupational Hazards Branch (2%, employer-only) covers all nationalities from day one. A major new Social Insurance Law effective July 3, 2025 restructures retirement ages and gradually raises contribution rates.",
-      "ar": "يُلزَم كل صاحع عمل في القطاع الخاص بالتسجيل في التأمينات الاجتماعية وسداد الاشتراكات. يشمل فرع الأخطار المهنية (2%، على صاحب العمل) جميع الجنسيات من اليوم الأول. نظام تأمين اجتماعي جديد نافذ من 3 يوليو 2025 يُعيد هيكلة أسنان التقاعد ويرفع معدلات الاشتراك تدريجيًا."
+      "en": "Every private sector employer must register with GOSI and enrol all employees from day one. The new Social Insurance Law (effective July 2025) restructures pension contributions and raises the retirement age for new entrants.",
+      "ar": "يجب على كل صاحب عمل في القطاع الخاص التسجيل في التأمينات الاجتماعية وتسجيل جميع موظفيه من اليوم الأول. أعاد نظام التأمين الاجتماعي الجديد (النافذ من يوليو 2025) هيكلة الاشتراكات ورفع سن التقاعد للمنضمين الجدد."
     },
     "pills": {
       "en": [
-        "★ New Law July 2025",
+        "★ Updated July 2025",
         "Social Insurance Law",
+        "Arts. 1–7",
         "Applies to: All employers"
       ],
       "ar": [
-        "★ قانون جديد يوليو 2025",
+        "★ محدّث يوليو 2025",
         "نظام التأمين الاجتماعي",
+        "المواد 1–7",
         "ينطبق على: جميع أصحاب العمل"
       ]
     },
     "updBadge": {
-      "en": "New law July 2025",
-      "ar": "قانون جديد يوليو 2025"
+      "en": "3 changes in 2025",
+      "ar": "3 تغييرات في 2025"
     },
+    "relatedKeys": [],
     "facts": {
       "en": [
-        [
-          "GOSI registration",
-          "All employers"
-        ],
         [
           "Occupational Hazards rate",
           "2% (employer only)"
         ],
         [
-          "OSH non-compliance rate",
-          "4% (doubled)"
+          "Pensions branch",
+          "Saudis only — 18% total"
         ],
         [
-          "Pension rate (current)",
-          "18% total (9%+9%)"
+          "Employer share (Pensions)",
+          "9% of basic + housing"
         ],
         [
-          "Pension rate (2025 law)",
-          "Rising to 11% by 2028"
+          "Payment deadline",
+          "15th of following month"
         ],
         [
-          "HASM unemployment",
-          "1.5% (0.75% each)"
+          "Max contribution base",
+          "SAR 45,000/month"
         ],
         [
-          "New retirement age",
-          "65 (new entrants)"
+          "New entrant retirement age",
+          "65 years ★"
         ]
       ],
       "ar": [
         [
-          "التسجيل في التأمينات",
-          "جميع أصحاب العمل"
-        ],
-        [
-          "معدل الأخطار المهنية",
+          "نسبة الأخطار المهنية",
           "2% (صاحب العمل فقط)"
         ],
         [
-          "عدم الامتثال للسلامة",
-          "4% (مضاعف)"
+          "فرع المعاشات",
+          "السعوديون — 18% إجمالًا"
         ],
         [
-          "معدل المعاشات (الحالي)",
-          "18% إجمالًا (9%+9%)"
+          "حصة صاحب العمل",
+          "9% من الأجر + السكن"
         ],
         [
-          "معدل المعاشات (قانون 2025)",
-          "يرتفع إلى 11% بحلول 2028"
+          "موعد السداد",
+          "اليوم 15 من الشهر التالي"
         ],
         [
-          "حافز (البطالة)",
-          "1.5% (0.75% لكل طرف)"
+          "الحد الأقصى للاشتراك",
+          "45,000 ريال/شهر"
         ],
         [
-          "سن التقاعد الجديد",
-          "65 (للمستجدين)"
+          "سن التقاعد للمنضمين الجدد",
+          "65 عامًا ★"
         ]
       ]
     }
   },
   {
-    "id": "safety",
+    "id": "osh",
     "icon": "🦺",
     "hasUpdates": true,
     "articleCount": 5,
-    "updateCount": 1,
+    "updateCount": 2,
     "title": {
       "en": "Occupational Safety & Health",
       "ar": "السلامة والصحة المهنية"
     },
     "sub": {
-      "en": "Employer safety obligations, outdoor work ban, health insurance, working hours, Qiwa skill classification",
-      "ar": "التزامات السلامة، حظر العمل في الشمس، التأمين الصحي، ساعات العمل، تصنيف المهارة"
+      "en": "Safety obligations, outdoor work ban, health insurance, skill classification",
+      "ar": "التزامات السلامة، حظر العمل في الشمس، التأمين الصحي، تصنيف المهارات"
     },
     "heroSub": {
-      "en": "Chapter 8 of the Labour Law sets out safety obligations for all employers. The outdoor work ban (12pm–3pm, 15 June–15 September) is actively enforced. Compulsory Health Insurance is a prerequisite for Iqama issuance. Qiwa now requires every employee to be classified by skill level.",
-      "ar": "يُحدد الفصل الثامن من نظام العمل التزامات السلامة لجميع أصحاب العمل. يُطبَّق حظر العمل في الهواء الطلق (12–3م، 15 يونيو – 15 سبتمبر) فعليًا. التأمين الصحي الإلزامي شرط مسبق لإصدار الإقامة. تُلزم قيوة الآن بتصنيف كل موظف بمستوى مهارته."
+      "en": "Chapter 8 of the Labour Law covers all employer safety obligations. The outdoor work ban (12pm–3pm, June 15–September 15) is legally enforced every year. Compulsory health insurance is mandatory for all private sector employees.",
+      "ar": "يُغطي الفصل الثامن من نظام العمل جميع التزامات صاحب العمل في السلامة. يُطبَّق حظر العمل الخارجي (12–3، 15 يونيو–15 سبتمبر) قانونًا كل عام. التأمين الصحي التعاوني إلزامي لجميع موظفي القطاع الخاص."
     },
     "pills": {
       "en": [
+        "★ Enforced June–Sep 2025",
         "Labour Law Chapter 8",
-        "Ministerial Decision 3337",
+        "NCOSH",
         "Applies to: All employers"
       ],
       "ar": [
+        "★ مُطبَّق يونيو–سبتمبر 2025",
         "الفصل الثامن من نظام العمل",
-        "القرار الوزاري 3337",
+        "المجلس الوطني للسلامة",
         "ينطبق على: جميع أصحاب العمل"
       ]
     },
     "updBadge": {
-      "en": "Qiwa skill classification new 2025",
-      "ar": "تصنيف المهارة على قيوة جديد 2025"
+      "en": "Enforced Jun–Sep 2025",
+      "ar": "تطبيق يونيو–سبتمبر 2025"
     },
+    "relatedKeys": [],
     "facts": {
       "en": [
         [
-          "Outdoor work ban hours",
-          "12pm – 3pm"
+          "Outdoor ban period",
+          "Jun 15 – Sep 15 ★"
         ],
         [
-          "Outdoor work ban period",
-          "15 Jun – 15 Sep"
+          "Prohibited hours",
+          "12:00 noon – 3:00 PM"
+        ],
+        [
+          "Violations hotline",
+          "19911"
+        ],
+        [
+          "OH Branch penalty rate",
+          "2% (doubles to 4% if unsafe)"
         ],
         [
           "Health insurance",
           "Mandatory for all employees"
         ],
         [
-          "Max daily hours",
-          "8 hours (6 in Ramadan)"
-        ],
-        [
-          "Max weekly hours",
-          "48 hours (36 in Ramadan)"
-        ],
-        [
-          "Weekly rest day",
-          "Min. 1 full day (default: Friday)"
-        ],
-        [
-          "Skill tiers on Qiwa",
-          "High / Skilled / Basic ★"
+          "Skill classification on Qiwa",
+          "High Skill / Skilled / Basic ★"
         ]
       ],
       "ar": [
         [
-          "ساعات حظر العمل",
+          "فترة حظر العمل الخارجي",
+          "15 يونيو – 15 سبتمبر ★"
+        ],
+        [
+          "الساعات المحظورة",
           "12 ظهرًا – 3 عصرًا"
         ],
         [
-          "فترة حظر العمل",
-          "15 يونيو – 15 سبتمبر"
+          "خط الإبلاغ",
+          "19911"
+        ],
+        [
+          "نسبة عقوبة الأخطار",
+          "2% (تضاعف إلى 4% عند الإهمال)"
         ],
         [
           "التأمين الصحي",
           "إلزامي لجميع الموظفين"
         ],
         [
-          "الحد الأقصى اليومي",
-          "8 ساعات (6 في رمضان)"
-        ],
-        [
-          "الحد الأقصى الأسبوعي",
-          "48 ساعة (36 في رمضان)"
-        ],
-        [
-          "يوم الراحة الأسبوعي",
-          "يوم كامل كحد أدنى (الجمعة افتراضيًا)"
-        ],
-        [
-          "درجات المهارة على قيوة",
-          "عالية / مهاري / أساسي ★"
+          "تصنيف المهارات على قيوة",
+          "عالي / مهاري / أساسي ★"
         ]
       ]
     }
@@ -751,181 +741,182 @@
     "id": "domestic-workers",
     "icon": "🏠",
     "hasUpdates": false,
-    "articleCount": 4,
+    "articleCount": 6,
     "updateCount": 0,
     "title": {
       "en": "Domestic Workers",
-      "ar": "عمال المنازل"
+      "ar": "عمالة المنازل"
     },
     "sub": {
-      "en": "Separate legal framework, Musaned platform, employer obligations, prohibited conduct, and penalties",
-      "ar": "إطار قانوني منفصل، منصة مساند، التزامات صاحب العمل، السلوكيات المحظورة والعقوبات"
+      "en": "Separate legal framework — drivers, housemaids, cooks — via Musaned",
+      "ar": "إطار قانوني مستقل — السائقون والعمالة المنزلية والطهاة — عبر مساند"
     },
     "heroSub": {
-      "en": "Domestic workers are governed by a completely separate legal framework from the Labour Law (Council of Ministers Resolution No. 310). All contracts are managed via the Musaned platform, not Qiwa. 14 recognised professions. Employer bears all recruitment costs — never the worker.",
-      "ar": "يخضع عمال المنازل لإطار قانوني منفصل كليًا عن نظام العمل (قرار مجلس الوزراء رقم 310). تُدار جميع العقود عبر منصة مساند لا قيوة. 14 مهنة معترف بها. يتحمل صاحب العمل جميع تكاليف الاستقدام — لا العامل."
+      "en": "Domestic workers are not covered by the Labour Law. They are governed by Council of Ministers Resolution No. 310 and managed through the Musaned platform, with different rules for passports, recruitment costs, accommodation, and dispute resolution.",
+      "ar": "لا تخضع عمالة المنازل لنظام العمل. تُحكمها لائحة قرار مجلس الوزراء رقم 310 وتُدار عبر منصة مساند، مع قواعد مختلفة لجوازات السفر وتكاليف الاستقدام والسكن وتسوية النزاعات."
     },
     "pills": {
       "en": [
-        "Council of Ministers Res. 310",
-        "Musaned Platform",
-        "Applies to: Household employers"
+        "Council of Ministers Resolution No. 310",
+        "Musaned platform",
+        "14 recognised professions",
+        "Applies to: Households & employers"
       ],
       "ar": [
         "قرار مجلس الوزراء رقم 310",
         "منصة مساند",
-        "ينطبق على: أصحاب العمل المنزلي"
+        "14 مهنة معترفًا بها",
+        "ينطبق على: الأسر وأصحاب العمل"
       ]
     },
-    "updBadge": null,
+    "updBadge": {
+      "en": "",
+      "ar": ""
+    },
+    "relatedKeys": [],
     "facts": {
       "en": [
         [
-          "Governing law",
-          "Res. 310 (not Labour Law)"
+          "Max employer fine",
+          "SAR 20,000 per violation"
         ],
         [
-          "Contract platform",
-          "Musaned (not Qiwa)"
+          "Annual leave",
+          "30 days (after 2 yrs)"
         ],
         [
-          "Recognised professions",
-          "14"
+          "Sick leave",
+          "30 days"
+        ],
+        [
+          "Rest hours",
+          "9 hrs/day (8 consecutive)"
         ],
         [
           "Passport retention",
-          "Strictly prohibited"
+          "Explicitly prohibited"
         ],
         [
-          "Employer max fine",
-          "SAR 20,000"
-        ],
-        [
-          "Recruitment costs",
-          "100% borne by employer"
-        ],
-        [
-          "Worker max fine",
-          "SAR 2,000"
+          "EOSB",
+          "1 month/yr after 2 yrs"
         ]
       ],
       "ar": [
         [
-          "النظام المطبَّق",
-          "قرار 310 (لا نظام العمل)"
+          "الحد الأقصى للغرامة",
+          "20,000 ريال/مخالفة"
         ],
         [
-          "منصة العقود",
-          "مساند (لا قيوة)"
+          "الإجازة السنوية",
+          "30 يومًا (بعد سنتَين)"
         ],
         [
-          "المهن المعترف بها",
-          "14"
+          "الإجازة المرضية",
+          "30 يومًا"
+        ],
+        [
+          "ساعات الراحة",
+          "9 ساعات/يوم (8 متواصلة)"
         ],
         [
           "الاحتفاظ بالجواز",
-          "محظور قطعيًا"
+          "محظور صراحةً"
         ],
         [
-          "الحد الأقصى لغرامة صاحب العمل",
-          "20,000 ريال"
-        ],
-        [
-          "تكاليف الاستقدام",
-          "يتحملها صاحب العمل بالكامل"
-        ],
-        [
-          "الحد الأقصى لغرامة العامل",
-          "2,000 ريال"
+          "مكافأة نهاية الخدمة",
+          "شهر/سنة بعد سنتَين"
         ]
       ]
     }
   },
   {
-    "id": "internal-work-regulations",
+    "id": "iwr",
     "icon": "📄",
     "hasUpdates": true,
-    "articleCount": 3,
-    "updateCount": 3,
+    "articleCount": 4,
+    "updateCount": 1,
     "title": {
       "en": "Internal Work Regulations",
       "ar": "اللوائح الداخلية للعمل"
     },
     "sub": {
-      "en": "What IWRs are, who needs them, the new February 2025 mandatory clauses, and how to submit",
-      "ar": "ما اللوائح الداخلية، من يحتاجها، البنود الإلزامية الجديدة لفبراير 2025، وكيفية التقديم"
+      "en": "Mandatory workplace rulebook — new MHRSD standard form required Feb 2025",
+      "ar": "دليل العمل الإلزامي — نموذج قياسي جديد من الوزارة مطلوب من فبراير 2025"
     },
     "heroSub": {
-      "en": "Internal Work Regulations (IWR) are formal workplace rules documents required from all employers with 10+ staff, approved by MHRSD. In February 2025, MHRSD published a new standard IWR form with updated mandatory clauses — all employers must review and resubmit their IWRs.",
-      "ar": "اللوائح الداخلية للعمل وثائق قواعد عمل رسمية مطلوبة من جميع أصحاب العمل الذين يوظفون 10 موظفين فأكثر، ومعتمدة من وزارة الموارد البشرية. في فبراير 2025، نشرت الوزارة نموذجًا معياريًا جديدًا ببنود إلزامية محدَّثة — يجب على جميع أصحاب العمل مراجعة لوائحهم وإعادة تقديمها."
+      "en": "All employers with 10 or more employees must maintain MHRSD-approved Internal Work Regulations (IWR) via Qiwa. A new standard form was published in February 2025 — all existing IWRs must be updated to include five newly mandatory clauses.",
+      "ar": "يجب على جميع أصحاب العمل بـ 10 موظفين فأكثر الاحتفاظ باللوائح الداخلية للعمل معتمدةً من الوزارة عبر قيوة. نُشر نموذج قياسي جديد في فبراير 2025 — يجب تحديث اللوائح القائمة لتتضمن خمسة بنود إلزامية جديدة."
     },
     "pills": {
       "en": [
-        "★ Updated Feb 2025",
+        "★ New standard form Feb 2025",
         "Labour Law Arts. 12–13",
-        "Applies to: Employers with 10+ staff"
+        "Via Qiwa",
+        "Applies to: 10+ employees"
       ],
       "ar": [
-        "★ محدَّث فبراير 2025",
+        "★ نموذج جديد فبراير 2025",
         "المادتان 12–13 من نظام العمل",
-        "ينطبق على: أصحاب العمل 10+ موظفين"
+        "عبر قيوة",
+        "ينطبق على: 10 موظفين فأكثر"
       ]
     },
     "updBadge": {
-      "en": "3 changes in Feb 2025",
-      "ar": "3 تغييرات في فبراير 2025"
+      "en": "New form Feb 2025",
+      "ar": "نموذج جديد فبراير 2025"
     },
+    "relatedKeys": [],
     "facts": {
       "en": [
         [
-          "Who must have IWR",
+          "Applies to",
           "Employers with 10+ staff"
         ],
         [
-          "Language required",
-          "Arabic (prevails in disputes)"
+          "Approval route",
+          "Qiwa + registered law firm"
         ],
         [
-          "Approval required from",
-          "MHRSD"
+          "Mandatory clauses (min)",
+          "5 (from Feb 2025 ★)"
         ],
         [
-          "Submission via",
-          "Qiwa platform"
+          "IWR language",
+          "Arabic (bilingual ok)"
         ],
         [
-          "Key new clause",
-          "Housing allowance (Cl. 24) ★"
+          "Probation period",
+          "Up to 180 days ★"
         ],
         [
-          "Feb 2025 update",
-          "Mandatory resubmission required"
+          "Employee grievance window",
+          "30 days written ★"
         ]
       ],
       "ar": [
         [
-          "من يُلزَم بالإعداد",
-          "أصحاب العمل 10+ موظفين"
+          "ينطبق على",
+          "أصحاب العمل بـ 10 موظفين فأكثر"
         ],
         [
-          "اللغة المطلوبة",
-          "العربية (تسود في النزاعات)"
+          "طريق الاعتماد",
+          "قيوة + مكتب قانوني مسجَّل"
         ],
         [
-          "الجهة المُعتمِدة",
-          "وزارة الموارد البشرية"
+          "البنود الإلزامية (حد أدنى)",
+          "5 (من فبراير 2025 ★)"
         ],
         [
-          "التقديم عبر",
-          "منصة قيوة"
+          "لغة اللائحة",
+          "عربية (ثنائية مقبولة)"
         ],
         [
-          "أهم بند جديد",
-          "بدل السكن (البند 24) ★"
+          "فترة الاختبار",
+          "حتى 180 يومًا ★"
         ],
         [
-          "تحديث فبراير 2025",
-          "إعادة التقديم إلزامية"
+          "نافذة تظلم الموظف",
+          "30 يومًا كتابيًا ★"
         ]
       ]
     }

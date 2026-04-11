@@ -3,138 +3,146 @@
     "id": "gosi-what-is",
     "topic": "gosi",
     "updated": false,
-    "lawRef": "Social Insurance Law (Cabinet Decision 2000, amended 2024)",
+    "lawRef": "Social Insurance Law",
+    "audiences": [
+      "hr",
+      "founder",
+      "expat"
+    ],
+    "question": {
+      "en": "What is GOSI and who must register?",
+      "ar": "ما هو نظام التأمينات الاجتماعية (GOSI) ومن يجب عليه التسجيل؟"
+    },
+    "answer": {
+      "en": "<p>The <strong>General Organization for Social Insurance (GOSI)</strong> is the government body that manages social insurance for private sector workers in KSA. Every private sector employer must register with GOSI and enrol all employees.</p><p><strong>Who must register:</strong></p><ul><li>Every employer operating a commercial activity in KSA, including branches of foreign companies</li><li>Both Saudi and non-Saudi employees must be enrolled — they are covered by different branches</li><li>Registration is required <strong>within 30 days of hiring the first employee</strong></li></ul><p><strong>Who is exempt from GOSI:</strong></p><ul><li>Civil servants and government employees (covered by the Civil Pension Law)</li><li>Armed forces personnel</li><li>Domestic workers — covered by a separate regulation</li><li>Workers on short-term Royal Commission assignments under 3 months</li><li>Family-based businesses with no external employees</li></ul><p>Registration is done via the GOSI online portal at gosi.gov.sa. Late registration results in backdated contributions, fines, and penalties.</p>",
+      "ar": "<p><strong>التأمينات الاجتماعية (GOSI)</strong> هي الهيئة الحكومية المسؤولة عن إدارة التأمين الاجتماعي للعاملين في القطاع الخاص. يُلزَم كل صاحع عمل بالتسجيل وتسجيل جميع موظفيه.</p><p><strong>من يجب عليه التسجيل:</strong></p><ul><li>كل صاحب عمل يمارس نشاطًا تجاريًا في المملكة، بما في ذلك فروع الشركات الأجنبية</li><li>يجب تسجيل الموظفين السعوديين وغير السعوديين، وإن اختلفت الفروع التي يُغطَّون بموجبها</li><li>يجب إتمام التسجيل <strong>خلال 30 يومًا من تعيين أول موظف</strong></li></ul><p><strong>المستثنون:</strong></p><ul><li>موظفو الجهات الحكومية، منسوبو القوات المسلحة، العمالة المنزلية، العمال القادمون لمهام أقل من 3 أشهر، والمنشآت العائلية التي لا تضم موظفين من خارج الأسرة</li></ul>"
+    },
+    "cite": {
+      "en": "Social Insurance Law · GOSI portal · Unchanged in 2025",
+      "ar": "نظام التأمينات الاجتماعية · بوابة التأمينات · لم يتغير في 2025"
+    }
+  },
+  {
+    "id": "gosi-branches",
+    "topic": "gosi",
+    "updated": false,
+    "lawRef": "Social Insurance Law Arts. 1–6",
     "audiences": [
       "hr",
       "founder"
     ],
     "question": {
-      "en": "What is GOSI and who must register?",
-      "ar": "ما هي التأمينات الاجتماعية (قوسي) ومن يجب عليه التسجيل؟"
+      "en": "What are the two branches of GOSI and who do they cover?",
+      "ar": "ما فرعا التأمينات الاجتماعية ومن يشملهما؟"
     },
     "answer": {
-      "en": "<p>The <strong>General Organization for Social Insurance (GOSI)</strong> is the government body that administers social insurance in Saudi Arabia. Every private sector employer that hires at least one worker is legally required to register with GOSI and make monthly contributions for each employee.</p><p><strong>Registration timeline:</strong></p><ul><li>Employers must register their establishment with GOSI before or on the date they hire their first employee</li><li>Each new employee must be added to GOSI within one month of their start date</li><li>Non-Saudi employees must be added with the current month's date — retroactive addition is not permitted</li></ul><p><strong>Who is excluded from GOSI coverage:</strong></p><ul><li>Civil servants and armed forces personnel (covered by separate pension schemes)</li><li>Domestic workers (covered separately under the Domestic Workers Law)</li><li>Workers on short-term tasks under 3 months (Royal Commission exceptions)</li><li>Family-based workers in businesses with no other employees</li></ul>",
-      "ar": "<p><strong>المؤسسة العامة للتأمينات الاجتماعية (قوسي)</strong> هي الجهة الحكومية المشرفة على التأمين الاجتماعي في المملكة العربية السعودية. يُلزَم كل صاحب عمل في القطاع الخاص يوظّف موظفًا واحدًا على الأقل بالتسجيل لدى التأمينات وسداد الاشتراكات الشهرية عن كل موظف.</p><p><strong>مواعيد التسجيل:</strong></p><ul><li>يجب على أصحاب العمل تسجيل منشأتهم في التأمينات قبل توظيف أول موظف أو بحلول تاريخ توظيفه</li><li>يجب إضافة كل موظف جديد خلال شهر من تاريخ التحاقه بالعمل</li><li>يُضاف الموظفون غير السعوديين بتاريخ الشهر الجاري فقط — لا يُسمح بالإضافة بأثر رجعي</li></ul><p><strong>من يُستثنى من تغطية التأمينات:</strong></p><ul><li>موظفو الحكومة والقوات المسلحة (يخضعون لأنظمة تقاعد منفصلة)</li><li>العمالة المنزلية (تخضع للنظام الخاص بها)</li><li>العمال في مهام قصيرة الأمد أقل من 3 أشهر (استثناءات الهيئة الملكية)</li><li>أفراد العائلة العاملون في المنشأة التي لا تضم موظفين آخرين</li></ul>"
+      "en": "<p>GOSI operates through two distinct branches:</p><div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>Branch</th><th>Who is covered</th><th>Rate</th><th>Who pays</th></tr></thead><tbody><tr><td><strong>Occupational Hazards</strong></td><td>All workers — Saudi and non-Saudi, any age, any gender</td><td>2% of eligible wage</td><td>Employer only</td></tr><tr><td><strong>Annuities (Pensions)</strong></td><td>Saudi nationals only (under age 60 at enrolment); GCC nationals under reciprocal GCC agreement</td><td>18% of basic wage + housing allowance</td><td>9% employer + 9% employee</td></tr></tbody></table></div><p><strong>Key points:</strong></p><ul><li>The Occupational Hazards Branch is mandatory for every employee from day one — it covers work injuries, occupational diseases, disability, and death from work-related causes</li><li>The rate doubles to 4% if the employer fails to observe safety and health regulations</li><li>Non-Saudi employees have no access to the Pensions Branch — their retirement protection is end-of-service gratuity (EOSG)</li><li>Contribution calculation base is capped at <strong>SAR 45,000/month</strong></li><li>Minimum eligible wage: <strong>SAR 1,500/month</strong></li></ul>",
+      "ar": "<p>تعمل التأمينات الاجتماعية من خلال فرعين:</p><div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>الفرع</th><th>من يشمله</th><th>النسبة</th><th>من يدفع</th></tr></thead><tbody><tr><td><strong>الأخطار المهنية</strong></td><td>جميع العمال — سعوديون وغير سعوديين، بصرف النظر عن السن أو الجنس</td><td>2% من الأجر</td><td>صاحب العمل فقط</td></tr><tr><td><strong>المعاشات (التقاعد)</strong></td><td>المواطنون السعوديون فقط (دون 60 عامًا)؛ مواطنو دول الخليج وفق الاتفاقية الخليجية</td><td>18% من الأجر الأساسي + بدل السكن</td><td>9% صاحب العمل + 9% الموظف</td></tr></tbody></table></div><p><strong>نقاط رئيسية:</strong></p><ul><li>فرع الأخطار المهنية إلزامي لكل موظف من اليوم الأول</li><li>ترتفع النسبة إلى 4% إذا أخل صاحب العمل بمتطلبات السلامة</li><li>لا يحق للموظفين غير السعوديين الانضمام لفرع المعاشات — حمايتهم هي مكافأة نهاية الخدمة</li><li>سقف الاشتراك: <strong>45,000 ريال/شهر</strong>؛ حد أدنى: <strong>1,500 ريال/شهر</strong></li></ul>"
     },
     "cite": {
-      "en": "Social Insurance Law (Cabinet Decision, 29 Nov 2000 as amended) · GOSI Official",
-      "ar": "نظام التأمين الاجتماعي (قرار مجلس الوزراء، 29 نوفمبر 2000 بصيغته المعدَّلة) · التأمينات الاجتماعية"
+      "en": "Social Insurance Law Arts. 1–6 · GOSI FAQ",
+      "ar": "المواد 1–6 من نظام التأمينات · الأسئلة الشائعة للتأمينات"
+    }
+  },
+  {
+    "id": "gosi-contributions",
+    "topic": "gosi",
+    "updated": true,
+    "lawRef": "New Social Insurance Law (July 2025)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How are GOSI contributions calculated, and what changed in July 2025?",
+      "ar": "كيف تُحسب اشتراكات التأمينات، وما الذي تغيّر في يوليو 2025؟"
+    },
+    "answer": {
+      "en": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>Employee type</th><th>Base</th><th>Employee</th><th>Employer</th><th>Total</th></tr></thead><tbody><tr><td>Saudi (enrolled before July 3, 2024)</td><td>Basic + housing</td><td>9% + 0.75% SANED</td><td>9% + 0.75% SANED + 2% OH</td><td>~21.5%</td></tr><tr class=\"new-row\"><td><strong>★ Saudi (enrolled July 3, 2024 or after)</strong></td><td>Basic + housing</td><td>9.5% rising 0.5%/yr to 11% by July 2028</td><td>Same + 0.75% SANED + 2% OH</td><td>~22.5%+</td></tr><tr><td>Non-Saudi (expatriate)</td><td>Basic + housing</td><td>None</td><td>2% (Occupational Hazards only)</td><td>2%</td></tr></tbody></table></div><p><strong>SANED (Unemployment insurance):</strong> 1.5% total (0.75% each side), Saudi nationals only. Provides temporary income support to Saudis who involuntarily lose their jobs and have contributed for at least 12 months.</p><p><strong>Payment deadline:</strong> Contributions due by the <strong>15th of the following month</strong>. Late payment penalty: 2% per delayed month.</p>",
+      "ar": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>نوع الموظف</th><th>أساس الحساب</th><th>الموظف</th><th>صاحب العمل</th><th>الإجمالي</th></tr></thead><tbody><tr><td>سعودي (قبل 3 يوليو 2024)</td><td>أساسي + سكن</td><td>9% + 0.75% ساند</td><td>9% + 0.75% ساند + 2% أخطار</td><td>~21.5%</td></tr><tr class=\"new-row\"><td><strong>★ سعودي (3 يوليو 2024 أو بعده)</strong></td><td>أساسي + سكن</td><td>9.5% ترتفع 0.5% سنويًا حتى 11% يوليو 2028</td><td>ذاتها + 0.75% ساند + 2% أخطار</td><td>~22.5%+</td></tr><tr><td>غير سعودي</td><td>أساسي + سكن</td><td>لا يوجد</td><td>2% أخطار مهنية فقط</td><td>2%</td></tr></tbody></table></div><p><strong>ساند:</strong> 1.5% (0.75% لكل طرف)، للسعوديين فقط. يوفر دعمًا ماليًا مؤقتًا عند فقدان العمل قسرًا بعد 12 شهرًا اشتراك.</p><p><strong>موعد السداد:</strong> الاشتراكات مستحقة بحلول <strong>اليوم 15 من الشهر التالي</strong>. غرامة التأخير: 2% شهريًا.</p>"
+    },
+    "cite": {
+      "en": "New Social Insurance Law (effective July 3, 2025) · GOSI portal · Paul Hastings",
+      "ar": "نظام التأمين الاجتماعي الجديد (نافذ من 3 يوليو 2025) · بوابة التأمينات · بول هاستينغز"
+    },
+    "callout": {
+      "en": "<strong>July 2025 change — Two parallel systems:</strong> Employees who first joined GOSI on or after July 3, 2024 fall under a new contribution structure with rates rising 0.5% annually until reaching 11% each side by July 2028. Employers must track which system applies to each employee.",
+      "ar": "<strong>تغيير يوليو 2025 — نظامان متوازيان:</strong> الموظفون المنضمون في 3 يوليو 2024 أو بعده يخضعون لهيكل اشتراكات جديد يرتفع 0.5% سنويًا حتى 11% لكل طرف بحلول يوليو 2028. يجب على أصحاب العمل تتبع النظام المنطبق على كل موظف."
     }
   },
   {
     "id": "gosi-occupational-hazards",
     "topic": "gosi",
     "updated": false,
-    "lawRef": "Social Insurance Law Art. — Occupational Hazards Branch",
+    "lawRef": "Social Insurance Law Art. 7",
     "audiences": [
       "hr",
       "founder",
       "expat"
     ],
     "question": {
-      "en": "What is the Occupational Hazards Branch and who does it cover?",
-      "ar": "ما فرع الأخطار المهنية ومن يشمله؟"
+      "en": "What does the Occupational Hazards Branch cover?",
+      "ar": "ما الذي يغطيه فرع الأخطار المهنية؟"
     },
     "answer": {
-      "en": "<p>The <strong>Occupational Hazards Branch</strong> is mandatory for <em>all workers</em> — Saudi and non-Saudi alike — with no distinction based on age, nationality, or gender. It provides compensation for work-related injuries, occupational diseases, and death arising from employment.</p><p><strong>Contribution rate:</strong></p><ul><li><strong>2% of eligible wage</strong> — paid entirely by the employer</li><li>Rate doubles to <strong>4%</strong> for employers who fail to comply with occupational safety and health regulations</li><li>The employee pays nothing for this branch</li></ul><p><strong>What it covers:</strong></p><ul><li>Work injury compensation and medical treatment</li><li>Disability benefits (partial or total)</li><li>Death compensation — paid to family members including non-Saudi families</li><li>Repatriation expenses for the body of a deceased non-Saudi worker</li><li>Maternity compensation (paid by GOSI, separate from employer's maternity leave obligation — see below)</li></ul>",
-      "ar": "<p>يُعدّ <strong>فرع الأخطار المهنية</strong> إلزاميًا لجميع العمال — سعوديين وغير سعوديين على حدٍّ سواء — دون تمييز بسبب السن أو الجنسية أو النوع الاجتماعي. يوفر تعويضات عن إصابات العمل والأمراض المهنية والوفاة الناجمة عن العمل.</p><p><strong>معدل الاشتراك:</strong></p><ul><li><strong>2% من الأجر الخاضع للاشتراك</strong> — يدفعها صاحب العمل بالكامل</li><li>يرتفع المعدل إلى <strong>4%</strong> للمنشآت التي لا تلتزم بمعايير السلامة والصحة المهنية</li><li>لا يدفع الموظف أي اشتراك في هذا الفرع</li></ul><p><strong>ما يشمله:</strong></p><ul><li>تعويضات إصابات العمل والعلاج الطبي</li><li>مزايا العجز الجزئي أو الكلي</li><li>تعويض الوفاة — يُصرف لأسرة المتوفى بمن فيهم أسر غير السعوديين</li><li>نفقات نقل جثمان العامل غير السعودي المتوفى إلى بلده</li><li>تعويض الأمومة (تدفعه التأمينات مستقلًا عن التزام صاحب العمل بإجازة الأمومة)</li></ul>"
+      "en": "<p>The Occupational Hazards Branch covers every worker from their first day — Saudi and non-Saudi alike.</p><p><strong>Coverage includes:</strong></p><ul><li><strong>Work injuries</strong> — accidents at work or commuting to/from work</li><li><strong>Occupational diseases</strong> — illnesses caused by workplace conditions</li><li><strong>Temporary disability</strong> — medical costs and daily wage replacement during recovery</li><li><strong>Permanent disability</strong> — lump-sum or monthly pension by disability percentage</li><li><strong>Death compensation</strong> — survivor benefits for the worker's family</li><li><strong>Repatriation costs</strong> — GOSI covers transport of a deceased non-Saudi worker's remains to their home country</li></ul><p><strong>Employer obligation:</strong> When a work injury occurs, report to GOSI immediately and ensure medical treatment. If the employer failed to register the employee with GOSI, the employer bears all compensation costs personally — a significant financial penalty.</p><p><strong>Rate penalty:</strong> The 2% rate rises to 4% if MHRSD inspectors find the employer has failed to comply with safety requirements.</p>",
+      "ar": "<p>يغطي فرع الأخطار المهنية كل عامل من اليوم الأول — سعوديًا أو وافدًا.</p><p><strong>التغطية تشمل:</strong></p><ul><li><strong>إصابات العمل</strong> — الحوادث خلال العمل أو في طريق الذهاب والإياب</li><li><strong>الأمراض المهنية</strong> — الأمراض الناجمة عن ظروف بيئة العمل</li><li><strong>العجز المؤقت</strong> — تكاليف العلاج وتعويض يومي خلال التعافي</li><li><strong>العجز الدائم</strong> — تعويض إجمالي أو معاش شهري حسب نسبة العجز</li><li><strong>تعويض الوفاة</strong> — مستحقات للورثة</li><li><strong>تكاليف الترحيل</strong> — التأمينات تتحمل نقل رفات العامل الوافد المتوفى</li></ul><p><strong>التزام صاحب العمل:</strong> عند وقوع إصابة، أبلغ التأمينات فورًا وضمان العلاج. إن لم يُسجَّل الموظف، يتحمل صاحب العمل كامل التعويضات شخصيًا.</p>"
     },
     "cite": {
-      "en": "Social Insurance Law · Occupational Hazards Branch provisions · GOSI Official FAQ",
-      "ar": "نظام التأمين الاجتماعي · أحكام فرع الأخطار المهنية · أسئلة التأمينات الشائعة"
+      "en": "Social Insurance Law Art. 7 · GOSI FAQ · Labour Law Art. 141",
+      "ar": "المادة 7 من نظام التأمينات · الأسئلة الشائعة · المادة 141 من نظام العمل"
     }
   },
   {
-    "id": "gosi-pensions-branch",
-    "topic": "gosi",
-    "updated": false,
-    "lawRef": "Social Insurance Law — Pensions (Annuities) Branch",
-    "audiences": [
-      "hr",
-      "founder"
-    ],
-    "question": {
-      "en": "Who participates in the Pensions Branch (Annuities)?",
-      "ar": "من يشترك في فرع المعاشات (الأقساط السنوية)؟"
-    },
-    "answer": {
-      "en": "<p>The <strong>Pensions (Annuities) Branch</strong> covers Saudi nationals and GCC nationals (under a GCC-wide reciprocal arrangement). Non-GCC expatriates are not covered — they receive end-of-service gratuity from their employer instead.</p><p><strong>Current contribution rate (Saudi nationals, existing contributors):</strong></p><ul><li>Total: <strong>18%</strong> of eligible wage</li><li>Employer share: 9%</li><li>Employee share: 9%</li></ul><p><strong>Eligible wage base:</strong> Basic salary plus housing allowance. Other allowances are generally excluded unless contractually specified.</p><p><strong>Retirement age:</strong></p><ul><li>Current system contributors: retirement age depends on contribution period and age — typically 60 for men, with flexibility for long-service contributors</li><li>New entrants under the July 2025 law: retirement age is 65 (see next article)</li></ul><p>HASM unemployment insurance (0.75% each from employer and employee) is also collected alongside pension contributions for Saudi nationals.</p>",
-      "ar": "<p>يغطي <strong>فرع المعاشات (الأقساط السنوية)</strong> المواطنين السعوديين ومواطني دول مجلس التعاون الخليجي (وفق ترتيب متبادل على مستوى دول الخليج). لا يشمل الوافدين من خارج دول الخليج — يتلقون بدلًا من ذلك مكافأة نهاية الخدمة من صاحب العمل.</p><p><strong>معدل الاشتراك الحالي (المواطنون السعوديون، المشتركون الحاليون):</strong></p><ul><li>الإجمالي: <strong>18%</strong> من الأجر الخاضع</li><li>حصة صاحب العمل: 9%</li><li>حصة الموظف: 9%</li></ul><p><strong>الأجر الخاضع للاشتراك:</strong> الراتب الأساسي مضافًا إليه بدل السكن. تُستثنى البدلات الأخرى عمومًا ما لم ينص العقد على خلاف ذلك.</p><p><strong>سن التقاعد:</strong></p><ul><li>المشتركون في النظام الحالي: يعتمد سن التقاعد على مدة الاشتراك والسن — عادةً 60 عامًا للرجال مع مرونة لأصحاب فترات الخدمة الطويلة</li><li>المستجدون في إطار قانون يوليو 2025: سن التقاعد 65 عامًا</li></ul><p>يُحصَّل أيضًا تأمين البطالة (حافز) بنسبة 0.75% من كل طرف إلى جانب اشتراكات المعاشات للمواطنين السعوديين.</p>"
-    },
-    "cite": {
-      "en": "Social Insurance Law — Pensions Branch · GOSI contribution tables",
-      "ar": "نظام التأمين الاجتماعي — فرع المعاشات · جداول اشتراكات التأمينات"
-    }
-  },
-  {
-    "id": "gosi-new-2025-law",
+    "id": "gosi-maternity",
     "topic": "gosi",
     "updated": true,
-    "lawRef": "New Social Insurance Law — effective 3 July 2025",
+    "lawRef": "New Social Insurance Law (July 2025)",
     "audiences": [
       "hr",
-      "founder"
-    ],
-    "question": {
-      "en": "What changed under the new July 2025 Social Insurance Law?",
-      "ar": "ما الذي تغيَّر بموجب نظام التأمين الاجتماعي الجديد (يوليو 2025)؟"
-    },
-    "callout": {
-      "en": "<strong>Major reform effective 3 July 2025:</strong> A new Social Insurance Law took effect on 3 July 2025. It applies specifically to <em>new entrants</em> to the workforce who have no prior contribution history. Existing contributors remain under the current system with no change to their rates.",
-      "ar": "<strong>إصلاح جوهري نافذ من 3 يوليو 2025:</strong> دخل نظام التأمين الاجتماعي الجديد حيز التنفيذ في 3 يوليو 2025. يسري تحديدًا على <em>المستجدين</em> في سوق العمل الذين لا سجل اشتراك سابق لهم. يبقى المشتركون الحاليون في النظام القائم دون أي تغيير في معدلاتهم."
-    },
-    "answer": {
-      "en": "<p><strong>Who the new law applies to:</strong> Individuals entering the labour force for the first time after 3 July 2024 with no previous social insurance contributions.</p><p><strong>Key changes for new entrants:</strong></p><ul><li><strong>Retirement age: 65</strong> (up from the flexible early-retirement thresholds in the current system)</li><li><strong>Contribution rates rise gradually:</strong> Starting from year two, rates increase by 0.5% annually, reaching a total of <strong>11%</strong> by 1 July 2028 (up from the current 9% each side — 18% total)</li><li>By 2028: employer pays ~5.5%, employee pays ~5.5%, totalling 11%</li></ul><p><strong>For existing contributors (pre-July 2024):</strong></p><ul><li>No change to contribution rates — remain at 18% total (9%+9%)</li><li>Retirement age increases gradually based on the contributor's age on 3 July 2024</li></ul><p><strong>Maternity compensation:</strong> Under the new law, GOSI pays maternity compensation directly to eligible female employees for 3 months following childbirth, provided the employee has contributed for at least 12 consecutive months (or intermittently over 36 months). This is separate from — and in addition to — the employer's 12-week maternity leave obligation.</p>",
-      "ar": "<p><strong>من يسري عليه القانون الجديد:</strong> الأفراد الداخلون إلى سوق العمل لأول مرة بعد 3 يوليو 2024 دون سجل اشتراك سابق.</p><p><strong>التغييرات الرئيسية للمستجدين:</strong></p><ul><li><strong>سن التقاعد: 65 عامًا</strong> (ارتفاعًا من حدود التقاعد المبكر المرنة في النظام الحالي)</li><li><strong>معدلات الاشتراك ترتفع تدريجيًا:</strong> اعتبارًا من السنة الثانية، يرتفع المعدل بنسبة 0.5% سنويًا ليبلغ إجمالي <strong>11%</strong> بحلول 1 يوليو 2028 (ارتفاعًا من 9% لكل طرف — 18% إجمالًا في النظام الحالي)</li><li>بحلول 2028: يدفع صاحب العمل نحو 5.5%، والموظف نحو 5.5%، بإجمالي 11%</li></ul><p><strong>للمشتركين الحاليين (قبل يوليو 2024):</strong></p><ul><li>لا تغيير في معدلات الاشتراك — تبقى 18% إجمالًا (9% + 9%)</li><li>يرتفع سن التقاعد تدريجيًا بحسب سن المشترك في 3 يوليو 2024</li></ul><p><strong>تعويض الأمومة:</strong> بموجب القانون الجديد، تدفع التأمينات تعويض أمومة مباشرةً للموظفات المؤهلات لمدة 3 أشهر عقب الولادة، شريطة أن تكون الموظفة قد اشتركت 12 شهرًا متتاليًا على الأقل (أو بصفة متقطعة خلال 36 شهرًا). يأتي هذا مستقلًا عن — وإضافةً إلى — التزام صاحب العمل بإجازة الأمومة المدتها 12 أسبوعًا.</p>"
-    },
-    "cite": {
-      "en": "New Social Insurance Law (effective 3 July 2025) · GOSI · Mercans · Paul Hastings",
-      "ar": "نظام التأمين الاجتماعي الجديد (نافذ من 3 يوليو 2025) · التأمينات الاجتماعية · بول هاستينغز"
-    }
-  },
-  {
-    "id": "gosi-hasm",
-    "topic": "gosi",
-    "updated": false,
-    "lawRef": "HASM Unemployment Insurance Programme",
-    "audiences": [
-      "hr",
-      "founder",
       "expat"
     ],
     "question": {
-      "en": "What is HASM (unemployment insurance) and who pays?",
-      "ar": "ما هو تأمين حافز (ضد البطالة) ومن يدفعه؟"
+      "en": "How does GOSI maternity compensation work?",
+      "ar": "كيف يعمل تعويض الأمومة في التأمينات الاجتماعية؟"
     },
     "answer": {
-      "en": "<p><strong>HASM</strong> (sometimes called the Unemployment Protection Programme) is Saudi Arabia's unemployment insurance scheme for Saudi national employees. It pays a benefit to Saudi workers who lose their jobs involuntarily.</p><p><strong>Contribution rate:</strong></p><ul><li><strong>1.5% of eligible wage total</strong></li><li>Employer: 0.75%</li><li>Employee: 0.75%</li></ul><p><strong>Who is covered:</strong> Saudi national employees in the private sector only. Non-Saudi employees are not covered and no contribution is made on their behalf.</p><p><strong>Benefit:</strong> Eligible Saudi employees who are made redundant (not resigned or dismissed for cause) receive a monthly benefit for a limited period while they seek new employment.</p><p><strong>Practical note:</strong> HASM contributions are collected by GOSI alongside pension branch contributions, on the same monthly payroll cycle. They appear as a separate line on the GOSI contribution schedule.</p>",
-      "ar": "<p><strong>حافز</strong> (المعروف أحيانًا ببرنامج حماية الأجور ضد البطالة) هو نظام تأمين ضد البطالة للموظفين السعوديين في المملكة، يدفع مزايا للعمال السعوديين الذين يفقدون وظائفهم بصورة لا إرادية.</p><p><strong>معدل الاشتراك:</strong></p><ul><li><strong>1.5% من الأجر الخاضع إجمالًا</strong></li><li>صاحب العمل: 0.75%</li><li>الموظف: 0.75%</li></ul><p><strong>من يشمله:</strong> الموظفون السعوديون فقط في القطاع الخاص. لا يشمل الموظفين غير السعوديين ولا يُسدَّد اشتراك عنهم.</p><p><strong>المزايا:</strong> يتلقى الموظفون السعوديون المؤهلون الذين تُنهى خدماتهم (لا من استقالوا أو فُصلوا لأسباب تأديبية) مزايا شهرية لفترة محدودة ريثما يجدون عملًا جديدًا.</p><p><strong>ملاحظة عملية:</strong> تُحصَّل اشتراكات حافز من قِبل التأمينات الاجتماعية إلى جانب اشتراكات فرع المعاشات في الدورة الشهرية ذاتها لكشوف الرواتب، وتظهر كبند مستقل في جدول اشتراكات التأمينات.</p>"
+      "en": "<p>Under the new Social Insurance Law (effective July 3, 2025), GOSI now provides a maternity compensation benefit separate from the employer's 12-week Labour Law obligation.</p><p><strong>Eligibility:</strong></p><ul><li>Female employees enrolled in the Occupational Hazards Branch (all employees — Saudi and non-Saudi)</li><li>At least <strong>12 consecutive months</strong> of GOSI contributions, or 12 intermittent months within the past 36 months</li><li>Birth must occur at least 6 months after start of pregnancy</li></ul><p><strong>Benefit:</strong></p><ul><li>3 months compensation at the employee's average registered GOSI wage</li><li>Additional 1 month if the child is born sick or disabled requiring constant care</li><li>Cannot be combined with regular wages — replaces them during leave</li><li>Can be received simultaneously with Occupational Hazards compensation where applicable</li></ul>",
+      "ar": "<p>بموجب نظام التأمين الاجتماعي الجديد (النافذ من 3 يوليو 2025)، باتت التأمينات تقدم تعويض أمومة منفصلًا عن التزام صاحب العمل بـ 12 أسبوعًا بموجب نظام العمل.</p><p><strong>شروط الاستحقاق:</strong></p><ul><li>الموظفات المسجلات في فرع الأخطار المهنية (جميع الموظفات)</li><li><strong>12 شهرًا متتاليًا على الأقل</strong> من الاشتراك، أو 12 شهرًا متقطعة خلال 36 شهرًا الماضية</li><li>الوضع بعد 6 أشهر على الأقل من بدء الحمل</li></ul><p><strong>التعويض:</strong></p><ul><li>3 أشهر بمعدل متوسط الأجر المسجل</li><li>شهر إضافي إذا وُلد الطفل مريضًا أو معاقًا</li><li>لا يُجمع مع الأجر العادي — يحل محله خلال الإجازة</li></ul>"
     },
     "cite": {
-      "en": "HASM (Unemployment Protection Programme) · GOSI · HRSD",
-      "ar": "برنامج حافز (الحماية من البطالة) · التأمينات الاجتماعية · وزارة الموارد البشرية"
+      "en": "New Social Insurance Law (effective July 3, 2025) · Saudipedia · GOSI portal",
+      "ar": "نظام التأمين الاجتماعي الجديد (نافذ من 3 يوليو 2025) · سعودية · بوابة التأمينات"
+    },
+    "callout": {
+      "en": "<strong>New in July 2025:</strong> Maternity compensation now extends to non-Saudi female employees enrolled in the Occupational Hazards Branch — not just Saudi nationals. This is a significant expansion.",
+      "ar": "<strong>جديد في يوليو 2025:</strong> امتدت مزايا الأمومة لتشمل الموظفات الوافدات المسجلات في فرع الأخطار المهنية — وليس السعوديات فحسب."
     }
   },
   {
-    "id": "gosi-penalties",
+    "id": "gosi-retirement",
     "topic": "gosi",
-    "updated": false,
-    "lawRef": "Social Insurance Law — Penalties",
+    "updated": true,
+    "lawRef": "New Social Insurance Law (July 2025)",
     "audiences": [
       "hr",
       "founder"
     ],
     "question": {
-      "en": "What are the penalties for non-compliance with GOSI?",
-      "ar": "ما عقوبات عدم الامتثال للتأمينات الاجتماعية؟"
+      "en": "What changed about retirement age and pensions in 2025?",
+      "ar": "ما الذي تغيّر في سن التقاعد والمعاشات في 2025؟"
     },
     "answer": {
-      "en": "<p>Failure to register or pay GOSI contributions on time carries escalating penalties:</p><ul><li><strong>Late registration:</strong> Employer is liable for all contributions that should have been made from the employee's start date, plus a penalty</li><li><strong>Late payment:</strong> Monthly surcharge on unpaid contributions</li><li><strong>Failure to report injuries:</strong> Employer bears cost of treatment and compensation if an uninspected work injury occurs</li><li><strong>Safety non-compliance:</strong> Occupational Hazards Branch rate doubles from 2% to 4%</li></ul><p>GOSI inspectors have authority to audit employer records and payroll systems. Persistent non-compliance can result in referral to the Ministry of Human Resources, which may suspend work permit renewals for the entire establishment.</p>",
-      "ar": "<p>يستوجب عدم التسجيل أو التأخر في سداد اشتراكات التأمينات عقوبات متصاعدة:</p><ul><li><strong>التأخر في التسجيل:</strong> يتحمل صاحب العمل جميع الاشتراكات الواجب سدادها من تاريخ التحاق الموظف بالعمل، مضافًا إليها غرامة</li><li><strong>التأخر في السداد:</strong> رسوم شهرية إضافية على الاشتراكات غير المدفوعة</li><li><strong>عدم الإبلاغ عن الإصابات:</strong> يتحمل صاحب العمل تكاليف العلاج والتعويض في حال وقوع إصابة عمل غير مُبلَّغ عنها</li><li><strong>عدم الامتثال للسلامة:</strong> يرتفع معدل فرع الأخطار المهنية من 2% إلى 4%</li></ul><p>يملك مفتشو التأمينات صلاحية مراجعة سجلات صاحب العمل وأنظمة كشوف رواتبه. قد يؤدي عدم الامتثال المستمر إلى الإحالة إلى وزارة الموارد البشرية، التي قد تعلّق تجديد تصاريح العمل للمنشأة بأكملها.</p>"
+      "en": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>Group</th><th>Retirement age</th><th>Contributions</th></tr></thead><tbody><tr><td>Enrolled before July 3, 2024</td><td>58–65 based on age at enactment — old system applies</td><td>Unchanged at 18% total</td></tr><tr class=\"new-row\"><td><strong>★ Enrolled July 3, 2024 or after</strong></td><td><strong>65 years (fixed)</strong></td><td>Starts at 19%, rises 0.5%/yr to 22% total by July 2028</td></tr><tr><td>Already receiving pension</td><td>No change</td><td>No change</td></tr></tbody></table></div><p><strong>Employer action required:</strong></p><ul><li>Update payroll systems to apply the correct rate per each employee's enrolment date</li><li>Two parallel systems now run simultaneously — pre-July 2024 and post-July 2024 must be tracked separately</li><li>Annual rate increases must be applied each July</li></ul>",
+      "ar": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>الفئة</th><th>سن التقاعد</th><th>الاشتراكات</th></tr></thead><tbody><tr><td>مشترك قبل 3 يوليو 2024</td><td>58–65 حسب العمر — النظام القديم</td><td>لا تغيير، 18% إجمالًا</td></tr><tr class=\"new-row\"><td><strong>★ مشترك 3 يوليو 2024 أو بعده</strong></td><td><strong>65 عامًا (ثابت)</strong></td><td>تبدأ بـ 19%، ترتفع 0.5% سنويًا حتى 22% يوليو 2028</td></tr><tr><td>يتقاضى معاشًا بالفعل</td><td>لا تغيير</td><td>لا تغيير</td></tr></tbody></table></div><p><strong>ما على أصحاب العمل فعله:</strong></p><ul><li>تحديث أنظمة الرواتب لتطبيق المعدل الصحيح وفق تاريخ انضمام كل موظف</li><li>يعمل نظامان موازيان — ما قبل وما بعد يوليو 2024 يُتتبَّعان بشكل منفصل</li><li>تطبيق الزيادة السنوية كل يوليو</li></ul>"
     },
     "cite": {
-      "en": "Social Insurance Law — Penalties provisions · GOSI Official FAQ",
-      "ar": "نظام التأمين الاجتماعي — أحكام العقوبات · أسئلة التأمينات الشائعة"
+      "en": "New Social Insurance Law (effective July 3, 2025) · Mercans · Paul Hastings",
+      "ar": "نظام التأمين الاجتماعي الجديد (نافذ من 3 يوليو 2025) · ميركانز · بول هاستينغز"
+    },
+    "callout": {
+      "en": "<strong>July 2025:</strong> Saudi Arabia now runs two GOSI pension systems simultaneously. HR teams must know each Saudi employee's enrolment date to apply the correct rates. New system rates increase every July.",
+      "ar": "<strong>يوليو 2025:</strong> تُدير المملكة الآن نظامَي معاشات في التأمينات بالتزامن. يجب على فرق الموارد البشرية معرفة تاريخ انضمام كل موظف سعودي."
     }
   }
 ]

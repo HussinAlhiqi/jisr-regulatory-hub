@@ -1,0 +1,102 @@
+[
+  {
+    "id": "iwr-what-is",
+    "topic": "iwr",
+    "updated": true,
+    "lawRef": "Labour Law Arts. 12–13 · Implementing Regulations Arts. 3–4 (Feb 2025)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are Internal Work Regulations (IWR) and who must have them?",
+      "ar": "ما اللوائح الداخلية للعمل وعلى من يجب وضعها؟"
+    },
+    "answer": {
+      "en": "<p><strong>Internal Work Regulations (IWR)</strong> are mandatory written rules governing workplace conduct, discipline, working hours, and employee rights. They are separate from the individual employment contract.</p><p><strong>Who must have an IWR?</strong></p><ul><li>All private sector employers with <strong>10 or more employees</strong></li><li>The IWR must be approved by MHRSD before it takes effect</li><li>A copy must be posted visibly in the workplace</li></ul><p><strong>Legal basis:</strong> Labour Law Arts. 12 and 13, implemented by Implementing Regulations Arts. 3–4 (February 2025).</p><p><strong>The IWR governs:</strong> Working hours and rest breaks, attendance rules, disciplinary procedures and permitted penalties, leave entitlements and procedures, workplace conduct and grievance mechanisms, and termination and notice procedures.</p><p>In any disciplinary dispute, the IWR is the first document MHRSD inspectors and Labour Courts will review. An outdated or absent IWR significantly weakens the employer's position.</p>",
+      "ar": "<p><strong>اللوائح الداخلية للعمل</strong> هي قواعد مكتوبة إلزامية تُنظِّم سلوك بيئة العمل والانضباط وساعات العمل وحقوق الموظفين. وهي وثيقة مستقلة عن عقد العمل الفردي.</p><p><strong>من يُلزَم بوضع لوائح داخلية؟</strong></p><ul><li>جميع أصحاب العمل بـ <strong>10 موظفين فأكثر</strong></li><li>يجب اعتماد اللائحة من الوزارة قبل سريانها</li><li>تعليق نسخة منها في مكان ظاهر بمقر العمل</li></ul><p><strong>الأساس القانوني:</strong> المادتان 12 و13 من نظام العمل، وفق المادتين 3 و4 من اللائحة التنفيذية (فبراير 2025).</p><p>في أي نزاع تأديبي، اللائحة الداخلية هي أول وثيقة يُطلع عليها المفتشون والمحاكم. غيابها أو قِدَمها يُضعف موقف صاحب العمل بشكل ملحوظ.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 12–13 · Implementing Regulations (Feb 2025) · Clyde & Co · Lexology",
+      "ar": "المادتان 12–13 من نظام العمل · اللائحة التنفيذية (فبراير 2025) · كلايد وشركاه"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — New standard form required:</strong> MHRSD published a new standard IWR form in February 2025. All employers must update their existing IWRs to comply. This is not optional — the new form incorporates the 2025 Labour Law amendments.",
+      "ar": "<strong>تغيير فبراير 2025 — نموذج قياسي جديد:</strong> نشرت الوزارة نموذج لائحة داخلية جديدًا في فبراير 2025. يُلزَم جميع أصحاب العمل بتحديث لوائحهم. الأمر إلزامي — النموذج يتضمن تعديلات نظام العمل 2025."
+    }
+  },
+  {
+    "id": "iwr-mandatory-clauses",
+    "topic": "iwr",
+    "updated": true,
+    "lawRef": "Implementing Regulations (Feb 2025) · Clyde & Co",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the five mandatory clauses every IWR must now include?",
+      "ar": "ما البنود الخمسة الإلزامية التي يجب أن تتضمنها كل لائحة داخلية الآن؟"
+    },
+    "answer": {
+      "en": "<p>MHRSD currently requires a minimum of five clauses in the new standard IWR form:</p><ol><li><strong>Clause 24 — Housing and transportation allowance:</strong> Must reflect the February 2025 obligation. State what the employer provides and the applicable amounts or policy.</li><li><strong>Clauses 34–38 — Updated leave entitlements:</strong> Must reflect 2025 changes — 12 weeks maternity (not 10), new sibling bereavement leave, 7-day paternity window. Old clauses referencing 10-week maternity are now non-compliant.</li><li><strong>Clause 57 — Termination provisions:</strong> Must reflect new resignation process (30-day employer response, automatic acceptance, 7-day withdrawal right), new termination grounds (bankruptcy, force majeure), and updated disciplinary appeals.</li><li><strong>Probation clause:</strong> State that probation may last up to 180 days (updated from 90) and that either party may terminate without penalty during probation.</li><li><strong>Equal opportunity and anti-discrimination clause:</strong> Must include the explicit anti-discrimination mandate (race, gender, age, disability, marital status) and an internal grievance mechanism for harassment complaints.</li></ol><p>Additional clauses on remote work registration, training obligations, and skill classification are expected to become requirements shortly.</p>",
+      "ar": "<p>تشترط الوزارة حاليًا خمسة بنود كحد أدنى في نموذج اللائحة الجديد:</p><ol><li><strong>البند 24 — بدل السكن والنقل:</strong> يعكس الالتزام القانوني لفبراير 2025 — ما يوفره صاحب العمل والمبالغ أو السياسة.</li><li><strong>البنود 34–38 — استحقاقات الإجازة المحدَّثة:</strong> 12 أسبوعًا للأمومة (لا 10)، إجازة وفاة الأشقاء الجديدة، نافذة إجازة الأبوة 7 أيام.</li><li><strong>البند 57 — أحكام الإنهاء:</strong> إجراءات الاستقالة الجديدة (30 يومًا للرد، القبول التلقائي، حق السحب 7 أيام)، وأسباب الإنهاء الجديدة.</li><li><strong>بند الاختبار:</strong> فترة اختبار حتى 180 يومًا (محدَّثة من 90)، وحق الإنهاء لأي طرف بلا مقابل.</li><li><strong>بند تكافؤ الفرص:</strong> مبدأ مناهضة التمييز والأسباب المحظورة وآلية التشكي الداخلية.</li></ol>"
+    },
+    "cite": {
+      "en": "Implementing Regulations (Feb 2025) · Clyde & Co · Lexology · MHRSD",
+      "ar": "اللائحة التنفيذية (فبراير 2025) · كلايد وشركاه · ليكسولوجي · وزارة الموارد البشرية"
+    },
+    "callout": {
+      "en": "<strong>Timing note:</strong> MHRSD is currently enforcing the five clauses above as a minimum. Full compliance with all updated provisions is expected to become mandatory soon. Employers should update their full IWR now.",
+      "ar": "<strong>ملاحظة التوقيت:</strong> تُطبِّق الوزارة البنود الخمسة حاليًا كحد أدنى. الامتثال الكامل لجميع الأحكام المحدَّثة سيصبح إلزاميًا قريبًا. يُنصح بتحديث اللائحة الكاملة الآن."
+    }
+  },
+  {
+    "id": "iwr-how-to-submit",
+    "topic": "iwr",
+    "updated": false,
+    "lawRef": "Qiwa platform · Labour Law Art. 13",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How do employers submit and update their IWR with MHRSD?",
+      "ar": "كيف يُقدِّم أصحاب العمل لوائحهم الداخلية ويحدِّثونها لدى الوزارة؟"
+    },
+    "answer": {
+      "en": "<p>IWR submission and approval is handled through <strong>Qiwa</strong>. Only MHRSD-registered law firms are authorised to review and approve IWRs.</p><p><strong>Submission process:</strong></p><ol><li>Draft or update the IWR using the MHRSD standard form as the base template</li><li>Engage an MHRSD-registered law firm to review and approve — only registered firms can approve via Qiwa</li><li>Upload the approved IWR through your Qiwa business account</li><li>MHRSD reviews and approves or requests amendments</li><li>Post a copy visibly in the workplace</li><li>Provide all current employees with a copy</li></ol><p><strong>When to update:</strong> On significant law changes (including the Feb 2025 amendments), when internal policies change materially, or when MHRSD issues a new standard form.</p><p><strong>Employee acknowledgment:</strong> Obtain a signed acknowledgment from employees that they received and understood the updated IWR. This is key evidence in any dispute.</p><p><strong>Language:</strong> IWR must be in Arabic. Bilingual versions are permitted but Arabic prevails in any dispute.</p>",
+      "ar": "<p>تُقدَّم اللوائح الداخلية وتُعتمد عبر <strong>قيوة</strong>. المكاتب القانونية المسجَّلة لدى الوزارة فقط هي المخوَّلة بالاعتماد.</p><p><strong>إجراءات التقديم:</strong></p><ol><li>صياغة اللائحة أو تحديثها وفق النموذج القياسي الوزاري</li><li>التعاقد مع مكتب قانوني مسجَّل لمراجعة واعتماد اللائحة</li><li>رفع اللائحة المعتمدة عبر حساب قيوة التجاري</li><li>مراجعة الوزارة وإقرارها أو طلب تعديلات</li><li>تعليق نسخة في مكان ظاهر وتزويد الموظفين بها</li></ol><p><strong>متى تُحدَّث:</strong> عند التغييرات القانونية الجوهرية، تغيّر السياسات، أو إصدار نموذج جديد.</p><p><strong>اللغة:</strong> عربية إلزاميًا. النسخ ثنائية اللغة مسموحة لكن العربية تتقدم.</p>"
+    },
+    "cite": {
+      "en": "Qiwa platform · Labour Law Art. 13 · Clyde & Co · MHRSD",
+      "ar": "منصة قيوة · المادة 13 من نظام العمل · كلايد وشركاه"
+    }
+  },
+  {
+    "id": "iwr-disciplinary",
+    "topic": "iwr",
+    "updated": true,
+    "lawRef": "Labour Law Arts. 70–77 (Feb 2025 amendments)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is the formal disciplinary procedure employers must follow?",
+      "ar": "ما الإجراء التأديبي الرسمي الذي يجب على أصحاب العمل اتباعه؟"
+    },
+    "answer": {
+      "en": "<p>The February 2025 amendments formalised the disciplinary process. Employers who skip steps face wrongful dismissal liability even when the underlying misconduct is legitimate.</p><p><strong>Required steps before dismissal:</strong></p><ol><li><strong>Written investigation notice</strong> — employee formally notified in writing of the investigation and its scope</li><li><strong>Opportunity to respond</strong> — employee submits written defence</li><li><strong>Written penalty notice</strong> — any disciplinary action, including dismissal, must be communicated in writing</li><li><strong>30-day grievance window</strong> — employee may file a written grievance within 30 days (excluding official holidays). Now a statutory right.</li><li><strong>Written grievance response</strong> — employer must respond to the grievance in writing</li></ol><p><strong>Permitted penalties (in order of severity):</strong></p><ul><li>Written warning</li><li>Salary deduction (up to 5 days' pay per incident)</li><li>Suspension without pay (up to 5 days per incident)</li><li>Withholding increment or promotion</li><li>Demotion</li><li>Dismissal for gross misconduct (Article 80 grounds only)</li></ul><p><strong>Escalation:</strong> If internal grievance fails, employee may escalate via Qiwa mediation before a Labour Court claim.</p><p><strong>IWR requirement:</strong> All permitted penalties, the investigation process, and the grievance procedure must be in the IWR. Penalties not listed in the IWR cannot be lawfully applied.</p>",
+      "ar": "<p>عزّزت تعديلات فبراير 2025 رسمية الإجراء التأديبي. تخطّي الخطوات يُعرِّض لمسؤولية الفصل التعسفي حتى حين يكون الإخلال ثابتًا.</p><p><strong>الخطوات المطلوبة قبل الفصل:</strong></p><ol><li><strong>إشعار تحقيق كتابي</strong> — إبلاغ الموظف رسميًا بالتحقيق ونطاقه</li><li><strong>فرصة للرد</strong> — تقديم دفاع كتابي</li><li><strong>إشعار عقوبة كتابي</strong> — أي إجراء تأديبي يُبلَّغ به كتابيًا</li><li><strong>نافذة تظلم 30 يومًا</strong> — حق قانوني تظلم كتابي (باستثناء العطل)</li><li><strong>رد كتابي على التظلم</strong></li></ol><p><strong>العقوبات المسموح بها:</strong> إنذار كتابي، خصم (5 أيام)، إيقاف بلا أجر (5 أيام)، تأجيل العلاوة أو الترقية، التخفيض الوظيفي، الفصل (أسباب المادة 80 فقط).</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 70–77 (amended by Royal Decree M/44, effective Feb 2025) · Paul Hastings",
+      "ar": "المواد 70–77 (بصيغة المرسوم الملكي م/44، نافذ من فبراير 2025) · بول هاستينغز"
+    },
+    "callout": {
+      "en": "<strong>February 2025 change — Written grievance now statutory:</strong> Employees have an explicit legal right to file a written grievance against any disciplinary penalty within 30 days. This must be communicated to employees and documented in the IWR.",
+      "ar": "<strong>تغيير فبراير 2025 — حق التظلم الكتابي أصبح قانونيًا:</strong> للموظفين حق قانوني صريح في التظلم الكتابي خلال 30 يومًا. يجب إخطار الموظفين وتوثيقه في اللائحة."
+    }
+  }
+]

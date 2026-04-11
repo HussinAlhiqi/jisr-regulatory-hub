@@ -108,7 +108,7 @@ const title = 'Jisr Regulatory Hub — Saudi Arabia';
     // Build search index from all topics
     window.__ARTICLES__ = [];
     (async () => {
-      const topics = ['hiring','pay','leave','termination','worker-types','compliance'];
+      const topics = ['hiring','pay','leave','termination','worker-types','compliance','gosi','osh','domestic-workers','iwr'];
       for (const t of topics) {
         try {
           const res  = await fetch(`/content/${t}/articles.json`);

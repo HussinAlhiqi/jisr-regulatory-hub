@@ -112,34 +112,45 @@
   {
     "date": "2025-07",
     "topic": "gosi",
-    "articleId": "gosi-new-2025-law",
+    "articleId": "gosi-contributions",
     "title": {
-      "en": "New GOSI Social Insurance Law takes effect — retirement age 65 for new entrants",
-      "ar": "نظام التأمين الاجتماعي الجديد يدخل حيز التنفيذ — سن التقاعد 65 للمستجدين"
+      "en": "New Social Insurance Law — retirement age raised, contribution rates rising from July 2025",
+      "ar": "نظام التأمين الاجتماعي الجديد — رفع سن التقاعد وزيادة نسب الاشتراك من يوليو 2025"
     },
-    "lawRef": "New Social Insurance Law",
+    "lawRef": "New Social Insurance Law (July 2025)",
     "severity": "high"
   },
   {
-    "date": "2025-02",
-    "topic": "internal-work-regulations",
-    "articleId": "iwr-mandatory-clauses",
+    "date": "2025-07",
+    "topic": "gosi",
+    "articleId": "gosi-maternity",
     "title": {
-      "en": "New MHRSD standard IWR form — all employers must update and resubmit",
-      "ar": "نموذج اللائحة الداخلية المعياري الجديد — يجب على جميع أصحاب العمل التحديث وإعادة التقديم"
+      "en": "GOSI maternity compensation extended to all female employees — including non-Saudis",
+      "ar": "تعويض الأمومة في التأمينات امتدّ ليشمل جميع الموظفات بما فيهن الوافدات"
     },
-    "lawRef": "Implementing Regulations Arts. 3–4",
-    "severity": "high"
-  },
-  {
-    "date": "2025-02",
-    "topic": "termination",
-    "articleId": "disciplinary-procedure",
-    "title": {
-      "en": "Written disciplinary notice now mandatory — employees get 30-day grievance right",
-      "ar": "الإشعار التأديبي الكتابي أصبح إلزاميًا — للموظفين حق التظلم خلال 30 يومًا"
-    },
-    "lawRef": "Arts. 66–70",
+    "lawRef": "New Social Insurance Law (July 2025)",
     "severity": "medium"
+  },
+  {
+    "date": "2025-06",
+    "topic": "osh",
+    "articleId": "osh-outdoor-ban",
+    "title": {
+      "en": "Outdoor work ban enforced annually — 12pm to 3pm, June 15 to September 15",
+      "ar": "تطبيق حظر العمل في الأماكن المكشوفة سنويًا — 12 ظهرًا إلى 3 عصرًا، 15 يونيو إلى 15 سبتمبر"
+    },
+    "lawRef": "Ministerial Decision No. 3337 (2014) · Enforced annually",
+    "severity": "medium"
+  },
+  {
+    "date": "2025-02",
+    "topic": "iwr",
+    "articleId": "iwr-what-is",
+    "title": {
+      "en": "MHRSD publishes new standard IWR form — all employers must update their Internal Work Regulations",
+      "ar": "الوزارة تنشر نموذج لائحة داخلية قياسيًا جديدًا — يجب على جميع أصحاب العمل تحديث لوائحهم الداخلية"
+    },
+    "lawRef": "Implementing Regulations Arts. 3–4 (Feb 2025)",
+    "severity": "high"
   }
 ]

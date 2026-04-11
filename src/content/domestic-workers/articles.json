@@ -1,93 +1,134 @@
 [
   {
-    "id": "domestic-law-overview",
+    "id": "dw-framework",
     "topic": "domestic-workers",
     "updated": false,
-    "lawRef": "Council of Ministers Resolution No. 310 (2013) as amended",
-    "audiences": [
-      "hr",
-      "founder",
-      "expat"
-    ],
-    "question": {
-      "en": "What law governs domestic workers and how is it different from the Labour Law?",
-      "ar": "ما النظام الذي يحكم عمال المنازل وما الفرق بينه وبين نظام العمل؟"
-    },
-    "answer": {
-      "en": "<p>Domestic workers in KSA are governed by a <strong>completely separate legal framework</strong> from the Labour Law (Royal Decree M/51). The applicable regulation is <strong>Council of Ministers Resolution No. 310 (2013)</strong>, administered via the <strong>Musaned platform</strong>.</p><p><strong>Key differences from the Labour Law:</strong></p><ul><li>Domestic workers cannot file cases in Labour Courts — disputes go through MHRSD's dedicated domestic worker channel</li><li>Different leave entitlements (one month after two years of service, not 21 days after one year)</li><li>No Qiwa contract — contracts are issued via Musaned</li><li>Employer (the household) bears all recruitment, permit, and renewal costs</li><li>Separate penalty schedules for employers and workers</li></ul><p><strong>14 recognised domestic worker professions:</strong> Includes housemaids, drivers, cooks, gardeners, childcare workers, security guards (private), and similar roles.</p><p><strong>Who regulates it:</strong> MHRSD oversees domestic worker contractual relationships between workers, recruitment agencies, and employers, in alignment with ILO Convention No. 189.</p>",
-      "ar": "<p>يخضع عمال المنازل في المملكة لإطار قانوني <strong>منفصل كليًا</strong> عن نظام العمل (المرسوم الملكي م/51). النظام المعمول به هو <strong>قرار مجلس الوزراء رقم 310 (2013)</strong>، ويُدار عبر <strong>منصة مساند</strong>.</p><p><strong>الفوارق الرئيسية عن نظام العمل:</strong></p><ul><li>لا يحق لعمال المنازل رفع قضايا أمام المحاكم العمالية — تُحسم النزاعات عبر قناة وزارة الموارد البشرية المخصصة لهم</li><li>استحقاقات إجازة مختلفة (شهر واحد بعد سنتين من الخدمة، لا 21 يومًا بعد سنة واحدة)</li><li>لا عقد قيوة — تُصدر العقود عبر مساند</li><li>يتحمل صاحب العمل (رب البيت) جميع تكاليف الاستقدام والتصاريح والتجديدات</li><li>جداول عقوبات منفصلة لأصحاب العمل والعمال</li></ul><p><strong>14 مهنة معترفًا بها لعمال المنازل:</strong> تشمل العمالة المنزلية، السائقين، الطهاة، البستانيين، مربي الأطفال، الحراس الخاصين، والمهن المماثلة.</p><p><strong>جهة الإشراف:</strong> تشرف وزارة الموارد البشرية على العلاقات التعاقدية بين العمال ووكالات الاستقدام وأصحاب العمل، بما يتماشى مع اتفاقية منظمة العمل الدولية رقم 189.</p>"
-    },
-    "cite": {
-      "en": "Council of Ministers Resolution No. 310 (2013) · Musaned Platform · MHRSD",
-      "ar": "قرار مجلس الوزراء رقم 310 (2013) · منصة مساند · وزارة الموارد البشرية"
-    }
-  },
-  {
-    "id": "domestic-employer-obligations",
-    "topic": "domestic-workers",
-    "updated": false,
-    "lawRef": "Domestic Workers Regulation — Employer obligations",
-    "audiences": [
-      "hr",
-      "founder",
-      "expat"
-    ],
-    "question": {
-      "en": "What are employer obligations toward domestic workers?",
-      "ar": "ما التزامات صاحب العمل تجاه عمال المنازل؟"
-    },
-    "answer": {
-      "en": "<p>The Domestic Workers Regulation sets out the following employer obligations:</p><ul><li><strong>Bear all costs:</strong> Recruitment fees, profession change fees, service transfer fees, residency fees, work permit fees and renewals, and any fines resulting from the employer's own actions</li><li><strong>Provide accommodation:</strong> Suitable housing (inside or outside the workplace) plus appropriate food, or financial compensation in lieu of food</li><li><strong>Never retain documents:</strong> Passports, personal identification papers, or personal belongings must not be held by the employer</li><li><strong>Right to communicate:</strong> The domestic worker must be able to contact their family, home country's embassy, HR companies, and relevant authorities at all times</li><li><strong>Pay wages monthly</strong> in the official currency (SAR), according to methods set by MHRSD</li><li><strong>Prohibit dangerous tasks:</strong> Do not assign work that is hazardous to the worker's health or physical safety</li></ul><p><strong>Prohibited conduct:</strong></p><ul><li>Physical or verbal abuse or any violent act</li><li>Sexual harassment (verbal or physical)</li><li>Forced labour or any activity within the scope of human trafficking</li><li>Discrimination based on colour, gender, age, national origin, or any other characteristic</li></ul>",
-      "ar": "<p>يُحدد نظام عمال المنازل الالتزامات التالية على صاحب العمل:</p><ul><li><strong>تحمُّل جميع التكاليف:</strong> رسوم الاستقدام وتغيير المهنة ونقل الخدمة والإقامة وتصاريح العمل وتجديداتها، وأي غرامات ناجمة عن تصرفات صاحب العمل</li><li><strong>توفير السكن:</strong> مسكن مناسب (داخل مكان العمل أو خارجه) مع طعام ملائم أو تعويض مالي بديلًا عنه</li><li><strong>عدم الاحتجاز بالوثائق:</strong> يُحظر على صاحب العمل الاحتفاظ بجوازات السفر أو وثائق الهوية أو المتعلقات الشخصية</li><li><strong>حق التواصل:</strong> يجب أن يتمكن العامل المنزلي في جميع الأوقات من التواصل مع أسرته وسفارة بلده وشركات الموارد البشرية والجهات المختصة</li><li><strong>صرف الأجور شهريًا</strong> بالعملة الرسمية (الريال السعودي) وفق الوسائل التي تحددها وزارة الموارد البشرية</li><li><strong>حظر الأعمال الخطرة:</strong> عدم تكليف العامل بأعمال تُعرِّض صحته أو سلامته الجسدية للخطر</li></ul><p><strong>السلوكيات المحظورة:</strong></p><ul><li>الإيذاء الجسدي أو اللفظي أو أي عمل عنيف</li><li>التحرش الجنسي (اللفظي أو الجسدي)</li><li>العمل الإجباري أو أي نشاط يدخل ضمن نطاق الاتجار بالبشر</li><li>التمييز على أساس اللون أو الجنس أو السن أو الأصل الوطني أو أي صفة أخرى</li></ul>"
-    },
-    "cite": {
-      "en": "Regulation for Domestic Workers (MHRSD) · Musaned Labor Education",
-      "ar": "لائحة عمال المنازل (وزارة الموارد البشرية) · تثقيف العمالة على مساند"
-    }
-  },
-  {
-    "id": "domestic-penalties",
-    "topic": "domestic-workers",
-    "updated": false,
-    "lawRef": "Domestic Workers Regulation — Penalties (Arts. 29–30)",
+    "lawRef": "Council of Ministers Resolution No. 310",
     "audiences": [
       "hr",
       "founder"
     ],
     "question": {
-      "en": "What are the penalties for violating domestic worker rules?",
-      "ar": "ما عقوبات انتهاك قواعد عمال المنازل؟"
+      "en": "What is the Domestic Workers Law and how is it different from the Labour Law?",
+      "ar": "ما نظام عمالة المنازل وكيف يختلف عن نظام العمل؟"
     },
     "answer": {
-      "en": "<p><strong>Employer penalties (Art. 29):</strong></p><ul><li>A fine not exceeding <strong>SAR 20,000</strong>, or a recruitment ban for up to <strong>3 years</strong>, or both</li><li><strong>Permanent recruitment ban</strong> for serious or repeat violations</li><li>Fines are multiplied by the number of individuals affected by the violation</li><li>Penalties may be doubled for repeat offences</li></ul><p><strong>Domestic worker penalties (Art. 30):</strong></p><ul><li>A fine not exceeding <strong>SAR 2,000</strong>, or a ban on working in the Kingdom, or both</li><li>Fines multiplied by the number of violations committed</li></ul><p><strong>Most common violations leading to employer penalties:</strong></p><ul><li>Retaining the worker's passport or identity documents</li><li>Non-payment or underpayment of wages</li><li>Physical or verbal abuse</li><li>Assigning work dangerous to the worker's health without protective measures</li><li>Preventing the worker from contacting their embassy</li></ul><p>MHRSD has the jurisdiction to receive complaints from domestic workers and investigate employer violations. Workers can report issues via the Musaned platform or MHRSD hotlines.</p>",
-      "ar": "<p><strong>عقوبات صاحب العمل (المادة 29):</strong></p><ul><li>غرامة لا تتجاوز <strong>20,000 ريال سعودي</strong>، أو حظر استقدام لمدة تصل إلى <strong>3 سنوات</strong>، أو كليهما</li><li><strong>حظر استقدام دائم</strong> للمخالفات الجسيمة أو المتكررة</li><li>تُضاعَف الغرامات بعدد الأشخاص المتضررين من المخالفة</li><li>يُضاعَف الحد الأقصى للعقوبة في حالة التكرار</li></ul><p><strong>عقوبات العامل المنزلي (المادة 30):</strong></p><ul><li>غرامة لا تتجاوز <strong>2,000 ريال سعودي</strong>، أو حظر العمل في المملكة، أو كليهما</li><li>تُضاعَف الغرامات بعدد المخالفات المرتكبة</li></ul><p><strong>أكثر المخالفات شيوعًا التي تُفضي إلى عقوبات صاحب العمل:</strong></p><ul><li>الاحتفاظ بجواز سفر العامل أو وثائق هويته</li><li>عدم صرف الأجور أو صرفها ناقصة</li><li>الإيذاء الجسدي أو اللفظي</li><li>تكليف العامل بأعمال خطرة دون توفير وسائل الحماية</li><li>منع العامل من التواصل مع سفارته</li></ul><p>تختص وزارة الموارد البشرية بتلقي شكاوى العمال المنزليين والتحقيق في مخالفات أصحاب العمل. يمكن للعمال الإبلاغ عبر منصة مساند أو خطوط وزارة الموارد البشرية الساخنة.</p>"
+      "en": "<p>Domestic workers in KSA are governed by a <strong>completely separate legal framework</strong> — the Domestic Workers Regulation (Council of Ministers Resolution No. 310) — not the Labour Law that applies to regular private sector employees.</p><p><strong>Who is a domestic worker?</strong> MHRSD recognises <strong>14 professions</strong> under this category, including: housemaids, private drivers, cooks, gardeners, security guards (residential), babysitters/nannies, private tutors, home nurses and carers.</p><p><strong>Key differences from the Labour Law:</strong></p><ul><li>Domestic workers are <strong>excluded from GOSI</strong> (neither branch)</li><li>The <strong>Musaned platform</strong> (not Qiwa) manages contracts, visa issuance, and dispute resolution</li><li>Different leave entitlements: 1 month annual leave after 2 years of service; 1 month sick leave</li><li>Different dispute procedure: MHRSD Domestic Labour department, not the general Labour Court pathway</li></ul>",
+      "ar": "<p>تخضع عمالة المنازل في المملكة لإطار قانوني <strong>مختلف تمامًا</strong> — نظام عمال المنازل (قرار مجلس الوزراء رقم 310) — وليس لنظام العمل المنطبق على موظفي القطاع الخاص.</p><p><strong>من هو عامل المنزل؟</strong> تعترف الوزارة بـ <strong>14 مهنة</strong>، منها: العمالة المنزلية، السائقون الخاصون، الطهاة، البستانيون، حراس الأمن السكني، مربيات الأطفال، المعلمون الخاصون، الممرضون المنزليون.</p><p><strong>أبرز الفوارق عن نظام العمل:</strong></p><ul><li><strong>مستثنون من التأمينات الاجتماعية</strong></li><li><strong>منصة مساند</strong> (لا قيوة) تُدير العقود والتأشيرات والنزاعات</li><li>استحقاقات إجازة مختلفة: شهر سنوي بعد سنتَي خدمة؛ شهر مرضي</li><li>إدارة النزاعات عبر قسم عمالة المنازل في الوزارة، لا المحاكم العمالية العامة</li></ul>"
     },
     "cite": {
-      "en": "Regulation for Domestic Workers Arts. 29–30 · MHRSD Official",
-      "ar": "المادتان 29–30 من لائحة عمال المنازل · وزارة الموارد البشرية"
+      "en": "Council of Ministers Resolution No. 310 · Musaned · MHRSD",
+      "ar": "قرار مجلس الوزراء رقم 310 · مساند · وزارة الموارد البشرية"
     }
   },
   {
-    "id": "domestic-musaned",
+    "id": "dw-employer-obligations",
     "topic": "domestic-workers",
     "updated": false,
-    "lawRef": "Musaned Platform — MHRSD",
+    "lawRef": "Domestic Workers Regulation Arts. 7–14",
     "audiences": [
       "hr",
-      "founder",
-      "expat"
+      "founder"
     ],
     "question": {
-      "en": "What is the Musaned platform and how is it used?",
-      "ar": "ما منصة مساند وكيف تُستخدم؟"
+      "en": "What are employers legally required to provide to domestic workers?",
+      "ar": "ما الذي يُلزَم أصحاب العمل بتوفيره لعمال المنازل قانونًا؟"
     },
     "answer": {
-      "en": "<p><strong>Musaned</strong> is the official MHRSD platform for managing domestic worker contracts, recruitment, and rights. All domestic employment contracts must be issued and tracked through Musaned — there is no Qiwa equivalent for this category.</p><p><strong>What you can do on Musaned:</strong></p><ul><li>Issue and sign domestic worker employment contracts</li><li>Track contract status, renewal dates, and service periods</li><li>File and manage disputes between employer and worker</li><li>Access the wage protection system for domestic workers</li><li>Register exit/return records for domestic workers</li><li>Access educational materials on rights and obligations for both parties</li></ul><p><strong>Recruitment process:</strong> Domestic workers must be recruited through MHRSD-licensed recruitment agencies. Employers cannot recruit directly without agency involvement. The employer bears all agency fees — it is illegal to deduct recruitment costs from the worker's wages.</p>",
-      "ar": "<p><strong>مساند</strong> هي المنصة الرسمية لوزارة الموارد البشرية لإدارة عقود العمالة المنزلية والاستقدام والحقوق. يجب إصدار جميع عقود العمالة المنزلية وتتبعها عبر مساند — لا يوجد ما يعادلها على قيوة لهذه الفئة.</p><p><strong>ما يمكنك فعله على مساند:</strong></p><ul><li>إصدار عقود توظيف العمالة المنزلية وتوقيعها</li><li>متابعة حالة العقد وتواريخ التجديد وفترات الخدمة</li><li>تقديم النزاعات بين صاحب العمل والعامل وإدارتها</li><li>الوصول إلى نظام حماية الأجور للعمالة المنزلية</li><li>تسجيل سجلات الخروج والعودة للعمالة المنزلية</li><li>الاطلاع على المواد التثقيفية حول حقوق والتزامات كلا الطرفين</li></ul><p><strong>إجراءات الاستقدام:</strong> يجب استقدام العمالة المنزلية عبر وكالات استقدام مرخصة من وزارة الموارد البشرية. لا يجوز لصاحب العمل الاستقدام المباشر دون تدخل الوكالة. يتحمل صاحب العمل جميع رسوم الوكالة — ويُحظر قانونيًا خصم تكاليف الاستقدام من أجور العامل.</p>"
+      "en": "<p><strong>Financial obligations:</strong></p><ul><li>Pay wages monthly in SAR on or before end of month</li><li>Bear <strong>all recruitment costs</strong> — sponsorship, work permit, profession change fees, transfer fees, and any fines from employer actions</li><li>Deductions only permitted for intentional/negligent property damage (max 25% of monthly wage)</li></ul><p><strong>Physical welfare:</strong></p><ul><li>Provide <strong>suitable private accommodation</strong> inside or outside the workplace</li><li>Provide appropriate food or cash allowance in lieu</li><li>Provide healthcare and medical treatment</li></ul><p><strong>Rights and dignity (explicitly prohibited):</strong></p><ul><li><strong>Cannot retain the domestic worker's passport</strong>, identity documents, or personal belongings</li><li>Must allow free communication with family, embassy, and relevant authorities</li><li>Cannot assign dangerous tasks</li><li>Cannot impose forced labour or any human trafficking practices</li><li>Cannot sexually harass the worker — verbally or physically</li><li>Cannot discriminate based on colour, gender, age, or national origin</li></ul><p><strong>Rest entitlements:</strong> 9 hours rest per day (8 consecutive hours at night), 1 day off per week, 30 days paid annual leave after 2 years of service.</p>",
+      "ar": "<p><strong>الالتزامات المالية:</strong></p><ul><li>صرف الأجور شهريًا بالريال في موعد أقصاه نهاية الشهر</li><li>تحمّل <strong>جميع تكاليف الاستقدام</strong> — رسوم الكفالة وتصاريح العمل وتغيير المهنة والنقل وأي غرامات</li><li>الخصومات تقتصر على إتلاف الممتلكات (حد أقصى 25%)</li></ul><p><strong>الرعاية الجسدية:</strong> سكن لائق خاص، طعام مناسب أو بدل مالي، رعاية صحية.</p><p><strong>الحقوق والكرامة (محظورات صريحة):</strong></p><ul><li><strong>يُحظر الاحتفاظ بجواز السفر</strong> أو أي وثائق شخصية</li><li>تمكين العامل من التواصل مع أسرته وسفارة بلده والجهات المختصة</li><li>حظر الأعمال الخطرة والعمل القسري والتحرش الجنسي والتمييز</li></ul><p><strong>الراحة:</strong> 9 ساعات يوميًا (8 ليلية متواصلة)، يوم إجازة أسبوعية، 30 يوم سنوي بعد سنتَي خدمة.</p>"
     },
     "cite": {
-      "en": "Musaned Platform (musaned.com.sa) · MHRSD",
-      "ar": "منصة مساند (musaned.com.sa) · وزارة الموارد البشرية"
+      "en": "Domestic Workers Regulation Arts. 7–14 · Musaned · MHRSD",
+      "ar": "المواد 7–14 من لائحة عمال المنازل · مساند · وزارة الموارد البشرية"
+    }
+  },
+  {
+    "id": "dw-wages-contracts",
+    "topic": "domestic-workers",
+    "updated": false,
+    "lawRef": "Domestic Workers Regulation Arts. 5–10",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How are domestic worker wages and contracts managed?",
+      "ar": "كيف تُدار أجور ومشغل عقود عمالة المنازل؟"
+    },
+    "answer": {
+      "en": "<p><strong>Contracts:</strong> All domestic employment contracts must be issued through the <strong>Musaned platform</strong>. The contract must state: profession (one of 14 categories), agreed monthly wage, contract duration (typically 1–2 years), rest periods, weekly day off, and annual leave entitlement.</p><p><strong>Wages:</strong> No statutory minimum wage for domestic workers in KSA. Wages are agreed at contracting. Must be paid monthly in SAR.</p><p><strong>Permitted deductions only for:</strong></p><ul><li>Intentional or negligent damage to employer property (max 25% per month)</li><li>Execution of a judicial ruling against the worker</li><li>Advances previously paid by the employer</li></ul><p><strong>If the employer prevents the worker from working</strong> through no fault of the worker, the worker retains entitlement to full wages.</p><p><strong>End of contract entitlements:</strong></p><ul><li>End-of-service gratuity: 1 month's wage per year of service after 2 years</li><li>All outstanding wages paid immediately</li><li>Return air ticket to home country at employer's expense</li></ul>",
+      "ar": "<p><strong>العقود:</strong> تُصدَر جميع عقود عمالة المنازل عبر <strong>منصة مساند</strong> وتتضمن: المهنة، الأجر الشهري، مدة العقد، فترات الراحة، ويوم الراحة الأسبوعية، والإجازة السنوية.</p><p><strong>الأجور:</strong> لا حد أدنى قانوني. تُحدَّد بالاتفاق وتُدفع شهريًا بالريال.</p><p><strong>الخصومات المسموح بها فقط:</strong> إتلاف الممتلكات (25% كحد أقصى)، تنفيذ حكم قضائي، سُلَف صرفها صاحب العمل.</p><p><strong>مستحقات نهاية الخدمة:</strong> شهر أجر عن كل سنة بعد سنتَي خدمة، وتسوية الأجور فورًا، وتذكرة العودة على نفقة صاحب العمل.</p>"
+    },
+    "cite": {
+      "en": "Domestic Workers Regulation Arts. 5–10 · Musaned",
+      "ar": "المواد 5–10 من لائحة عمال المنازل · مساند"
+    }
+  },
+  {
+    "id": "dw-penalties",
+    "topic": "domestic-workers",
+    "updated": false,
+    "lawRef": "Domestic Workers Regulation Arts. 29–31",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What penalties apply for violating the Domestic Workers Regulation?",
+      "ar": "ما العقوبات المترتبة على انتهاك لائحة عمالة المنازل؟"
+    },
+    "answer": {
+      "en": "<p><strong>Employer penalties:</strong></p><ul><li>Fine up to <strong>SAR 20,000</strong>, or recruitment ban up to 3 years, or both</li><li>Repeat violations: penalties may be doubled</li><li>Severe violations (passport retention, forced labour, harassment): potential permanent recruitment ban</li><li>Fines multiply by number of individuals affected</li></ul><p><strong>Worker penalties:</strong></p><ul><li>Fine up to SAR 2,000, or ban on working in KSA, or both</li></ul><p><strong>Transfer rights:</strong> Domestic workers may transfer to a new employer without current employer permission in cases of misconduct or non-payment of wages.</p><p><strong>Dispute resolution channels:</strong></p><ul><li>Musaned platform</li><li>MHRSD Domestic Labour offices</li><li>Dedicated helpline for domestic workers</li><li>Shelter facilities for workers escaping abusive situations</li></ul>",
+      "ar": "<p><strong>عقوبات صاحب العمل:</strong></p><ul><li>غرامة حتى <strong>20,000 ريال</strong>، أو حظر استقدام 3 سنوات، أو كلاهما</li><li>تكرار المخالفات: مضاعفة العقوبات</li><li>مخالفات جسيمة: حظر استقدام دائم</li><li>الغرامات تُضرب في عدد المتضررين</li></ul><p><strong>عقوبات العامل:</strong> غرامة حتى 2,000 ريال أو حظر عمل.</p><p><strong>حق نقل الخدمة:</strong> يحق للعامل الانتقال لصاحب عمل آخر دون موافقة الحالي في حالات الإساءة أو عدم صرف الأجور.</p>"
+    },
+    "cite": {
+      "en": "Domestic Workers Regulation Arts. 29–31 · Musaned · MHRSD",
+      "ar": "المواد 29–31 · مساند · وزارة الموارد البشرية"
+    }
+  },
+  {
+    "id": "dw-musaned",
+    "topic": "domestic-workers",
+    "updated": false,
+    "lawRef": "Musaned platform",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How does the Musaned platform work for managing domestic workers?",
+      "ar": "كيف تعمل منصة مساند في إدارة عمالة المنازل؟"
+    },
+    "answer": {
+      "en": "<p><strong>Musaned</strong> (musaned.com.sa) is the official MHRSD platform for all domestic worker employment — equivalent to what Qiwa is for regular private sector employees.</p><p><strong>Employers use Musaned to:</strong></p><ul><li>Request domestic worker visas and select recruitment agencies</li><li>Execute and register domestic employment contracts</li><li>Pay wages electronically</li><li>Report issues, complaints, and contract terminations</li><li>Apply for exit visas for domestic workers</li><li>Transfer domestic workers to another employer (kafala transfer)</li></ul><p><strong>Worker visibility on Musaned:</strong></p><ul><li>Workers can view contract terms, wage payment history, and complaint status</li><li>Workers can communicate with their country's embassy through the platform</li></ul><p><strong>Insurance:</strong> A mandatory insurance scheme (Council of Ministers Resolution No. 591) covers domestic workers. Arranged through Musaned at visa issuance.</p><p><strong>Agencies:</strong> Employers must use MHRSD-licensed domestic worker recruitment agencies. Agency fees are borne by the employer — workers cannot be charged recruitment fees.</p>",
+      "ar": "<p><strong>منصة مساند</strong> (musaned.com.sa) هي منصة وزارة الموارد البشرية الرسمية لجميع جوانب توظيف عمالة المنازل.</p><p><strong>أصحاب العمل يستخدمون مساند لـ:</strong> طلب التأشيرات وإبرام العقود وصرف الأجور والإبلاغ عن المشكلات وتأشيرات الخروج ونقل الكفالة.</p><p><strong>حقوق العامل:</strong> الاطلاع على شروط العقد وسجل صرف الأجور والتواصل مع السفارة.</p><p><strong>التأمين الإلزامي:</strong> تغطية بموجب قرار مجلس الوزراء رقم 591، تُرتَّب عبر مساند عند إصدار التأشيرة.</p><p><strong>وكالات الاستقدام:</strong> مُرخَّصة من الوزارة. يتحمل صاحب العمل الرسوم — لا يجوز تحميل العامل أي رسوم استقدام.</p>"
+    },
+    "cite": {
+      "en": "Musaned platform · MHRSD · Council of Ministers Resolution No. 591",
+      "ar": "منصة مساند · وزارة الموارد البشرية · قرار مجلس الوزراء رقم 591"
+    }
+  },
+  {
+    "id": "dw-termination",
+    "topic": "domestic-workers",
+    "updated": false,
+    "lawRef": "Domestic Workers Regulation Arts. 18–26",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "How can a domestic employment contract be terminated?",
+      "ar": "كيف يمكن إنهاء عقد العمالة المنزلية؟"
+    },
+    "answer": {
+      "en": "<p><strong>Ways the contract can end:</strong></p><ul><li><strong>Natural expiry</strong> — end of agreed contract period (typically 1–2 years)</li><li><strong>Mutual agreement</strong> — with worker's written consent</li><li><strong>Employer termination</strong> — for misconduct or inability to perform work; written notice required</li><li><strong>Worker termination</strong> — for employer misconduct (non-payment, abuse, rights violations)</li><li><strong>Automatic termination</strong> — death of either party, medical incapacity, legal incapacity, or force majeure</li></ul><p><strong>Final settlement on termination:</strong></p><ul><li>End-of-service gratuity: 1 month's wage per year of service (after 2 years minimum)</li><li>All outstanding wages paid immediately</li><li>Return air ticket to home country at employer's expense</li><li>Employer must return passport and all personal documents</li></ul><p>Disputes are handled through Musaned and MHRSD Domestic Labour offices.</p>",
+      "ar": "<p><strong>طرق إنهاء العقد:</strong></p><ul><li><strong>انتهاء طبيعي</strong> — نهاية المدة المتفق عليها</li><li><strong>اتفاق متبادل</strong> — بموافقة كتابية من العامل</li><li><strong>إنهاء من صاحب العمل</strong> — للإخلال أو العجز؛ مع إشعار كتابي</li><li><strong>إنهاء من العامل</strong> — لإخلال صاحب العمل (عدم صرف أجور، إساءة، انتهاك حقوق)</li><li><strong>إنهاء تلقائي</strong> — وفاة أي طرف، عجز طبي، قوة قاهرة</li></ul><p><strong>التسوية النهائية:</strong> مكافأة نهاية خدمة (شهر لكل سنة بعد سنتين)، تسوية الأجور فورًا، تذكرة عودة، إعادة جواز السفر.</p>"
+    },
+    "cite": {
+      "en": "Domestic Workers Regulation Arts. 18–26 · Musaned · MHRSD",
+      "ar": "المواد 18–26 · مساند · وزارة الموارد البشرية"
     }
   }
 ]

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "osh-employer-obligations",
+    "topic": "osh",
+    "updated": false,
+    "lawRef": "Labour Law Chapter 8 (Arts. 121–141)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the employer's general occupational safety obligations?",
+      "ar": "ما التزامات صاحب العمل العامة في مجال السلامة المهنية؟"
+    },
+    "answer": {
+      "en": "<p>Chapter 8 of the Labour Law sets out core safety and health obligations for all private sector employers.</p><p><strong>Mandatory obligations:</strong></p><ul><li>Provide a <strong>safe and healthy work environment</strong> protecting employees from physical, chemical, biological, and ergonomic hazards</li><li>Supply protective equipment at <strong>no cost to the employee</strong></li><li>Inform employees of workplace hazards and required precautions</li><li>Record all work injuries and occupational diseases and report them to MHRSD</li><li>Post safety rules and emergency procedures in visible locations</li><li>Provide appropriate first aid kits on site</li><li>Not require any employee to perform a task presenting serious and imminent danger to their life or health</li></ul><p><strong>When a work injury occurs:</strong> Provide or arrange medical treatment immediately, bear all costs (hospitalisation, tests, prosthetics, transport), and report to GOSI. Failure to report means the employer personally bears all GOSI compensation costs.</p><p><strong>Oversight:</strong> MHRSD inspectors may enter any workplace at any time. The National Council for Occupational Safety and Health (NCOSH) sets national standards.</p>",
+      "ar": "<p>يُحدد الفصل الثامن من نظام العمل الالتزامات الجوهرية للسلامة والصحة المهنية لجميع أصحاب العمل.</p><p><strong>الالتزامات الإلزامية:</strong></p><ul><li>توفير <strong>بيئة عمل آمنة وصحية</strong> تحمي الموظفين من المخاطر المادية والكيميائية والبيولوجية</li><li>تزويد الموظفين بمعدات الوقاية <strong>دون أي تكلفة عليهم</strong></li><li>إطلاع الموظفين على المخاطر والاحتياطات الواجبة</li><li>الاحتفاظ بسجلات إصابات العمل والإبلاغ عنها للوزارة</li><li>تعليق قواعد السلامة وإجراءات الطوارئ في أماكن ظاهرة</li><li>توفير حقائب الإسعاف الأولي</li></ul><p><strong>عند وقوع إصابة عمل:</strong> توفير العلاج فورًا وتحمّل جميع التكاليف والإبلاغ للتأمينات. عدم التسجيل يعني تحمّل صاحب العمل كامل التعويضات شخصيًا.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Chapter 8 (Arts. 121–141) · MHRSD",
+      "ar": "الفصل الثامن (المواد 121–141) · وزارة الموارد البشرية"
+    }
+  },
+  {
+    "id": "osh-outdoor-ban",
+    "topic": "osh",
+    "updated": true,
+    "lawRef": "Ministerial Decision No. 3337 · Enforced annually",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is the outdoor work ban and when does it apply?",
+      "ar": "ما حظر العمل في الأماكن المكشوفة ومتى يُطبَّق؟"
+    },
+    "answer": {
+      "en": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>Rule</th><th>Detail</th></tr></thead><tbody><tr><td>Prohibited hours</td><td>12:00 noon to 3:00 PM daily</td></tr><tr><td>Period</td><td>June 15 to September 15 each year</td></tr><tr><td>Applies to</td><td>All private sector employers with outdoor workers</td></tr><tr><td>Report violations</td><td>MHRSD hotline 19911 or MHRSD mobile app</td></tr><tr><td>Enforcement body</td><td>MHRSD + National Council for Occupational Safety and Health (NCOSH)</td></tr></tbody></table></div><p><strong>What counts as outdoor work:</strong> Construction, agriculture, landscaping, loading/unloading, road maintenance, delivery, and similar activities under direct sunlight. Working inside vehicles or under shade does not constitute a violation.</p><p><strong>Exemptions:</strong> Workers in oil and gas companies; emergency maintenance workers (with protective measures in place).</p><p><strong>Employer obligations during the ban:</strong></p><ul><li>Reschedule outdoor tasks to before 12pm or after 3pm</li><li>Provide shaded rest areas, cool drinking water, hydration breaks</li><li>Train supervisors to recognise heat stress symptoms</li><li>Post ban notice at the worksite</li></ul>",
+      "ar": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>الحكم</th><th>التفاصيل</th></tr></thead><tbody><tr><td>الساعات المحظورة</td><td>من الساعة 12 ظهرًا حتى 3 عصرًا يوميًا</td></tr><tr><td>فترة التطبيق</td><td>من 15 يونيو حتى 15 سبتمبر من كل عام</td></tr><tr><td>من يشمله</td><td>جميع أصحاب العمل في القطاع الخاص الذين لديهم عمال في الخارج</td></tr><tr><td>الإبلاغ عن المخالفات</td><td>الخط الساخن 19911 أو تطبيق الوزارة</td></tr><tr><td>جهة التطبيق</td><td>وزارة الموارد البشرية + المجلس الوطني للسلامة والصحة المهنية</td></tr></tbody></table></div><p><strong>الاستثناءات:</strong> العمال في شركات النفط والغاز؛ عمال الصيانة في حالات الطوارئ (بشرط اتخاذ الاحتياطات اللازمة).</p><p><strong>التزامات صاحب العمل:</strong> إعادة جدولة الأعمال الخارجية، توفير مناطق استراحة مظللة ومياه باردة، تدريب المشرفين على الإجهاد الحراري، وتعليق إشعار الحظر.</p>"
+    },
+    "cite": {
+      "en": "Ministerial Decision No. 3337 (2014) · MHRSD announcement June 2025 · NCOSH",
+      "ar": "قرار وزاري رقم 3337 (2014) · إعلان الوزارة يونيو 2025 · المجلس الوطني"
+    },
+    "callout": {
+      "en": "<strong>Annually enforced — June 15 to September 15:</strong> MHRSD and NCOSH jointly enforce this ban every year. Violations are reported via hotline 19911 and carry MHRSD sanctions. This is legally enforceable — not optional.",
+      "ar": "<strong>مُطبَّق سنويًا — من 15 يونيو إلى 15 سبتمبر:</strong> تُطبِّق الوزارة والمجلس الوطني هذا الحظر مشتركَين كل عام. يُبلَّغ عن المخالفات عبر 19911 وتُفضي إلى عقوبات وزارية. الأمر إلزامي قانونًا."
+    }
+  },
+  {
+    "id": "osh-health-insurance",
+    "topic": "osh",
+    "updated": false,
+    "lawRef": "Council of Cooperative Health Insurance (CCHI)",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "Is health insurance mandatory for employees in KSA?",
+      "ar": "هل التأمين الصحي إلزامي للموظفين في المملكة؟"
+    },
+    "answer": {
+      "en": "<p>Yes. <strong>Compulsory Health Insurance (CHI)</strong> is mandatory for all private sector employees and their dependants, regulated by the Council of Cooperative Health Insurance (CCHI).</p><p><strong>Who must be covered:</strong></p><ul><li>All private sector employees — Saudi and non-Saudi</li><li>Dependants (spouse and children) — scope varies by policy</li><li>Must be in place before a work visa is issued for expatriate employees (requirement strengthened late 2025)</li></ul><p><strong>Insurance requirements:</strong></p><ul><li>Must be provided by a CCHI-registered and approved insurer — self-insurance is not permitted</li><li>Minimum coverage standards set by CCHI include inpatient and outpatient care, maternity, chronic conditions, and emergency treatment</li><li>Full cost borne by the employer — employees cannot be required to pay premiums</li><li>Coverage must be continuous — lapses are a compliance violation</li></ul><p><strong>Penalties:</strong> Operating without valid employee health insurance results in MHRSD fines and can affect work permit renewals.</p>",
+      "ar": "<p>نعم. <strong>التأمين الصحي التعاوني الإلزامي</strong> فرض على جميع موظفي القطاع الخاص وذويهم، ويُنظِّمه مجلس الضمان الصحي التعاوني.</p><p><strong>من يجب تأمينه:</strong></p><ul><li>جميع موظفي القطاع الخاص</li><li>الذوو (الزوج/ة والأبناء)</li><li>يجب أن يكون ساريًا قبل إصدار تأشيرة العمل</li></ul><p><strong>المتطلبات:</strong></p><ul><li>يجب أن يُقدَّم من مزود معتمد لدى المجلس — التأمين الذاتي غير مسموح</li><li>الحد الأدنى للتغطية يشمل الرعاية التنويمية والخارجية والأمومة والأمراض المزمنة</li><li>يتحمل صاحب العمل كامل التكلفة — لا يجوز إلزام الموظفين بالدفع</li></ul>"
+    },
+    "cite": {
+      "en": "Council of Cooperative Health Insurance (CCHI) · KPMG Flash Alert Dec 2025",
+      "ar": "مجلس الضمان الصحي التعاوني · تنبيه كي بي إم جي ديسمبر 2025"
+    }
+  },
+  {
+    "id": "osh-qiwa-classification",
+    "topic": "osh",
+    "updated": true,
+    "lawRef": "Qiwa platform — 2025",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What is worker skill classification on Qiwa and why does it matter?",
+      "ar": "ما تصنيف مستوى مهارة العامل على قيوة ولماذا يهم؟"
+    },
+    "answer": {
+      "en": "<p>As of 2025, MHRSD requires every employee to be formally classified by skill level in Qiwa. This classification has direct regulatory consequences.</p><div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>Classification</th><th>General criteria</th></tr></thead><tbody><tr><td><strong>High Skill</strong></td><td>Engineers, doctors, accountants, IT specialists, senior managers</td></tr><tr><td><strong>Skilled</strong></td><td>Technicians, nurses, skilled tradespeople with certification or training</td></tr><tr><td><strong>Basic / Labour</strong></td><td>Unskilled or manual labour — cleaning, loading, general labour</td></tr></tbody></table></div><p><strong>Why it matters:</strong></p><ul><li><strong>Visa processing:</strong> Higher classification → faster visa issuance and fewer restrictions</li><li><strong>Saudization (Nitaqat) scoring:</strong> High Skill expatriates may count more favourably in calculations</li><li><strong>MHRSD inspection ratings:</strong> Misclassification — especially over-classifying low-skill roles — is flagged during inspections</li><li><strong>Digital certificates:</strong> Employees can generate salary and service certificates via Qiwa Individuals; classification appears in those certificates</li></ul><p><strong>HR action:</strong> Review all job titles, update classifications on Qiwa, and implement training programmes aligned with skill-level expectations.</p>",
+      "ar": "<p>اعتبارًا من 2025، تشترط الوزارة تصنيف كل موظف بحسب مستوى مهارته في قيوة.</p><div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>التصنيف</th><th>المعايير العامة</th></tr></thead><tbody><tr><td><strong>عالي المهارة</strong></td><td>مهندسون وأطباء ومحاسبون ومتخصصو تقنية وكبار المديرين</td></tr><tr><td><strong>مهاري</strong></td><td>فنيون وممرضون وحرفيون مهرة بمؤهلات أو تدريب</td></tr><tr><td><strong>أساسي / عمالة</strong></td><td>الأعمال اليدوية البسيطة — نظافة وتحميل وأعمال عامة</td></tr></tbody></table></div><p><strong>لماذا يهم:</strong> سرعة إصدار التأشيرات، احتساب نطاقات، تقييمات التفتيش، وظهور التصنيف في شهادات الراتب الرقمية.</p>"
+    },
+    "cite": {
+      "en": "MHRSD · Qiwa platform · TASC Outsourcing 2025",
+      "ar": "وزارة الموارد البشرية · منصة قيوة"
+    },
+    "callout": {
+      "en": "<strong>2025 requirement:</strong> Worker skill classification is now mandatory on Qiwa for all employees. Misclassification creates compliance discrepancies during MHRSD audits and affects visa processing and Saudization scoring.",
+      "ar": "<strong>اشتراط 2025:</strong> أصبح تصنيف مستوى المهارة إلزاميًا على قيوة. يُفضي التصنيف الخاطئ إلى تناقضات امتثال أثناء التدقيق."
+    }
+  },
+  {
+    "id": "osh-accident-reporting",
+    "topic": "osh",
+    "updated": false,
+    "lawRef": "Labour Law Arts. 138–141",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What must be done when a workplace accident occurs?",
+      "ar": "ما الذي يجب فعله عند وقوع حادث عمل؟"
+    },
+    "answer": {
+      "en": "<p><strong>Immediate steps:</strong></p><ol><li>Provide first aid and arrange medical treatment without delay</li><li>Transfer the injured employee to a hospital at the employer's cost if needed</li><li>Notify GOSI of the injury — timelines apply depending on severity</li><li>Notify MHRSD if the injury results in death or total disability</li><li>Document in the workplace injury register, which must be maintained and available for inspection</li></ol><p><strong>Financial responsibility:</strong></p><ul><li>All medical costs (hospitalisation, surgery, tests, prosthetics, physiotherapy, transport) are borne by the employer unless covered by GOSI</li><li>If the employee is enrolled in GOSI, GOSI reimburses costs</li><li>If the employer <em>failed</em> to register the employee with GOSI, the employer bears all GOSI compensation amounts personally</li></ul><p><strong>Occupational diseases:</strong> Treated as work injuries. The date of first medical diagnosis is treated as the injury date.</p>",
+      "ar": "<p><strong>الخطوات الفورية:</strong></p><ol><li>تقديم الإسعافات الأولية وترتيب العلاج فورًا</li><li>نقل المصاب إلى المستشفى على نفقة صاحب العمل إذا لزم</li><li>إبلاغ التأمينات بالإصابة وفق المواعيد المحددة</li><li>إبلاغ الوزارة في حال الوفاة أو العجز الكلي</li><li>التوثيق في سجل إصابات العمل</li></ol><p><strong>المسؤولية المالية:</strong> جميع التكاليف الطبية على صاحب العمل ما لم تُغطِّها التأمينات. إن أخفق في التسجيل، يتحمل كامل تعويضات التأمينات شخصيًا.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 138–141 · MHRSD · GOSI",
+      "ar": "المواد 138–141 من نظام العمل · وزارة الموارد البشرية · التأمينات"
+    }
+  }
+]

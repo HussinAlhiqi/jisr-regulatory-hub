@@ -143,5 +143,28 @@
       "en": "Labour Law Art. 112 · Unchanged in Feb 2025",
       "ar": "المادة 112 من نظام العمل · لم تتغير في فبراير 2025"
     }
+  },
+  {
+    "id": "working-hours",
+    "topic": "leave",
+    "updated": false,
+    "lawRef": "Labour Law Arts. 98–108",
+    "audiences": [
+      "expat",
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "What are the maximum working hours and rest day rules?",
+      "ar": "ما الحد الأقصى لساعات العمل وقواعد يوم الراحة الأسبوعية؟"
+    },
+    "answer": {
+      "en": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>Rule</th><th>Standard</th><th>Ramadan (Muslim employees)</th></tr></thead><tbody><tr><td>Maximum daily hours</td><td>8 hours</td><td>6 hours</td></tr><tr><td>Maximum weekly hours</td><td>48 hours</td><td>36 hours</td></tr><tr><td>Mandatory rest break</td><td>30 minutes after every 5 continuous hours</td><td>Same</td></tr><tr><td>Weekly rest day</td><td>1 full day (Friday by default)</td><td>Same</td></tr></tbody></table></div><p><strong>Weekly rest day:</strong> Friday is the default. Employers may designate a different day with MHRSD approval, provided at least one full day off per week is given. Employees required to work on their rest day must receive compensatory rest or overtime pay.</p><p><strong>Ramadan:</strong> Hours reduced by 2 per day for Muslim employees. Non-Muslim employees have no legal entitlement to the reduction (though many employers apply it uniformly).</p><p><strong>Overtime:</strong> Hours beyond the contractual limit are paid at the normal hourly wage + 50%. Alternatively, 1.5 hours of compensatory leave per overtime hour may be offered with the employee's written agreement (February 2025 change).</p><p><strong>Night work:</strong> 9pm–6am. Juvenile employees (under 18) may not perform night work.</p>",
+      "ar": "<div style=\"overflow-x:auto\"><table class=\"data-tbl\"><thead><tr><th>الحكم</th><th>المعتاد</th><th>رمضان (للمسلمين)</th></tr></thead><tbody><tr><td>الحد الأقصى اليومي</td><td>8 ساعات</td><td>6 ساعات</td></tr><tr><td>الحد الأقصى الأسبوعي</td><td>48 ساعة</td><td>36 ساعة</td></tr><tr><td>استراحة إلزامية</td><td>30 دقيقة بعد كل 5 ساعات متواصلة</td><td>ذاتها</td></tr><tr><td>يوم الراحة الأسبوعية</td><td>يوم كامل (الجمعة افتراضيًا)</td><td>ذاته</td></tr></tbody></table></div><p><strong>يوم الراحة:</strong> الجمعة افتراضيًا. لصاحب العمل تغييره بموافقة الوزارة شريطة يوم كامل أسبوعيًا على الأقل.</p><p><strong>رمضان:</strong> تخفيض ساعتين يوميًا للمسلمين فقط.</p><p><strong>العمل الإضافي:</strong> أجر + 50%، أو إجازة تعويضية 1.5 ساعة/ساعة إضافية باتفاق كتابي (تغيير فبراير 2025).</p>"
+    },
+    "cite": {
+      "en": "Labour Law Arts. 98–108 · Unchanged in Feb 2025",
+      "ar": "المواد 98–108 من نظام العمل · لم تتغير في فبراير 2025"
+    }
   }
 ]

@@ -146,5 +146,27 @@
       "en": "Labour Law Art. 1 (language provisions) · Labour Law Art. 51 (contract requirements)",
       "ar": "المادة 1 من نظام العمل (أحكام اللغة) · المادة 51 (متطلبات العقد)"
     }
+  },
+  {
+    "id": "arabic-language",
+    "topic": "hiring",
+    "updated": false,
+    "lawRef": "Labour Law Art. 4",
+    "audiences": [
+      "hr",
+      "founder"
+    ],
+    "question": {
+      "en": "Must employment contracts and workplace documents be in Arabic?",
+      "ar": "هل يجب أن تكون عقود العمل والوثائق الإدارية باللغة العربية؟"
+    },
+    "answer": {
+      "en": "<p>Yes. Arabic is the mandatory language for all employment-related documents in KSA.</p><p><strong>What must be in Arabic:</strong></p><ul><li>Employment contracts (Qiwa contracts are in Arabic by default)</li><li>Internal Work Regulations (IWR)</li><li>Payslips</li><li>Disciplinary notices and written warnings</li><li>Any records, files, or instructions required by the Labour Law</li></ul><p><strong>Bilingual documents permitted:</strong> Employers may provide bilingual versions for practical purposes — especially for non-Arabic-speaking employees. Common and permitted.</p><p><strong>Arabic version prevails:</strong> In any dispute before MHRSD or Labour Courts, the Arabic version is the legally binding version. If Arabic and non-Arabic conflict, Arabic controls. Employees cannot waive this protection.</p><p><strong>Practical implication:</strong> International companies operating primarily in English must audit their HR documentation — English-only contracts and policies have no legal standing in KSA proceedings.</p><p><strong>Risk area:</strong> Qiwa auto-generates contracts in Arabic, so the employment contract is covered. The risk is in ancillary documents: offer letters, addenda, policy documents, and disciplinary notices.</p>",
+      "ar": "<p>نعم. العربية هي اللغة الإلزامية لجميع الوثائق المتعلقة بالعمل في المملكة.</p><p><strong>ما يجب أن يكون باللغة العربية:</strong> عقود العمل (قيوة عربية افتراضيًا)، اللوائح الداخلية، كشوف الرواتب، إشعارات التأديب والإنذارات، أي سجلات أو تعليمات يشترطها نظام العمل.</p><p><strong>الوثائق ثنائية اللغة مسموحة:</strong> شائعة وجائزة للأغراض العملية.</p><p><strong>النسخة العربية تتقدم:</strong> في أي نزاع أمام الوزارة أو المحاكم العمالية.</p><p><strong>منطقة الخطر:</strong> خطابات العرض والملاحق وسياسات الموارد البشرية والإشعارات التأديبية بالإنجليزية فقط لا حجية لها.</p>"
+    },
+    "cite": {
+      "en": "Labour Law Art. 4 · MHRSD · Unchanged in 2025",
+      "ar": "المادة 4 من نظام العمل · وزارة الموارد البشرية"
+    }
   }
 ]
