@@ -3,6 +3,7 @@ import Base     from '../layouts/Base.astro';
 import Topbar   from '../components/Topbar.astro';
 import Sidebar  from '../components/Sidebar.astro';
 import SubscribeModal from '../components/SubscribeModal.astro';
+import MobileTopicNav from '../components/MobileTopicNav.astro';
 import topicsData from '../content/topics.json';
 import changesData from '../content/changes.json';
 
@@ -11,6 +12,7 @@ const title = 'Jisr Regulatory Hub — Saudi Arabia';
 ---
 <Base title={title} lang={lang}>
   <Topbar lang={lang} />
+  <MobileTopicNav lang={lang} />
   <div class="layout">
     <Sidebar lang={lang} active="home" />
     <main class="main">
@@ -22,11 +24,15 @@ const title = 'Jisr Regulatory Hub — Saudi Arabia';
           <h1>KSA Regulatory <em>Hub</em></h1>
           <p>Plain-language Saudi HR law for everyone working in the Kingdom. Updated to reflect the February 2025 amendments — the most significant reform since 2015.</p>
           <div class="hero-stats">
-            <div class="h-stat"><strong>6</strong><span>Topic areas</span></div>
-            <div class="h-stat"><strong>27</strong><span>Articles</span></div>
-            <div class="h-stat"><strong>10</strong><span>2025 changes</span></div>
+            <div class="h-stat"><strong>10</strong><span>Topic areas</span></div>
+            <div class="h-stat"><strong>53</strong><span>Articles</span></div>
+            <div class="h-stat"><strong>14</strong><span>2025 changes</span></div>
             <div class="h-stat"><strong>EN / عربي</strong><span>Bilingual</span></div>
           </div>
+          <a href="#change-feed" class="hero-changes-cta">
+            <span class="hcc-dot"></span>
+            14 regulation changes since February 2025 &darr;
+          </a>
         </div>
 
         <!-- Topic cards -->
@@ -49,7 +55,7 @@ const title = 'Jisr Regulatory Hub — Saudi Arabia';
         </div>
 
         <!-- Change feed -->
-        <div class="sec-hd"><h2>Latest regulation changes</h2><span>February 2025 amendments · Royal Decree M/44</span></div>
+        <div class="sec-hd" id="change-feed"><h2>Latest regulation changes</h2><span>February 2025 amendments · Royal Decree M/44</span></div>
         <div class="change-feed">
           {changesData.map(c => (
             <a href={`/topics/${c.topic}/`} class="change-item">

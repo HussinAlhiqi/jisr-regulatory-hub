@@ -1,0 +1,22 @@
+---
+import topicsData from '../content/topics.json';
+
+interface Props {
+  lang: 'en' | 'ar';
+  active?: string;
+}
+const { lang, active } = Astro.props;
+const isAr = lang === 'ar';
+const base = isAr ? '/ar' : '';
+---
+<nav class="mobile-topic-nav" aria-label={isAr ? 'الموضوعات' : 'Topics'}>
+  {topicsData.map(t => (
+    <a
+      href={`${base}/topics/${t.id}/`}
+      class={`mtn-pill${active === t.id ? ' active' : ''}`}
+    >
+      <span>{t.icon}</span>
+      {t.title[lang]}
+    </a>
+  ))}
+</nav>

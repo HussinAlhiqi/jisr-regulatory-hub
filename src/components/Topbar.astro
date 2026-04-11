@@ -16,8 +16,16 @@ const ui = {
   subscribe: isAr ? 'اشترك' : 'Subscribe',
 };
 
-const arHref = isAr ? '/' : '/ar/';
-const enHref = isAr ? '/' : '/ar/';
+// Derive the equivalent page in the other language
+const currentPath = Astro.url.pathname;
+// EN → AR: prepend /ar
+// AR → EN: strip /ar prefix
+const enHref = isAr
+  ? currentPath.replace(/^\/ar/, '') || '/'
+  : currentPath;
+const arHref = isAr
+  ? currentPath
+  : '/ar' + (currentPath === '/' ? '/' : currentPath);
 ---
 <header class="topbar">
   <a class="logo" href={isAr ? '/ar/' : '/'}>
@@ -47,10 +55,9 @@ const enHref = isAr ? '/' : '/ar/';
     <button class="aud-btn" data-aud="founder">{ui.founder}</button>
   </div>
 
-  <!-- Language toggle -->
   <div class="lang-toggle">
-    <a href="/" class={`lang-btn${!isAr ? ' active' : ''}`}>EN</a>
-    <a href="/ar/" class={`lang-btn${isAr ? ' active' : ''}`}>عربي</a>
+    <a href={enHref} class={`lang-btn${!isAr ? ' active' : ''}`}>EN</a>
+    <a href={arHref} class={`lang-btn${isAr ? ' active' : ''}`}>عربي</a>
   </div>
 
   <button class="subscribe-btn" onclick="openSubscribe()">

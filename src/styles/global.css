@@ -273,6 +273,10 @@ mark { background: #FFF3B0; color: inherit; border-radius: 2px; padding: 0 1px; 
 .h-stat { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius-md); padding: 10px 14px; }
 .h-stat strong { display: block; font-size: 18px; font-weight: 700; color: #fff; }
 .h-stat span   { font-size: 9.5px; color: rgba(255,255,255,.38); text-transform: uppercase; letter-spacing: .7px; }
+.hero-changes-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 12px; font-weight: 600; color: var(--teal); text-decoration: none; transition: color .12s; }
+.hero-changes-cta:hover { color: #fff; }
+.hcc-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); display: inline-block; animation: pulse-dot 1.8s ease-in-out infinite; }
+@keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .5; transform: scale(.75); } }
 
 /* ── Topic cards (home) ── */
 .sec-hd { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
@@ -354,6 +358,91 @@ mark { background: #FFF3B0; color: inherit; border-radius: 2px; padding: 0 1px; 
 /* ── Disclaimer ── */
 .disclaimer { margin-top: 32px; padding: 14px 18px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 11px; color: var(--mist); line-height: 1.7; }
 
+/* ── Mobile topic pill nav ── */
+.mobile-topic-nav {
+  display: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 16px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  gap: 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.mobile-topic-nav::-webkit-scrollbar { display: none; }
+.mtn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--slate);
+  background: var(--white);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background .12s, border-color .12s, color .12s;
+}
+.mtn-pill:hover  { background: var(--teal-lt); border-color: var(--teal); color: var(--teal-dk); }
+.mtn-pill.active { background: var(--teal-lt); border-color: var(--teal); color: var(--teal-dk); font-weight: 600; }
+
+/* ── Back to top button ── */
+#back-to-top {
+  position: fixed;
+  bottom: 28px;
+  inset-inline-end: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .2s, transform .2s;
+  pointer-events: none;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+#back-to-top:hover   { background: var(--teal-dk); }
+
+/* ── Audience filter banner ── */
+.aud-filter-banner {
+  font-size: 12.5px;
+  color: var(--slate);
+  background: var(--teal-lt);
+  border: 1px solid var(--teal);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  margin-bottom: 12px;
+}
+.aud-filter-banner a { color: var(--teal-dk); font-weight: 600; }
+
+/* ── Search empty state ── */
+.sr-empty { padding: 24px 0 8px; text-align: center; }
+.sr-empty-msg { font-size: 13.5px; color: var(--body); margin-bottom: 12px; }
+.sr-empty-hint { font-size: 11px; color: var(--mist); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+.sr-chips { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.sr-chip {
+  font-size: 11.5px;
+  padding: 4px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--slate);
+  cursor: pointer;
+  transition: background .1s, border-color .1s;
+}
+.sr-chip:hover { background: var(--teal-lt); border-color: var(--teal); color: var(--teal-dk); }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .topic-grid, .articles-layout { grid-template-columns: 1fr 1fr; }
@@ -363,6 +452,7 @@ mark { background: #FFF3B0; color: inherit; border-radius: 2px; padding: 0 1px; 
 @media (max-width: 680px) {
   :root { --sidebar-w: 0px; }
   .sidebar { display: none; }
+  .mobile-topic-nav { display: flex; }
   .main, [dir="rtl"] .main { margin-left: 0; margin-right: 0; }
   #searchResults { inset-inline-start: 0; }
   .topic-grid, .aud-cards { grid-template-columns: 1fr 1fr; }

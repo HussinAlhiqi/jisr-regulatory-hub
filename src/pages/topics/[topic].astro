@@ -3,6 +3,7 @@ import Base     from '../../layouts/Base.astro';
 import Topbar   from '../../components/Topbar.astro';
 import Sidebar  from '../../components/Sidebar.astro';
 import SubscribeModal from '../../components/SubscribeModal.astro';
+import MobileTopicNav from '../../components/MobileTopicNav.astro';
 import topicsData from '../../content/topics.json';
 import { readFileSync } from 'fs';
 import { join } from 'path';
@@ -28,6 +29,7 @@ const pageTitle = `${topicMeta.title.en} — Jisr Regulatory Hub`;
 ---
 <Base title={pageTitle} lang={lang}>
   <Topbar lang={lang} />
+  <MobileTopicNav lang={lang} active={topic} />
   <div class="layout">
     <Sidebar lang={lang} active={topic} />
     <main class="main">
@@ -75,8 +77,10 @@ const pageTitle = `${topicMeta.title.en} — Jisr Regulatory Hub`;
           <div class="articles-col">
             {articles.map((art: any) => (
               <div
+                id={art.id}
                 class={`article-card${art.updated ? ' upd-card' : ''}`}
                 data-updated={art.updated ? 'true' : 'false'}
+                data-audiences={(art.audiences || ['all']).join(',')}
               >
                 <button class="art-header" onclick="toggleCard(this)">
                   <span class="art-q">{art.question.en}</span>
@@ -148,6 +152,10 @@ const pageTitle = `${topicMeta.title.en} — Jisr Regulatory Hub`;
   </div>
 
   <SubscribeModal lang={lang} />
+
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
   <script src="../../scripts/main.js"></script>
   <script>
     // Auto-open first updated card on load
@@ -156,18 +164,19 @@ const pageTitle = `${topicMeta.title.en} — Jisr Regulatory Hub`;
 
     window.__ARTICLES__ = [];
     (async () => {
-      const topics = ['hiring','pay','leave','termination','worker-types','compliance'];
+      const topics = ['hiring','pay','leave','termination','worker-types','compliance','gosi','osh','domestic-workers','iwr'];
       for (const t of topics) {
         try {
           const res  = await fetch(`/content/${t}/articles.json`);
           const arts = await res.json();
           arts.forEach((a: any) => {
             window.__ARTICLES__.push({
-              q:       a.question.en,
-              body:    a.answer.en.replace(/<[^>]+>/g,'').slice(0,160),
-              topic:   t,
-              updated: a.updated,
-              href:    `/topics/${t}/`,
+              q:         a.question.en,
+              body:      a.answer.en.replace(/<[^>]+>/g,'').slice(0,160),
+              topic:     t,
+              articleId: a.id,
+              updated:   a.updated,
+              href:      `/topics/${t}/#${a.id}`,
             });
           });
         } catch(e) {}
