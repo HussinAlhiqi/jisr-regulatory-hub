@@ -102,27 +102,5 @@
       "en": "Ministerial Resolution No. 3568 (25 July 2023) · Paul Hastings · MHRSD Qiwa",
       "ar": "القرار الوزاري رقم 3568 (25 يوليو 2023) · بول هاستينغز · قيوة"
     }
-  },
-  {
-    "id": "training-disclosure",
-    "topic": "compliance",
-    "updated": false,
-    "lawRef": "Ministerial Resolution No. 3568 (July 2023)",
-    "audiences": [
-      "hr",
-      "founder"
-    ],
-    "question": {
-      "en": "What is the annual training disclosure obligation and when is the deadline?",
-      "ar": "ما التزام الإفصاح السنوي عن التدريب وما موعده النهائي؟"
-    },
-    "answer": {
-      "en": "<p>Employers with <strong>50+ employees</strong> must disclose annual training data via Qiwa by <strong>January 31 each year</strong>.</p><p><strong>Legal basis:</strong> Ministerial Resolution No. 3568 (July 2023).</p><p><strong>Training requirements:</strong></p><ul><li>At least <strong>12% of Saudi employees</strong> must be trained annually</li><li>Minimum <strong>8 training units per trainee</strong></li><li>What counts as 1 training unit: Lectures (2 hrs), online training (3 hrs), on-the-job training (8 hrs)</li></ul><p><strong>What counts as training:</strong> Courses, workshops, lectures, seminars; online/e-learning; career guidance programmes; on-the-job training; career rotation; Saudi employees studying on the employer's expense.</p><p><strong>Penalties:</strong></p><ul><li>SAR 5,000 to SAR 15,000 depending on company size</li><li><strong>Doubled for repeat offenders</strong></li></ul><p><strong>Process:</strong> MHRSD sends a Qiwa reminder one month before deadline. Submit through the employer's Qiwa business account.</p>",
-      "ar": "<p>يجب على أصحاب العمل بـ <strong>50 موظفًا فأكثر</strong> الإفصاح عن بيانات التدريب السنوية عبر قيوة بحلول <strong>31 يناير سنويًا</strong>.</p><p><strong>الأساس القانوني:</strong> قرار وزاري رقم 3568 (يوليو 2023).</p><p><strong>متطلبات التدريب:</strong></p><ul><li>تدريب <strong>12% على الأقل من الموظفين السعوديين</strong> سنويًا</li><li><strong>8 وحدات تدريبية كحد أدنى لكل مشارك</strong></li><li>ما يُعادل وحدة واحدة: محاضرات (ساعتان)، إلكتروني (3 ساعات)، ميداني (8 ساعات)</li></ul><p><strong>العقوبات:</strong> 5,000 إلى 15,000 ريال بحسب الحجم — <strong>مضاعفة عند التكرار</strong>.</p>"
-    },
-    "cite": {
-      "en": "Ministerial Resolution No. 3568 (July 2023) · Paul Hastings · MHRSD",
-      "ar": "قرار وزاري رقم 3568 (يوليو 2023) · بول هاستينغز · وزارة الموارد البشرية"
-    }
   }
 ]

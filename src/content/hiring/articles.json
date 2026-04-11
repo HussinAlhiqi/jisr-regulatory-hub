@@ -125,29 +125,6 @@
     }
   },
   {
-    "id": "arabic-language-requirement",
-    "topic": "hiring",
-    "updated": false,
-    "lawRef": "Labour Law Art. 1 — Language requirements",
-    "audiences": [
-      "hr",
-      "founder",
-      "expat"
-    ],
-    "question": {
-      "en": "Must employment contracts be in Arabic?",
-      "ar": "هل يجب أن تكون عقود العمل باللغة العربية؟"
-    },
-    "answer": {
-      "en": "<p>Yes. Under the Labour Law, Arabic is the language of all employment-related documents, records, files, and contracts. This means:</p><ul><li>The Qiwa electronic contract is issued in Arabic by default — this is the legally binding version</li><li>Employers may prepare a bilingual contract (Arabic + English, or Arabic + another language), but in any dispute <strong>the Arabic text prevails</strong></li><li>Any instruction, notice, or disciplinary letter issued by the employer to employees must also be in Arabic to be enforceable</li></ul><p><strong>Practical implication for international companies:</strong></p><ul><li>Employment contracts drafted in English only are not fully enforceable in Saudi courts</li><li>If you provide an English translation alongside the Qiwa Arabic contract, include a clause explicitly stating that the Arabic version governs in case of inconsistency</li><li>Internal work regulations (IWR) must also be in Arabic</li></ul><p><strong>Note on Qiwa contracts:</strong> Since all contracts are now issued exclusively through Qiwa and that platform operates in Arabic, the Arabic-language requirement is effectively built into the compliance process. The risk arises with side agreements, addenda, or internal HR policies drafted only in English.</p>",
-      "ar": "<p>نعم. بموجب نظام العمل، العربية هي لغة جميع وثائق التوظيف والسجلات والملفات والعقود. ويعني ذلك:</p><ul><li>يُصدَر عقد قيوة الإلكتروني بالعربية بشكل افتراضي — وهذه هي النسخة الملزمة قانونًا</li><li>يجوز لأصحاب العمل إعداد عقد مزدوج اللغة (العربية + الإنجليزية أو لغة أخرى)، لكن في أي نزاع <strong>يسود النص العربي</strong></li><li>يجب أن تكون أي تعليمات أو إشعارات أو خطابات تأديبية يُصدرها صاحب العمل للموظفين بالعربية أيضًا لتكون نافذة</li></ul><p><strong>التداعيات العملية للشركات الدولية:</strong></p><ul><li>العقود المُحرَّرة بالإنجليزية فحسب لا تُنفَّذ بالكامل أمام المحاكم السعودية</li><li>إذا قدّمت ترجمة إنجليزية مع عقد قيوة العربي، أضف بندًا يُنصّ صراحةً على أن النسخة العربية هي المرجع في حالة التعارض</li><li>يجب أن تكون اللوائح الداخلية للعمل (IWR) باللغة العربية أيضًا</li></ul><p><strong>ملاحظة بشأن عقود قيوة:</strong> بما أن جميع العقود تُصدَر الآن حصريًا عبر قيوة وتعمل المنصة بالعربية، فإن متطلب اللغة العربية مُدمَج فعليًا في عملية الامتثال. تنشأ المخاطرة في الاتفاقيات الجانبية والملاحق وسياسات الموارد البشرية الداخلية المُحرَّرة بالإنجليزية فقط.</p>"
-    },
-    "cite": {
-      "en": "Labour Law Art. 1 (language provisions) · Labour Law Art. 51 (contract requirements)",
-      "ar": "المادة 1 من نظام العمل (أحكام اللغة) · المادة 51 (متطلبات العقد)"
-    }
-  },
-  {
     "id": "arabic-language",
     "topic": "hiring",
     "updated": false,

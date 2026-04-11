@@ -3,7 +3,7 @@
     "id": "hiring",
     "icon": "📋",
     "hasUpdates": true,
-    "articleCount": 7,
+    "articleCount": 6,
     "updateCount": 2,
     "title": {
       "en": "Hiring & Contracts",
@@ -99,7 +99,7 @@
     "id": "pay",
     "icon": "💰",
     "hasUpdates": true,
-    "articleCount": 6,
+    "articleCount": 5,
     "updateCount": 3,
     "title": {
       "en": "Pay & Compensation",
@@ -289,7 +289,7 @@
     "id": "termination",
     "icon": "⚖️",
     "hasUpdates": true,
-    "articleCount": 5,
+    "articleCount": 6,
     "updateCount": 2,
     "title": {
       "en": "Termination",
@@ -466,7 +466,7 @@
     "id": "compliance",
     "icon": "✅",
     "hasUpdates": true,
-    "articleCount": 5,
+    "articleCount": 4,
     "updateCount": 3,
     "title": {
       "en": "Compliance",

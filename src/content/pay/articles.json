@@ -131,27 +131,5 @@
       "en": "WPS Regulations · Mudad Platform (mudad.com.sa) · MHRSD · BIPO Employment Guide 2025",
       "ar": "لوائح نظام حماية الأجور · منصة مدد (mudad.com.sa) · وزارة الموارد البشرية · دليل توظيف BIPO 2025"
     }
-  },
-  {
-    "id": "mudad-wps",
-    "topic": "pay",
-    "updated": false,
-    "lawRef": "MHRSD · Mudad platform",
-    "audiences": [
-      "hr",
-      "founder"
-    ],
-    "question": {
-      "en": "How does the Mudad platform and Wage Protection System (WPS) work?",
-      "ar": "كيف تعمل منصة مداد ونظام حماية الأجور؟"
-    },
-    "answer": {
-      "en": "<p><strong>Mudad</strong> is the MHRSD payroll compliance platform implementing the Wage Protection System (WPS). Every private sector employer must process salaries through Mudad.</p><p><strong>How it works:</strong></p><ol><li>Register on Mudad and link employee bank accounts</li><li>Upload a <strong>Salary Information File (SIF)</strong> monthly with each employee's name, ID, salary amount, and payment date</li><li>Mudad cross-checks the SIF against Qiwa contracts</li><li>Process salary payment through a registered Saudi bank account</li><li>Mudad verifies receipt and records compliance</li></ol><p><strong>Mandatory rules:</strong></p><ul><li>All salaries must be paid in <strong>Saudi Riyals (SAR)</strong></li><li>Paid to a <strong>Saudi bank account in the employee's name</strong></li><li>SIF must be submitted <strong>within 30 days of the salary payment date</strong></li><li>Any deduction must be digitally justified via Mudad and acknowledged by the employee</li><li>Monthly payslips must be provided to employees (soft or hard copy)</li></ul><p><strong>Penalties for non-compliance:</strong></p><ul><li>Delays beyond 10 days trigger automatic system warnings</li><li>Non-submission: immediate suspension of Ministry e-services</li><li>Two consecutive missed payments: suspension of right to renew work permits or issue new visas</li><li>Three months non-payment: employees may transfer to another employer without authorisation</li><li>Fines up to SAR 5,000 per employee for missing WPS submissions</li></ul>",
-      "ar": "<p><strong>مداد</strong> منصة الامتثال الرواتب الرسمية لوزارة الموارد البشرية المُطبِّقة لنظام حماية الأجور. يجب على كل صاحب عمل في القطاع الخاص معالجة الرواتب عبرها.</p><p><strong>آلية العمل:</strong></p><ol><li>التسجيل في مداد وربط حسابات الموظفين البنكية</li><li>رفع <strong>ملف بيانات الرواتب (SIF)</strong> شهريًا</li><li>مداد تُراجع الملف مقابل عقود قيوة</li><li>معالجة الدفع عبر حساب بنكي سعودي مسجَّل</li><li>مداد تتحقق من الاستلام وتسجّل الامتثال</li></ol><p><strong>الضوابط الإلزامية:</strong> SAR فقط، حساب سعودي باسم الموظف، SIF خلال 30 يومًا، تبرير رقمي لأي خصم، كشوف رواتب شهرية.</p><p><strong>عقوبات عدم الامتثال:</strong> تأخر 10 أيام = تحذيرات تلقائية؛ عدم التقديم = تعليق الخدمات الإلكترونية؛ دفعتان مفقودتان = تعليق تجديد التصاريح؛ 3 أشهر = حق انتقال الموظفين؛ غرامات حتى 5,000 ريال/موظف.</p>"
-    },
-    "cite": {
-      "en": "MHRSD · Mudad platform · AstroLabs · Multiplier · Ensaan Tech",
-      "ar": "وزارة الموارد البشرية · منصة مداد · أسترولابس"
-    }
   }
 ]
