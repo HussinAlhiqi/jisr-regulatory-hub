@@ -198,3 +198,13 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSubscri
   }, { passive: true });
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
+
+// ── Expose globals for inline onclick handlers ────────────────────────────────
+// Astro bundles scripts as ES modules (scoped), so functions used in
+// onclick="..." attributes must be explicitly placed on window.
+window.toggleCard       = toggleCard;
+window.setAud           = setAud;
+window.openSubscribe    = openSubscribe;
+window.closeSubscribe   = closeSubscribe;
+window.closeSubscribeOnBg = closeSubscribeOnBg;
+window.doSearch         = doSearch;
