@@ -1,7 +1,7 @@
 {
   "name": "jisr-regulatory-hub",
   "version": "1.0.0",
-  "description": "Jisr Regulatory Hub \u2014 Plain-language Saudi HR law",
+  "description": "Jisr Regulatory Hub — Plain-language Saudi HR law",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^7.0.6",
+    "@netlify/blobs": "^10.7.4",
+    "@netlify/functions": "^5.2.0",
     "astro": "^6.1.4"
   },
   "engines": {

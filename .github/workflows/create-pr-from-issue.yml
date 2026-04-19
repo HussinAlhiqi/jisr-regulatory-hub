@@ -1,0 +1,291 @@
+name: Create regulation update PR
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  create-pr:
+    # Only run when:
+    # 1. The comment contains the REGULATION_UPDATE marker
+    # 2. The issue has the 'regulation-update' label
+    # 3. The commenter is the repo owner (Hussin) — prevents abuse
+    if: |
+      contains(github.event.comment.body, 'REGULATION_UPDATE:') &&
+      contains(join(github.event.issue.labels.*.name, ','), 'regulation-update') &&
+      github.event.comment.user.login == github.repository_owner
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Parse YAML template from comment
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = context.payload.comment.body;
+
+            // Extract the YAML block between ```yaml and ```
+            const yamlMatch = comment.match(/```yaml\s*([\s\S]*?)```/);
+            if (!yamlMatch) {
+              core.setFailed('Could not find ```yaml block in comment');
+              return;
+            }
+
+            const yamlText = yamlMatch[1];
+
+            // Parse key fields using regex (avoids needing js-yaml in the runner)
+            function extract(key) {
+              // Match key: value (single line) or key: | (multiline block)
+              const singleLine = new RegExp(`^\\s*${key}:\\s*\\[\\[(.+?)\\]\\]`, 'm');
+              const singleClean = new RegExp(`^\\s*${key}:\\s*(.+)$`, 'm');
+              const m = yamlText.match(singleLine) || yamlText.match(singleClean);
+              return m ? m[1].trim() : '';
+            }
+
+            function extractMultiline(key) {
+              // Match key: | followed by indented lines
+              const re = new RegExp(`${key}:\\s*\\|\\s*\\n((?:[ \\t]+.*\\n?)*)`, 'm');
+              const m = yamlText.match(re);
+              if (!m) {
+                // Fallback: single-line with [[...]]
+                return extract(key);
+              }
+              return m[1]
+                .split('\n')
+                .map(l => l.replace(/^[ \t]{4}/, ''))  // dedent 4 spaces
+                .join('\n')
+                .trim();
+            }
+
+            const fields = {
+              topic:              extract('topic').replace(/\[\[|\]\]/g, ''),
+              article_id:         extract('article_id').replace(/\[\[|\]\]/g, ''),
+              updated:            extract('updated').replace(/\[\[|\]\]/g, ''),
+              law_ref:            extract('law_ref').replace(/\[\[|\]\]/g, ''),
+              question_en:        extract('question_en').replace(/\[\[|\]\]/g, ''),
+              question_ar:        extract('question_ar').replace(/\[\[|\]\]/g, ''),
+              answer_en:          extractMultiline('answer_en').replace(/\[\[|\]\]/g, ''),
+              answer_ar:          extractMultiline('answer_ar').replace(/\[\[|\]\]/g, ''),
+              callout_en:         extract('callout_en').replace(/\[\[|\]\]/g, ''),
+              callout_ar:         extract('callout_ar').replace(/\[\[|\]\]/g, ''),
+              cite_en:            extract('cite_en').replace(/\[\[|\]\]/g, ''),
+              cite_ar:            extract('cite_ar').replace(/\[\[|\]\]/g, ''),
+              change_summary_en:  extract('change_summary_en').replace(/\[\[|\]\]/g, ''),
+              change_summary_ar:  extract('change_summary_ar').replace(/\[\[|\]\]/g, ''),
+            };
+
+            // Validate required fields
+            const required = ['topic','article_id','question_en','question_ar','answer_en','answer_ar'];
+            for (const f of required) {
+              if (!fields[f]) {
+                core.setFailed(`Missing required field: ${f}`);
+                return;
+              }
+            }
+
+            // Export as env-safe JSON
+            core.setOutput('fields', JSON.stringify(fields));
+            core.setOutput('topic', fields.topic);
+            core.setOutput('article_id', fields.article_id);
+            console.log('Parsed fields:', JSON.stringify(fields, null, 2));
+
+      - name: Apply update to articles.json
+        id: apply
+        env:
+          FIELDS: ${{ steps.parse.outputs.fields }}
+        run: |
+          node - << 'EOF'
+          const fs   = require('fs');
+          const path = require('path');
+
+          const fields = JSON.parse(process.env.FIELDS);
+          const { topic, article_id } = fields;
+
+          const articlesPath = path.join('src', 'content', topic, 'articles.json');
+          if (!fs.existsSync(articlesPath)) {
+            console.error(`articles.json not found: ${articlesPath}`);
+            process.exit(1);
+          }
+
+          let articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
+
+          // Build the article object
+          const article = {
+            id:        article_id,
+            topic:     topic,
+            updated:   fields.updated === 'true',
+            lawRef:    fields.law_ref,
+            audiences: ['hr', 'founder', 'expat'],  // default; can be edited in PR
+            question:  { en: fields.question_en, ar: fields.question_ar },
+            answer:    { en: fields.answer_en,   ar: fields.answer_ar   },
+            cite:      { en: fields.cite_en,     ar: fields.cite_ar     },
+          };
+
+          if (fields.callout_en && fields.callout_en.trim()) {
+            article.callout = {
+              en: fields.callout_en,
+              ar: fields.callout_ar,
+            };
+          }
+
+          // Upsert: replace if id exists, otherwise append
+          const idx = articles.findIndex(a => a.id === article_id);
+          if (idx >= 0) {
+            articles[idx] = article;
+            console.log(`Updated existing article: ${article_id}`);
+          } else {
+            articles.push(article);
+            console.log(`Added new article: ${article_id}`);
+          }
+
+          fs.writeFileSync(articlesPath, JSON.stringify(articles, null, 2) + '\n', 'utf8');
+
+          // Also update the public/ copy for client-side search
+          const publicPath = path.join('public', 'content', topic, 'articles.json');
+          if (fs.existsSync(path.dirname(publicPath))) {
+            fs.writeFileSync(publicPath, JSON.stringify(articles, null, 2) + '\n', 'utf8');
+          }
+
+          console.log(`Written: ${articlesPath}`);
+          EOF
+
+      - name: Add change to changes.json
+        if: ${{ steps.parse.outputs.fields != '' }}
+        env:
+          FIELDS: ${{ steps.parse.outputs.fields }}
+        run: |
+          node - << 'EOF'
+          const fs     = require('fs');
+          const fields = JSON.parse(process.env.FIELDS);
+
+          if (!fields.change_summary_en) {
+            console.log('No change_summary_en — skipping changes.json update');
+            process.exit(0);
+          }
+
+          const changesPath = 'src/content/changes.json';
+          let changes = JSON.parse(fs.readFileSync(changesPath, 'utf8'));
+
+          const today = new Date().toISOString().slice(0, 7); // YYYY-MM
+
+          const entry = {
+            date:      today,
+            topic:     fields.topic,
+            articleId: fields.article_id,
+            title: {
+              en: fields.change_summary_en,
+              ar: fields.change_summary_ar,
+            },
+            lawRef:   fields.law_ref,
+            severity: 'medium',
+          };
+
+          // Avoid duplicate entries for same article_id
+          const exists = changes.some(c => c.articleId === fields.article_id &&
+                                           c.title.en   === fields.change_summary_en);
+          if (!exists) {
+            changes.push(entry);
+            fs.writeFileSync(changesPath, JSON.stringify(changes, null, 2) + '\n', 'utf8');
+            console.log(`Added change entry for ${fields.article_id}`);
+          } else {
+            console.log('Duplicate change entry — skipping');
+          }
+          EOF
+
+      - name: Create branch and push
+        id: branch
+        env:
+          TOPIC:      ${{ steps.parse.outputs.topic }}
+          ARTICLE_ID: ${{ steps.parse.outputs.article_id }}
+          ISSUE_NUM:  ${{ github.event.issue.number }}
+        run: |
+          BRANCH="regulation/issue-${ISSUE_NUM}-${TOPIC}-${ARTICLE_ID}"
+          git config user.name  "Jisr Regulatory Bot"
+          git config user.email "bot@jisr.net"
+          git checkout -b "${BRANCH}"
+          git add src/content/ public/content/
+          git commit -m "regulation: update ${TOPIC}/${ARTICLE_ID} (closes #${ISSUE_NUM})"
+          git push origin "${BRANCH}"
+          echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
+
+      - name: Create pull request
+        uses: actions/github-script@v7
+        env:
+          FIELDS:     ${{ steps.parse.outputs.fields }}
+          BRANCH:     ${{ steps.branch.outputs.branch }}
+          ISSUE_NUM:  ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        with:
+          script: |
+            const fields    = JSON.parse(process.env.FIELDS);
+            const branch    = process.env.BRANCH;
+            const issueNum  = process.env.ISSUE_NUM;
+            const issueTitle = process.env.ISSUE_TITLE;
+
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              title: `[Regulation] ${fields.topic}/${fields.article_id}`,
+              head:  branch,
+              base:  'main',
+              body: `## Regulation update
+
+            **Topic:** \`${fields.topic}\`
+            **Article ID:** \`${fields.article_id}\`
+            **Law reference:** ${fields.law_ref}
+
+            ### English question
+            ${fields.question_en}
+
+            ### Arabic question
+            ${fields.question_ar}
+
+            ---
+
+            Closes #${issueNum}
+
+            > **Review checklist before merging:**
+            > - [ ] Answer is accurate and complete (EN)
+            > - [ ] Answer is accurate and complete (AR)
+            > - [ ] Law reference is correct
+            > - [ ] Callout (if any) correctly describes the change
+            > - [ ] Article ID makes sense as a URL anchor
+            > - [ ] Check the Netlify preview below ↓
+
+            ---
+            *Auto-generated from issue #${issueNum}: ${issueTitle}*`,
+              draft: false,
+            });
+
+            console.log(`Created PR #${pr.data.number}: ${pr.data.html_url}`);
+
+            // Comment on the issue with the PR link
+            await github.rest.issues.createComment({
+              owner:      context.repo.owner,
+              repo:       context.repo.repo,
+              issue_number: parseInt(issueNum),
+              body: `✅ PR created: ${pr.data.html_url}\n\nNetlify will attach a preview URL to the PR automatically. Review the preview, then merge to publish.`,
+            });
+
+            // Add 'pr-created' label to the issue
+            try {
+              await github.rest.issues.addLabels({
+                owner:        context.repo.owner,
+                repo:         context.repo.repo,
+                issue_number: parseInt(issueNum),
+                labels:       ['pr-created'],
+              });
+            } catch { /* label may not exist yet */ }
