@@ -8,10 +8,6 @@
 [functions]
   directory = "netlify/functions"
 
-[[scheduled-functions]]
-  name     = "rss-monitor"
-  schedule = "0 7 * * *"
-
 [[headers]]
   for = "/*"
   [headers.values]
