@@ -2,37 +2,29 @@ import type { Config } from '@netlify/functions';
 import { getStore } from '@netlify/blobs';
 
 // ── RSS sources ───────────────────────────────────────────────────────────────
+// Google News RSS confirmed working — returns 40+ items per query.
+// Each query covers a different angle of KSA employment regulation.
+// Items are deduplicated by GUID across all sources.
+
 const SOURCES = [
   {
-    label: 'MHRSD — Ministry of Human Resources',
-    url: 'https://www.hrsd.gov.sa/en/rss.xml',
-    keywords: ['labor','labour','employment','worker','salary','wage',
-               'contract','iqama','saudization','nitaqat','leave',
-               'termination','gosi','work permit','qiwa','مرسوم','لائحة'],
+    label: 'Google News — MHRSD & Saudi employment regulation',
+    url: 'https://news.google.com/rss/search?q=MHRSD+Saudi+employment+regulation&hl=en-US&gl=US&ceid=US:en',
+    keywords: ['saudi','ksa','mhrsd','labour','labor','employment','worker',
+               'salary','wage','contract','saudization','nitaqat','leave',
+               'termination','gosi','work permit','qiwa','royal decree'],
   },
   {
-    label: 'Paul Hastings — KSA Employment Law',
-    url: 'https://www.paulhastings.com/rss/insights?practice=employment',
-    keywords: ['saudi','ksa','mhrsd','labour law','labor law','qiwa',
-               'gosi','saudization','royal decree','work permit'],
+    label: 'Google News — Saudi Arabia labour law 2025',
+    url: 'https://news.google.com/rss/search?q=Saudi+Arabia+labour+law+2025&hl=en-US&gl=US&ceid=US:en',
+    keywords: ['saudi','ksa','mhrsd','labour','labor','employment','worker',
+               'regulation','decree','ministry','qiwa','gosi','visa','iqama'],
   },
   {
-    label: 'Clyde & Co — Middle East Employment',
-    url: 'https://www.clydeco.com/en/insights/rss?region=middle-east&topic=employment',
-    keywords: ['saudi','ksa','labour','labor','employment','mhrsd',
-               'qiwa','gosi','work permit','royal decree'],
-  },
-  {
-    label: 'Al Tamimi — Employment & Incentives',
-    url: 'https://www.tamimi.com/feed/?cat=employment-incentives',
-    keywords: ['saudi','ksa','labour','labor','employment','mhrsd',
-               'qiwa','gosi','saudization','nitaqat'],
-  },
-  {
-    label: 'Lexology — Saudi Arabia Employment',
-    url: 'https://www.lexology.com/rss/employment/saudi-arabia',
-    keywords: ['labour law','labor law','mhrsd','qiwa','gosi',
-               'saudization','royal decree','work permit','nitaqat'],
+    label: 'Google News — Saudi Arabia Qiwa GOSI Mudad',
+    url: 'https://news.google.com/rss/search?q=Saudi+Arabia+Qiwa+GOSI+Mudad+employment&hl=en-US&gl=US&ceid=US:en',
+    keywords: ['saudi','qiwa','gosi','mudad','wps','saudization','nitaqat',
+               'iqama','labour','labor','employment','regulation'],
   },
 ];
 
@@ -57,7 +49,7 @@ function guessTopic(text: string): string {
   return 'compliance';
 }
 
-// ── Minimal RSS parser (no external deps) ────────────────────────────────────
+// ── RSS parser ────────────────────────────────────────────────────────────────
 interface RssItem {
   id: string;
   title: string;
@@ -81,31 +73,54 @@ function extractTag(xml: string, tag: string): string {
 async function fetchFeed(source: typeof SOURCES[0]): Promise<RssItem[]> {
   try {
     const res = await fetch(source.url, {
-      headers: { 'User-Agent': 'JisrRegulatoryHub/1.0 RSS Monitor (+https://github.com/HussinAlhiqi/jisr-regulatory-hub)' },
+      headers: {
+        // Must use a browser-like UA — Google News blocks generic bots
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
       signal: AbortSignal.timeout(12_000),
     });
+
     if (!res.ok) {
       console.warn(`[rss-monitor] ${source.label}: HTTP ${res.status}`);
       return [];
     }
+
     const xml = await res.text();
     const items: RssItem[] = [];
+
+    // Split on <item> boundaries
     const blocks = xml.match(/<item[\s\S]*?<\/item>/gi) ?? [];
 
     for (const block of blocks) {
       const title = extractTag(block, 'title');
-      const link  = extractTag(block, 'link') || extractTag(block, 'guid');
-      const guid  = extractTag(block, 'guid') || link;
-      const desc  = extractTag(block, 'description') || extractTag(block, 'summary');
+      const guid  = extractTag(block, 'guid') || extractTag(block, 'link');
+      const link  = extractTag(block, 'link') || guid;
+      const desc  = extractTag(block, 'description') || '';
       const date  = extractTag(block, 'pubDate') || new Date().toUTCString();
+      const src   = extractTag(block, 'source') || source.label;
 
       if (!title || !guid) continue;
 
+      // Skip items older than 90 days to avoid noise from old articles
+      const pubMs = new Date(date).getTime();
+      if (!isNaN(pubMs) && Date.now() - pubMs > 90 * 24 * 60 * 60 * 1000) continue;
+
+      // Keyword relevance filter
       const combined = (title + ' ' + desc).toLowerCase();
       if (!source.keywords.some(k => combined.includes(k))) continue;
 
-      items.push({ id: guid, title, link, pubDate: date, description: desc.slice(0, 600), source: source.label });
+      items.push({
+        id: guid,
+        title,
+        link: link || guid,
+        pubDate: date,
+        description: desc.slice(0, 500),
+        source: src,
+      });
     }
+
     return items;
   } catch (err) {
     console.warn(`[rss-monitor] ${source.label}: fetch failed —`, err);
@@ -124,7 +139,7 @@ async function createGitHubIssue(item: RssItem, token: string, repo: string) {
 **Link:** ${item.link}
 
 ### Summary from feed
-> ${item.description}
+> ${item.description || 'No description available — open the link above for full content.'}
 
 ---
 
@@ -166,15 +181,14 @@ REGULATION_UPDATE:
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      title: `[Regulation] ${item.title}`,
+      title: `[Regulation] ${item.title.slice(0, 120)}`,
       body,
       labels: ['regulation-update', 'automated'],
     }),
   });
 
   if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`GitHub API ${res.status}: ${err}`);
+    throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
   }
 
   const issue = await res.json() as { number: number; html_url: string };
@@ -182,7 +196,7 @@ REGULATION_UPDATE:
   return issue;
 }
 
-// ── Main function ─────────────────────────────────────────────────────────────
+// ── Main handler ──────────────────────────────────────────────────────────────
 export default async (req: Request) => {
   console.log('[rss-monitor] Starting RSS monitor run');
 
@@ -203,7 +217,7 @@ export default async (req: Request) => {
     console.log(`[rss-monitor] Loaded ${seenIds.size} seen IDs`);
   } catch {
     seenIds = new Set();
-    console.log('[rss-monitor] No seen IDs found — starting fresh');
+    console.log('[rss-monitor] No seen IDs — starting fresh');
   }
 
   const newSeenIds = new Set(seenIds);
@@ -217,26 +231,23 @@ export default async (req: Request) => {
     itemsChecked += items.length;
 
     for (const item of items) {
-      if (seenIds.has(item.id)) {
-        console.log(`[rss-monitor]   skip (seen): ${item.title.slice(0, 60)}`);
-        continue;
-      }
+      if (seenIds.has(item.id)) continue;
 
-      console.log(`[rss-monitor]   NEW: ${item.title.slice(0, 60)}`);
-
+      console.log(`[rss-monitor]   NEW: ${item.title.slice(0, 70)}`);
       try {
         await createGitHubIssue(item, GITHUB_TOKEN, GITHUB_REPO);
         issuesCreated++;
         newSeenIds.add(item.id);
-        await new Promise(r => setTimeout(r, 1200)); // rate limit buffer
+        // Avoid GitHub rate limiting
+        await new Promise(r => setTimeout(r, 1500));
       } catch (err) {
         console.error(`[rss-monitor] Failed to create issue:`, err);
       }
     }
   }
 
-  // Persist updated seen IDs (cap at 2000)
-  const idsToStore = [...newSeenIds].slice(-2000);
+  // Persist updated seen IDs (cap at 3000)
+  const idsToStore = [...newSeenIds].slice(-3000);
   try {
     await store.setJSON('seen-ids', idsToStore);
     console.log(`[rss-monitor] Saved ${idsToStore.length} seen IDs`);
